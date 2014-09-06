@@ -1,0 +1,449 @@
+// 
+// --------------------------------------------------
+
+// Block
+// --------------------------------------------------
+.shares
+	padding: 20px
+	display: none
+	&.is-open
+		display: block
+.usd-wrap
+	display: inline-block
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	line-height: 24px
+	text-align: center
+	border: 5px solid #fff
+	&:hover
+		border-color: $blue 
+	.fa-usd
+		font-size: 24px
+		vertical-align: middle
+		display: inline-block
+
+.cb-bet-panel
+	// max-width: 330px
+	max-width: 270px
+	position: relative
+	background: #242B2E
+	color: #fff
+	+r(w767)
+		max-width: 100%
+	.chat
+		padding: 20px
+		height: 100%
+		background: #242B2E
+	.chat__btn
+		position: absolute
+		left: 20px
+		right: 20px
+		bottom: 20px
+.cb-selection-rates
+	flex: 0 0 400px
+	padding-top: 20px
+	padding-right: 20px
+	.selection-rates
+		padding: 20px
+		background: #f3f3f3
+		
+.selection-rates-tabs
+	ul.nav-tabs
+		margin: -20px -20px 0
+		li
+			padding: 25px 15px
+			margin-bottom: 0
+			width: 50%
+			&:first-child
+				border-right: 1px solid #ddd
+			&.active
+				a
+					color: #000
+					border-color: transparent 
+		a
+			display: inline-block
+			padding: 0
+			border: none
+			font-size: 14px
+			
+			color: #999
+			border-bottom: 1px dotted #999 
+			background: transparent 
+			+ossb
+			&:hover
+				background: transparent 
+				border: none
+	.tab-content
+		text-align: left
+		padding: 20px 0 0
+		.tab-pane
+
+
+
+.chat
+	&.is-hide
+		display: none
+	.chat__topper
+		margin-bottom: 15px
+		+clr
+		.fa
+			margin-left: 20px
+			font-size: 30px
+			color: #3F4B4F
+			+transition
+			cursor: pointer
+			&:hover
+				color: #FFF
+				+transition
+	.chat__topper-title
+		float: left
+	.chat__topper-icons
+		height: 30px
+		line-height: 30px
+		float: right
+	.chat__in
+		height: 930px
+		margin-bottom: 100px
+	.chat__btn
+		+clr
+		.chat__enter, .chat__update
+			display: inline-block
+			padding: 5px 10px
+			border-radius: 3px
+			background: $blue
+			font-size: 14px
+			color: #FFF
+			+transition
+			&:hover
+				text-decoration: none
+				background: #fff 
+				color: $blue
+				+transition
+		.chat__enter
+			float: left
+		.chat__update
+			float: right
+	.chat__item
+		padding: 15px 0
+		border-bottom: 1px solid #2e373a
+		&:first-child
+			border-top: 1px solid #2e373a
+		.chat__item-title
+			margin-bottom: 5px
+			color: $blue
+
+.rate
+	margin-top: 20px
+	padding: 15px 20px
+	background: #FFF
+	&:first-child
+		margin-top: 0
+	.rate__top
+		margin-bottom: 20px
+		+clr
+		.rate__top-title
+			float: left
+			font-size: 14px
+			+ossb
+			color: $blue
+	.rate__close
+		float: right
+		color: $blue
+		cursor: pointer
+	.rate__row
+		height: 30px
+		line-height: 30px
+		margin-bottom: 10px
+		+clr
+		strong
+			+ossb
+		&.rate__row_mod
+			margin-top: 20px
+		.rate__label
+			color: $black 
+			&.rate__label_left
+				width: 145px
+				float: left
+			&.rate__label_right
+				text-align: right
+				float: right
+			.rate__input
+				width: 78px
+				height: 30px
+				margin-left: 10px
+				padding: 5px 12px 
+				display: inline-block
+				color: #999 
+				+placeholder
+					color: #999 
+	.rate__label-note
+		color: #999
+	.rate__reset 
+		color: #242B2E
+		border-bottom: 1px dotted #242b2e
+		&:hover
+			text-decoration: none
+			border-color: transparent
+
+.btn
+	padding: 5px 11px
+	&.btn-my
+		width: 30px
+		height: 30px
+		line-height: 30px
+		padding: 0
+.btn-primary
+	background: #3dc7fe
+	border: 0
+	+box-shadow(none) 
+	&.active
+		background: #35afe0
+
+.btn-danger
+	background: #f15b5b
+	border-color: #f15b5b
+	font-size: 14px
+	+os
+
+.sort
+	display: inline-block
+	position: relative
+	.sort__up, .sort__down
+		position: absolute
+		right: 10px
+		color: $blue
+		cursor: pointer
+	.sort__up
+		top: 8px
+	.sort__down
+		top: 8px
+
+.payment
+	padding-top: 40px
+	padding-bottom: 30px
+	padding-right: 70px
+	text-align: right
+	+r(w900)
+		padding-right: 0
+		text-align: center
+	.payment-1
+		margin-bottom: -10px
+		display: inline-block
+		margin-left: 90px
+		+s(alfa)
+		+r(w900)
+			margin-left: 50px
+		+r(w480)
+			display: block
+			margin: 0 auto 10px
+	.payment-2
+		display: inline-block
+		margin-left: 30px
+		+s(visa)
+		+r(w900)
+			margin-left: 20px
+		+r(w480)
+			display: block
+			margin: 0 auto 10px
+	.payment-3
+		display: inline-block
+		margin-left: 0px
+		+s(webmoney)
+		+r(w480)
+			display: block
+			margin: 0 auto 10px
+
+.translation
+	padding: 20px
+	background: #181D1F
+	color: #fff
+	position: absolute
+	bottom: 0
+	left: -50px
+	right: 0
+	text-align: left
+	+r(w990)
+		left: 0
+	+r(w600)
+		font-size: 12px
+	+r(w480)
+		font-size: 10px
+	.translation__play
+		color: #FFF
+		a
+			color: #FFF
+			&:hover
+				text-decoration: none
+		.fa-play-circle
+			display: inline-block
+			vertical-align: middle
+			font-size: 32px
+			margin-right: 10px
+			color: #F3F3F3
+			cursor: pointer
+	.translation__play-match
+		color: $blue
+	.fa-chevron-circle-up
+		font-size: 32px
+		position: absolute
+		top: 50%
+		margin-top: -16px
+		right: 20px
+		cursor: pointer
+
+.cb-icon-dota2
+	+svg(dota2, 26, 26)
+	-moz-background-size: 26px 26px
+	-webkit-background-size: 26px 26px
+	background-size: 26px 26px
+.cb-icon-sc
+	+svg(cs, 26, 26)
+	-moz-background-size: 26px 26px
+	-webkit-background-size: 26px 26px
+	background-size: 26px 26px
+.cb-icon-to
+	+svg(TO, 26, 26)
+	-moz-background-size: 26px 26px
+	-webkit-background-size: 26px 26px
+	background-size: 26px 26px
+.cb-icon-WoT
+	+svg(WoT, 26, 26)
+	-moz-background-size: 26px 26px
+	-webkit-background-size: 26px 26px
+	background-size: 26px 26px
+.cb-icon-pb
+	+svg(pb, 26, 26)
+	-moz-background-size: 26px 26px
+	-webkit-background-size: 26px 26px
+	background-size: 26px 26px
+
+.cb-bet-item
+	display: block
+	position: relative
+	+clr
+	.cb-bet-item-left
+		width: 420px
+		float: left
+		text-align: left
+		+r(w1280)
+			width: 100%
+			margin: 0 auto 10px
+			text-align: center
+	.cb-bet-item-right
+		width: 320px
+		height: 42px
+		line-height: 42px
+		float: right
+		text-align: right
+		font-size: 0
+		+r(w1280)
+			width: 100%
+			float: left
+			text-align: center
+		+r(w560)
+			height: auto
+			line-height: 1.4
+		.cb-bet-item-label
+			&:first-child
+				margin-left: 0
+				+r(w560)
+					margin: 0 auto 5px
+	.cb-icon
+		display: inline-block
+		vertical-align: middle
+		margin-right: 10px
+	.cb-bet-item-team
+		display: inline-block
+		vertical-align: middle
+		width: 80px
+		margin-right: 10px
+		text-align: left
+		+ossb
+		+text-overflow
+		+r(w560)
+			display: none
+	.cb-bet-item-date
+		display: inline-block
+		vertical-align: middle
+		margin-right: 10px
+		+r(w990)
+			font-size: 10px
+	.cb-bet-item-flag
+		display: inline-block
+		vertical-align: middle
+		width: 42px
+		height: 42px
+		border-radius: 50%
+		margin-right: 20px
+		overflow: hidden
+		+r(w990)
+			width: 26px
+			height: 26px
+			margin-right: 10px
+		img
+			max-width: 100%
+	.cb-bet-item-label
+		display: inline-block
+		vertical-align: middle
+		margin-left: 5px
+		padding: 3px 15px
+		border-radius: 3px
+		font-size: 14px
+		line-height: 1.4
+		background: $blue
+		color: #fff 
+		text-align: center
+		+r(w560)
+			display: block
+			width: 80px
+			padding: 3px 5px
+			margin: 0 auto 10px
+	.cb-bet-item-ico
+		display: inline-block
+		vertical-align: middle
+		margin-left: 5px
+		width: 20px
+		height: 20px
+		line-height: 20px
+		border-radius: 50%
+		background: #E3E3E3
+		font-size: 14px
+		color: #fff
+		text-align: center
+		&.cb-bet-item-ico_gray
+			color: #999 
+		&.cb-bet-item-ico_red
+			background: #f15b5b
+		&.cb-bet-item-ico_green
+			background: #8bd859
+		&.cb-bet-item-ico_black
+			background: #242b2e  
+	.i-arr-right
+		display: inline-block
+		+arr(8,10, #fff, right)
+		margin-left: 1px
+	.i-arr-right_gray
+		display: inline-block
+		+arr(8,10, #999, right)
+		margin-left: 1px
+	.fa
+		display: inline-block
+		vertical-align: middle
+		margin-left: 10px
+		font-size: 21px
+		color: #E3E3E3
+	// .fa-user
+	// 	margin-top: -3px
+	.fa-user-dgray
+		color: #999 
+	.fa-play-circle
+		// color: #cccccc
+
+.baron-wrap
+	+r(w767)
+		width: 100%
+			 
+
+
+

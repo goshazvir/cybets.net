@@ -1,0 +1,137 @@
+// 
+// --------------------------------------------------
+
+// Fonts
+// --------------------------------------------------
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400,300,700,800&subset=latin,cyrillic-ext)
+
+=os
+	font-family: "Open Sans", sans-serif
+	font-weight: 400
+	font-style: normal
+
+=osl
+	font-family: "Open Sans", sans-serif
+	font-weight: 300
+	font-style: normal
+
+=osb
+	font-family: "Open Sans", sans-serif
+	font-weight: 700
+	font-style: normal
+
+=ossb
+	font-family: "Open Sans", sans-serif
+	font-weight: 600
+	font-style: normal
+
+=oseb
+	font-family: "Open Sans", sans-serif
+	font-weight: 800
+	font-style: normal
+
+// Variables & mixins & extend
+// --------------------------------------------------
+$default-transition-duration: 0.3s
+$blue: #3dc7fe
+$black: #242b2e
+
+// Common blocks
+// --------------------------------------------------
+#applicationHost
+	min-height: 100%
+
+body
+	font-size: 14px 
+	+os
+	line-height: 1.4
+
+.cb-bet-list 
+	padding: 0 20px 72px
+	position: relative
+	.h2
+		margin-top: 20px
+		margin-bottom: 15px
+		text-align: left
+
+.cb-nav>ul
+	margin-top: 67px
+	+r(w990)
+		margin-top: 0
+.cb-nav>ul>li
+	width: 50px
+	height: 60px
+	line-height: 60px
+	text-align: center
+.cb-nav>ul>li>a
+	padding: 0
+	vertical-align: middle
+// Headings
+// --------------------------------------------------
+.h2
+	margin: 0
+	+ossb
+	font-size: 28px
+	color: #000
+	+r(w767)
+		font-size: 16px
+	&.h2_white
+		color: #FFF 
+// Nav
+// --------------------------------------------------
+.logo
+	display: inline-block
+	width: 120px
+	height: 120px
+	border-radius: 50%
+	background: #2e373a
+	position: relative
+	&:before
+		content: ""
+		+s(logo)
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-top: -35px
+		margin-left: -40px
+
+.cb-primaty-nav
+	background: #242B2E
+	padding: 25px 0px
+	+r(w767)
+	padding: 25px 0 0
+	li
+		padding: 25px 10px
+		border-top: 1px solid #2e373a 
+		text-align: center
+		&:hover
+			background: #2E373A 
+		&:first-child
+			border-top: none
+			background: #242B2E 
+	a
+		display: block
+		color: #FFF
+		&:hover
+			text-decoration: none
+			color: $blue
+		&.home
+			color: $blue
+			+ossb
+			+transition
+			&:hover
+				+opacity(0.6)
+		&.bet
+			&:hover
+				.usd-wrap
+					border-color: $blue
+	.cb-primaty-nav-ico
+		margin-bottom: 20px
+		font-size: 36px
+		vertical-align: middle
+		display: inline-block
+// Header
+// --------------------------------------------------
+
+// Footer
+// --------------------------------------------------
