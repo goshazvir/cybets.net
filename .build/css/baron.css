@@ -92,7 +92,7 @@ body {
     z-index: 1;
     width: 6px;
     background: #3f4b4f;
-    opacity: 0;
+/*    opacity: 0;*/
     -webkit-transition: opacity .2s linear;
     transition: opacity .2s linear;
     pointer-events: auto;

@@ -11,4 +11,9 @@ head.ready(function() {
 	 $(".chat").addClass("is-hide");
 	 $(".shares").addClass("is-open");
 	});
+
+	var windowheight = $(window).height();
+	var chatheight = (windowheight - 180);
+	$(".js-chat-set-height").css('min-height', chatheight);
+
 });

@@ -84,6 +84,9 @@
 .chat
 	&.is-hide
 		display: none
+	.chat__fixed
+		position: fixed
+		padding-right: 16px
 	.chat__topper
 		margin-bottom: 15px
 		+clr
@@ -93,7 +96,7 @@
 			color: #3F4B4F
 			+transition
 			cursor: pointer
-			&:hover
+			&:hover, &.is-active
 				color: #FFF
 				+transition
 	.chat__topper-title
@@ -103,8 +106,8 @@
 		line-height: 30px
 		float: right
 	.chat__in
-		height: 930px
-		margin-bottom: 100px
+		height: 430px
+		// margin-bottom: 100px
 	.chat__btn
 		+clr
 		.chat__enter, .chat__update
@@ -127,11 +130,37 @@
 	.chat__item
 		padding: 15px 0
 		border-bottom: 1px solid #2e373a
+		color: #3dc7fe 
+		a
+			color: #3dc7fe 
+		&.chat__item_mod
+			color: #33d7c9
+			a
+				color: #33d7c9
+		&.chat__item_warning
+			color: #fda556
+			a
+				color: #fda556	
+		&.chat__item_danger
+			color: #f15b5b 
+			a
+				color: #f15b5b 
 		&:first-child
 			border-top: 1px solid #2e373a
 		.chat__item-title
 			margin-bottom: 5px
 			color: $blue
+		.chat__item-user
+			font-size: 14px
+			.chat__item-user-ico
+				display: inline-block
+				vertical-align: middle
+				margin-right: 10px
+				font-size: 21px
+			span
+				display: inline-block
+				vertical-align: middle
+			
 
 .rate
 	margin-top: 20px
@@ -312,6 +341,16 @@
 	-moz-background-size: 26px 26px
 	-webkit-background-size: 26px 26px
 	background-size: 26px 26px
+	&.cb-icon-WoT_gray
+		+svg(WoT_gray, 26, 26)
+		-moz-background-size: 26px 26px
+		-webkit-background-size: 26px 26px
+		background-size: 26px 26px
+		&.is-active
+			+svg(WoT_white, 26, 26)
+			-moz-background-size: 26px 26px
+			-webkit-background-size: 26px 26px
+			background-size: 26px 26px
 .cb-icon-pb
 	+svg(pb, 26, 26)
 	-moz-background-size: 26px 26px
@@ -443,6 +482,109 @@
 .baron-wrap
 	+r(w767)
 		width: 100%
+
+.cb-bet-translation
+	flex: 1
+	background: #181d1f
+	color: #fff
+
+.baron-wrap
+	width: 100%
+
+.match
+	padding: 30px 90px 90px
+	text-align: left
+	+clr
+	.h2
+		margin-bottom: 70px
+	.match__nav
+		width: 30%
+		padding-right: 5%
+		float: left
+		li
+			margin-bottom: 15px
+		a
+			display: block
+			color: $blue
+			&.is-active
+				color: #fff
+				.cb-icon
+					color: #FFF
+			span
+				display: inline-block
+				vertical-align: middle
+		.cb-icon
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+			color: red
+	.match__top
+		position: relative
+		.match__close 
+			position: absolute
+			top: 0
+			right: 30px
+			cursor: pointer
+			font-size: 30px
+			color: #242b2e
+			+transition 
+			&:hover
+				color: #fff
+				+transition 
+	.match__items
+		width: 65%
+		height: 650px
+		float: left
+		+clr
+	.match__item
+		width: 46%
+		margin-right: 4%
+		margin-bottom: 4%
+		float: left
+	.match__item-media
+		position: relative
+		cursor: pointer
+		&:hover
+			.match__item-media-ico
+				background: rgba(#000, 1)
+				+transition
+	.match__item-media-play
+		img
+			max-width: 100%
+			height: auto 
+			display: block
+	.match__item-media-ico
+		width: 40px
+		height: 40px
+		background: rgba(#000, .5)
+		border-radius: 50%
+		position: absolute
+		top: 50%
+		margin-top: -20px
+		left: 50%
+		margin-left: -20px
+		+transition
+		&:before
+			content: ""
+			+arr(14,14,#3dc7fe,right)
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-top: -7px
+			margin-left: -5px
+	.match__item-descr
+		padding: 15px
+		background: #242B2E
+		text-align: center 
+	.match__item-descr-name
+		color: #FFF
+		a
+			color: #FFF
+			&:hover
+				text-decoration: underline
+
+
+
 			 
 
 
