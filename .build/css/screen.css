@@ -91,13 +91,14 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .selection-rates-tabs .tab-content { text-align: left; padding: 20px 0 0; }
 
 .chat.is-hide { display: none; }
+.chat .chat__fixed { position: fixed; padding-right: 16px; }
 .chat .chat__topper { margin-bottom: 15px; *zoom: 1; }
 .chat .chat__topper:after { content: " "; display: table; clear: both; }
 .chat .chat__topper .fa { margin-left: 20px; font-size: 30px; color: #3f4b4f; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; cursor: pointer; }
 .chat .chat__topper .fa:hover, .chat .chat__topper .fa.is-active { color: white; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .chat .chat__topper-title { float: left; }
 .chat .chat__topper-icons { height: 30px; line-height: 30px; float: right; }
-.chat .chat__in { height: 930px; margin-bottom: 100px; }
+.chat .chat__in { height: 430px; }
 .chat .chat__btn { *zoom: 1; }
 .chat .chat__btn:after { content: " "; display: table; clear: both; }
 .chat .chat__btn .chat__enter, .chat .chat__btn .chat__update { display: inline-block; padding: 5px 10px; border-radius: 3px; background: #3dc7fe; font-size: 14px; color: white; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
