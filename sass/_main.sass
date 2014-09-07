@@ -539,12 +539,36 @@
 		margin-bottom: 4%
 		float: left
 	.match__item-media
+		position: relative
+		cursor: pointer
+		&:hover
+			.match__item-media-ico
+				background: rgba(#000, 1)
+				+transition
 	.match__item-media-play
 		img
 			max-width: 100%
 			height: auto 
 			display: block
 	.match__item-media-ico
+		width: 40px
+		height: 40px
+		background: rgba(#000, .5)
+		border-radius: 50%
+		position: absolute
+		top: 50%
+		margin-top: -20px
+		left: 50%
+		margin-left: -20px
+		+transition
+		&:before
+			content: ""
+			+arr(14,14,#3dc7fe,right)
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-top: -7px
+			margin-left: -5px
 	.match__item-descr
 		padding: 15px
 		background: #242B2E

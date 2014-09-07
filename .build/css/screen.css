@@ -238,7 +238,11 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .match .match__items { width: 65%; height: 650px; float: left; *zoom: 1; }
 .match .match__items:after { content: " "; display: table; clear: both; }
 .match .match__item { width: 46%; margin-right: 4%; margin-bottom: 4%; float: left; }
+.match .match__item-media { position: relative; cursor: pointer; }
+.match .match__item-media:hover .match__item-media-ico { background: black; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .match .match__item-media-play img { max-width: 100%; height: auto; display: block; }
+.match .match__item-media-ico { width: 40px; height: 40px; background: rgba(0, 0, 0, 0.5); border-radius: 50%; position: absolute; top: 50%; margin-top: -20px; left: 50%; margin-left: -20px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.match .match__item-media-ico:before { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 7px 0 7px 14px; border-color: transparent transparent transparent #3dc7fe; position: absolute; top: 50%; left: 50%; margin-top: -7px; margin-left: -5px; }
 .match .match__item-descr { padding: 15px; background: #242b2e; text-align: center; }
 .match .match__item-descr-name { color: white; }
 .match .match__item-descr-name a { color: white; }
