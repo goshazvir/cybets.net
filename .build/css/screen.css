@@ -27,7 +27,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .cb-bet-list .h2 { margin-top: 20px; margin-bottom: 15px; text-align: left; }
 
 .cb-nav > ul { margin-top: 67px; }
-@media only screen and (max-width: 990px) { .cb-nav > ul { margin-top: 0; } }
+@media only screen and (max-width: 991px) { .cb-nav > ul { margin-top: 0; } }
 
 .cb-nav > ul > li { width: 50px; height: 60px; line-height: 60px; text-align: center; }
 
@@ -52,7 +52,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .cb-primaty-nav a.back:before { content: ""; display: inline-block; vertical-align: middle; margin-right: 10px; background: url('../img/icons-s50ce92ad60.png') 0 -323px no-repeat; width: 30px; height: 30px; }
 .cb-primaty-nav a.back:hover { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
 .cb-primaty-nav a.bet:hover .usd-wrap { border-color: #3dc7fe; }
-.cb-primaty-nav .user .user__media { margin-bottom: 5px; position: relative; }
+.cb-primaty-nav .user .user__media { margin-bottom: 5px; position: relative; display: inline-block; text-align: center; }
 .cb-primaty-nav .user .user__media-ava { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; }
 .cb-primaty-nav .user .user__media-ava img { max-width: 100%; height: auto; }
 .cb-primaty-nav .user .user__media-num { width: 32px; height: 32px; line-height: 32px; border-radius: 50%; background: #8bd859; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: white; text-align: center; position: absolute; top: 0; right: 0; z-index: 100; }
@@ -77,7 +77,8 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .cb-bet-panel { max-width: 270px; position: relative; background: #242b2e; color: white; }
 @media only screen and (max-width: 767px) { .cb-bet-panel { max-width: 100%; } }
 .cb-bet-panel .chat { padding: 20px; height: 100%; background: #242b2e; }
-.cb-bet-panel .chat__btn { position: absolute; left: 20px; right: 20px; bottom: 20px; }
+.cb-bet-panel .chat__btn { position: absolute; left: 20px; right: 16px; bottom: 20px; }
+@media only screen and (max-width: 767px) { .cb-bet-panel .chat__btn { right: 20px; } }
 
 .cb-selection-rates { flex: 0 0 400px; padding-top: 20px; padding-right: 20px; }
 .cb-selection-rates .selection-rates { padding: 20px; background: #f3f3f3; }
@@ -91,14 +92,16 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .selection-rates-tabs .tab-content { text-align: left; padding: 20px 0 0; }
 
 .chat.is-hide { display: none; }
-.chat .chat__fixed { position: fixed; padding-right: 16px; }
+.chat .chat__fixed { position: fixed; top: 20px; padding-bottom: 100px; padding-right: 16px; }
+@media only screen and (max-width: 991px) { .chat .chat__fixed { top: 20px; } }
+@media only screen and (max-width: 767px) { .chat .chat__fixed { padding-right: 0; position: static; } }
 .chat .chat__topper { margin-bottom: 15px; *zoom: 1; }
 .chat .chat__topper:after { content: " "; display: table; clear: both; }
 .chat .chat__topper .fa { margin-left: 20px; font-size: 30px; color: #3f4b4f; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; cursor: pointer; }
 .chat .chat__topper .fa:hover, .chat .chat__topper .fa.is-active { color: white; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .chat .chat__topper-title { float: left; }
 .chat .chat__topper-icons { height: 30px; line-height: 30px; float: right; }
-.chat .chat__in { height: 430px; }
+.chat .chat__in { height: 230px; }
 .chat .chat__btn { *zoom: 1; }
 .chat .chat__btn:after { content: " "; display: table; clear: both; }
 .chat .chat__btn .chat__enter, .chat .chat__btn .chat__update { display: inline-block; padding: 5px 10px; border-radius: 3px; background: #3dc7fe; font-size: 14px; color: white; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
@@ -167,7 +170,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 @media only screen and (max-width: 480px) { .payment .payment-3 { display: block; margin: 0 auto 10px; } }
 
 .translation { padding: 20px; background: #181d1f; color: white; position: absolute; bottom: 0; left: -50px; right: 0; text-align: left; }
-@media only screen and (max-width: 990px) { .translation { left: 0; } }
+@media only screen and (max-width: 991px) { .translation { left: 0; } }
 @media only screen and (max-width: 480px) { .translation { font-size: 10px; } }
 .translation .translation__play { color: white; }
 .translation .translation__play a { color: white; }
@@ -201,9 +204,9 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .cb-bet-item .cb-bet-item-team { display: inline-block; vertical-align: middle; width: 80px; margin-right: 10px; text-align: left; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
 @media only screen and (max-width: 560px) { .cb-bet-item .cb-bet-item-team { display: none; } }
 .cb-bet-item .cb-bet-item-date { display: inline-block; vertical-align: middle; margin-right: 10px; }
-@media only screen and (max-width: 990px) { .cb-bet-item .cb-bet-item-date { font-size: 10px; } }
+@media only screen and (max-width: 991px) { .cb-bet-item .cb-bet-item-date { font-size: 10px; } }
 .cb-bet-item .cb-bet-item-flag { display: inline-block; vertical-align: middle; width: 42px; height: 42px; border-radius: 50%; margin-right: 20px; overflow: hidden; }
-@media only screen and (max-width: 990px) { .cb-bet-item .cb-bet-item-flag { width: 26px; height: 26px; margin-right: 10px; } }
+@media only screen and (max-width: 991px) { .cb-bet-item .cb-bet-item-flag { width: 26px; height: 26px; margin-right: 10px; } }
 .cb-bet-item .cb-bet-item-flag img { max-width: 100%; }
 .cb-bet-item .cb-bet-item-label { display: inline-block; vertical-align: middle; margin-left: 5px; padding: 3px 15px; border-radius: 3px; font-size: 14px; line-height: 1.4; background: #3dc7fe; color: white; text-align: center; }
 @media only screen and (max-width: 560px) { .cb-bet-item .cb-bet-item-label { display: block; width: 80px; padding: 3px 5px; margin: 0 auto 10px; } }
@@ -223,10 +226,12 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 
 .baron-wrap { width: 100%; }
 
-.match { padding: 30px 90px 90px; text-align: left; *zoom: 1; }
+.match { padding: 20px 90px 90px; text-align: left; *zoom: 1; }
 .match:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 1280px) { .match { padding: 20px 30px 30px; } }
 .match .h2 { margin-bottom: 70px; }
 .match .match__nav { width: 30%; padding-right: 5%; float: left; }
+@media only screen and (max-width: 1280px) { .match .match__nav { width: 40%; } }
 .match .match__nav li { margin-bottom: 15px; }
 .match .match__nav a { display: block; color: #3dc7fe; }
 .match .match__nav a.is-active { color: white; }
@@ -238,7 +243,9 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .match .match__top .match__close:hover { color: white; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .match .match__items { width: 65%; height: 650px; float: left; *zoom: 1; }
 .match .match__items:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 1280px) { .match .match__items { width: 55%; } }
 .match .match__item { width: 46%; margin-right: 4%; margin-bottom: 4%; float: left; }
+@media only screen and (max-width: 1280px) { .match .match__item { width: 96%; } }
 .match .match__item-media { position: relative; cursor: pointer; }
 .match .match__item-media:hover .match__item-media-ico { background: black; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .match .match__item-media-play img { max-width: 100%; height: auto; display: block; }

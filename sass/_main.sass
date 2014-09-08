@@ -38,8 +38,10 @@
 	.chat__btn
 		position: absolute
 		left: 20px
-		right: 20px
+		right: 16px
 		bottom: 20px
+		+r(w767)
+			right: 20px
 .cb-selection-rates
 	flex: 0 0 400px
 	padding-top: 20px
@@ -86,7 +88,17 @@
 		display: none
 	.chat__fixed
 		position: fixed
+		top: 20px
+		// bottom: 100px
+		padding-bottom: 100px
 		padding-right: 16px
+		+r(w990)
+			top: 20px
+		+r(w767)
+			padding-right: 0
+			position: static
+		// 	position: static
+		// 	padding-right: 0
 	.chat__topper
 		margin-bottom: 15px
 		+clr
@@ -106,8 +118,7 @@
 		line-height: 30px
 		float: right
 	.chat__in
-		height: 430px
-		// margin-bottom: 100px
+		height: 230px
 	.chat__btn
 		+clr
 		.chat__enter, .chat__update
@@ -492,15 +503,19 @@
 	width: 100%
 
 .match
-	padding: 30px 90px 90px
+	padding: 20px 90px 90px
 	text-align: left
 	+clr
+	+r(w1280)
+		padding: 20px 30px 30px
 	.h2
 		margin-bottom: 70px
 	.match__nav
 		width: 30%
 		padding-right: 5%
 		float: left
+		+r(w1280)
+			width: 40%
 		li
 			margin-bottom: 15px
 		a
@@ -536,11 +551,15 @@
 		height: 650px
 		float: left
 		+clr
+		+r(w1280)
+			width: 55%
 	.match__item
 		width: 46%
 		margin-right: 4%
 		margin-bottom: 4%
 		float: left
+		+r(w1280)
+			width: 96%
 	.match__item-media
 		position: relative
 		cursor: pointer

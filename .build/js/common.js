@@ -16,4 +16,20 @@ head.ready(function() {
 	var chatheight = (windowheight - 180);
 	$(".js-chat-set-height").css('min-height', chatheight);
 
+
+	function chat_fixed() {
+		var position = $(".cb-nav-filter").offset().top;
+		var position_2 = $(".chat__fixed").offset().top;
+
+		if ($(window).scrollTop() > position) {
+		  $(".chat__fixed").addClass('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
+		  // alert(position);
+		}
+		if ($(window).scrollTop() <= position_2) {
+		  $(".chat__fixed").removeClass('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
+		  // alert(position_2);
+		}
+	}
+	chat_fixed();
+
 });
