@@ -32,6 +32,7 @@
 	+r(w767)
 		max-width: 100%
 	.chat
+		overflow: hidden
 		padding: 20px
 		height: 100%
 		background: #242B2E
@@ -39,9 +40,45 @@
 		position: absolute
 		left: 20px
 		right: 16px
-		bottom: 20px
+		bottom: 32px
 		+r(w767)
 			right: 20px
+	.chat__textarea-wrap
+		position: relative
+	.chat__textarea
+		margin-top: 20px
+		width: 100%
+		height: 95px
+		padding: 10px
+		color: #7e878b
+		+os
+		font-style: italic
+		border: 1px solid #1f2527
+		background: transparent
+		resize: vertival
+		+placeholder
+			color: #7e878b
+			+os
+			font-style: italic
+	.chat__textarea-smile
+		position: absolute
+		top: 35px
+		right: 30px
+		color: #7e878b
+		cursor: pointer
+		+transition
+		&:hover
+			color: #FFF
+			+transition
+	.chat__textarea-cross
+		position: absolute
+		top: 35px
+		right: 10px
+		color: #7e878b
+		cursor: pointer
+		&:hover
+			color: #FFF
+			+transition
 .cb-selection-rates
 	flex: 0 0 400px
 	padding-top: 20px
@@ -89,16 +126,14 @@
 	.chat__fixed
 		position: fixed
 		top: 20px
-		// bottom: 100px
-		padding-bottom: 100px
 		padding-right: 16px
 		+r(w990)
-			top: 20px
+			position: static
 		+r(w767)
 			padding-right: 0
 			position: static
-		// 	position: static
-		// 	padding-right: 0
+		&.js-fixed
+			position: fixed
 	.chat__topper
 		margin-bottom: 15px
 		+clr
