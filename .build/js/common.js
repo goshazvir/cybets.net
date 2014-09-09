@@ -1,5 +1,17 @@
 head.ready(function() {
 
+	$('.js-translation').on('click', function() {
+	 $(".cb-bet-translation").addClass("is-active");
+	 $(".cb-bet-list").addClass("is-hide");
+	 $(".cb-selection-rates").addClass("is-hide");
+	});
+
+	$('.js-match-close').on('click', function() {
+		$(".cb-bet-translation").removeClass("is-active");
+		$(".cb-bet-list").removeClass("is-hide");
+		$(".cb-selection-rates").removeClass("is-hide");
+	});
+
 	window.dima = baron({
 	    root: '.js-baron',
 	    scroller: '.scroller',
@@ -15,8 +27,8 @@ head.ready(function() {
 	var windowheight = $(window).height();
 	var chatheight = (windowheight);
 	var chatheight2 = (windowheight);
-	$(".js-chat-set-height").css('min-height', chatheight);
-	$(".js-chat-set-height2").css('min-height', chatheight - 250);
+	$(".js-chat-set-height").css('height', chatheight);
+	$(".js-chat-set-height2").css('height', chatheight - 250);
 
 
 	function chat_fixed() {
@@ -24,11 +36,9 @@ head.ready(function() {
 		var position_2 = $(".chat").offset().top;
 		if ($(window).scrollTop() >= position) {
 		  $(".chat__fixed").addClass("js-fixed");
-		  // alert(position);
 		}
 		if ($(window).scrollTop() < position_2) {
 		  $(".chat__fixed").removeClass("js-fixed");
-		  // alert(position_2);
 		}
 	}
 	if ($(".cb-nav-filter").length > 0){

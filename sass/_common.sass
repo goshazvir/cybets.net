@@ -46,9 +46,19 @@ body
 	+os
 	line-height: 1.4
 
+.cb-container
+	position: relative
+
 .cb-bet-list 
 	padding: 0 20px 72px
-	position: relative
+	+r(w1024)
+		padding: 0 10px 72px
+	+r(w860)
+		min-width: 200px
+	+r(w767)
+		padding-bottom: 0
+	&.is-hide
+		display: none
 	.h2
 		margin-top: 20px
 		margin-bottom: 15px
@@ -73,6 +83,8 @@ body
 	+ossb
 	font-size: 28px
 	color: #000
+	+r(w990)
+		font-size: 21px
 	+r(w767)
 		font-size: 16px
 	&.h2_white
@@ -86,6 +98,9 @@ body
 	border-radius: 50%
 	background: #2e373a
 	position: relative
+	+r(w1024)
+		width: 100px
+		height: 100px
 	&:before
 		content: ""
 		+s(logo)
