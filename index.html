@@ -35,7 +35,75 @@
 		}
 	</script>
 </head>
-<body>
+<body class="has-open-popup">
+
+	<div class="overlay js-overlay" style="display:  block;">
+		<div class="popup js-popup js-popup-reg">
+			<div class="popup__in">
+				<div class="popup__top">
+					<h2 class="h2">Регистрация</h2>
+					<i class="fa fa-close popup__close js-popup-close"></i>
+				</div>
+				<div class="popup__meta">1. Регистрационные данные</div>
+				<div class="popup__row">
+					<div class="input-wrap">
+						<i class="popup__ico1 fa fa-user"></i>
+						<input type="text" class="popup__input input" placeholder="Ваше имя">
+					</div>
+				</div>
+				<div class="popup__row">
+					<div class="input-wrap">
+						<i class="popup__ico2 fa fa-envelope-o"></i>
+						<input type="text" class="popup__input input" placeholder="Email">
+					</div>
+				</div>
+				<div class="popup__row">
+					<div class="input-wrap">
+						<i class="popup__ico3 fa fa-phone"></i>
+						<input type="text" class="popup__input input" placeholder="Телефон">
+					</div>
+				</div>
+				<div class="popup__row popup__row_btn">
+					<a href="#" class="popup__cansel">Отмена</a>
+					<a href="#" class="popup__next btn">Дальше</a>
+				</div>
+			</div>
+			<div class="popup__step popup__step-2">
+				<span>2</span>
+			</div>
+			<div class="popup__step popup__step-3">
+				<span>3</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay js-overlay" style="display: none;">
+		<div class="popup js-popup js-popup-enter">
+			<div class="popup__in">
+				<div class="popup__top popup__top_mod">
+					<h2 class="h2">Вход в систему</h2>
+					<i class="fa fa-close popup__close js-popup-close"></i>
+				</div>
+				<div class="popup__row">
+					<div class="input-wrap">
+						<i class="popup__ico1 fa fa-user"></i>
+						<input type="text" class="popup__input input" placeholder="Логин">
+					</div>
+				</div>
+				<div class="popup__row">
+					<div class="input-wrap">
+						<i class="popup__ico2 fa fa-lock"></i>
+						<input type="text" class="popup__input input" placeholder="Пароль">
+					</div>
+				</div>
+				<div class="popup__row popup__row_btn">
+					<a href="#" class="popup__cansel">Отмена</a>
+					<a href="#" class="popup__next btn">Войти</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div id="applicationHost">
 		<section class="cb-viewport-container cb-r-viewport-container">
 			<div class="cb-primaty-nav">
@@ -1153,8 +1221,8 @@
 									<i class="fa fa-close chat__textarea-cross"></i>
 								</div>
 								<div class="chat__btn">
-									<a href="#" class="chat__enter btn">Войти в чат</a>
-									<a href="#" class="chat__update btn">Обновить</a>
+									<a href="js-popup-reg" class="chat__enter btn js-popup-link">Войти в чат</a>
+									<a href="js-popup-enter" class="chat__update btn js-popup-link">Обновить</a>
 								</div>
 							</div>
 						</div>
@@ -1162,7 +1230,7 @@
 				</section>
 			</section>
 		</section>
-    </div>
+  </div>
 
 		<!--<div class="splash">
 			    <h1 class="message">Cybets</h1>
