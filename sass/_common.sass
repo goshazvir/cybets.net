@@ -77,6 +77,9 @@ body
 .cb-nav>ul>li>a
 	padding: 0
 	vertical-align: middle
+	color: #000
+.cb-r-icon
+	color: #000 
 // Headings
 // --------------------------------------------------
 .h2
@@ -99,18 +102,28 @@ body
 	border-radius: 50%
 	background: #2e373a
 	position: relative
-	+r(w1024)
-		width: 100px
-		height: 100px
+	+r(w1400)
+		width: 76px
+		height: 76px
 	&:before
-		content: ""
-		+s(logo)
+		content: "\e602"
+		font-family: 'Cybets'
+		speak: none
+		font-style: normal
+		font-weight: normal
+		font-variant: normal
+		text-transform: none
+		line-height: 1 
+		-webkit-font-smoothing: antialiased
+		-moz-osx-font-smoothing: grayscale
+		font-size: 100px
 		position: absolute
-		top: 50%
-		left: 50%
-		margin-top: -35px
-		margin-left: -40px
-
+		top: 10px
+		left: 10px
+		+r(w1400)
+			font-size: 48px
+			top: 14px
+			left: 14px
 .cb-primaty-nav
 	background: #242B2E
 	padding: 25px 0px
@@ -120,6 +133,8 @@ body
 		padding: 25px 10px
 		border-top: 1px solid #2e373a 
 		text-align: center
+		+r(w1400)
+			padding: 25px 0
 		&:hover
 			background: #2E373A 
 		&:first-child
@@ -128,6 +143,8 @@ body
 	a
 		display: block
 		color: #FFF
+		+r(w1400)
+			font-size: 0
 		&:hover
 			text-decoration: none
 			color: $blue
@@ -139,6 +156,7 @@ body
 				+opacity(0.6)
 		&.back
 			padding-right: 10px
+			font-size: 14px
 			color: #3dc7fe
 			+ossb
 			+transition
@@ -156,6 +174,7 @@ body
 				.usd-wrap
 					border-color: $blue
 	.user
+		padding: 0 10px
 		.user__media
 			margin-bottom: 5px
 			position: relative

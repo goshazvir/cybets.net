@@ -31,22 +31,43 @@
 	color: #fff
 	+r(w767)
 		max-width: 100%
+	&.cb-bet-panel-mod
+		+r(w990)
+			max-width: 100%
+		.chat
+			+r(w990)
+				width: 100%
+				height: 600px
+				right: 0
+		.chat__in
+			+r(w990)
+				left: 0
+				right: 16px
+				padding-right: 0
+		.chat__fixed
+			+r(w990)
+				padding-right: 0
+		.chat__topper
+			width: auto
 	.chat
 		overflow: hidden
 		padding: 20px
 		height: 100%
 		background: #242B2E
-	.chat__btn
-		position: absolute
-		left: 20px
-		right: 16px
-		bottom: 32px
-		+r(w767)
-			right: 20px
+	+r(w767)
+		height: 600px
+	// .chat__btn
+	// 	position: absolute
+	// 	left: 20px
+	// 	right: 16px
+	// 	bottom: 32px
+	// 	+r(w767)
+	// 		right: 20px
 	.chat__textarea-wrap
 		position: relative
 	.chat__textarea
 		margin-top: 20px
+		margin-bottom: 20px
 		width: 100%
 		height: 95px
 		padding: 10px 55px 10px 10px
@@ -83,6 +104,9 @@
 	flex: 0 0 250px
 	padding-top: 20px
 	padding-right: 20px
+	padding-bottom: 72px
+	+r(w1401)
+		min-width: 400px
 	+r(w1024)
 		padding-right: 10px
 	+r(w767)
@@ -133,7 +157,6 @@
 
 
 .chat
-	height: 643px !important
 	position: fixed
 	width: 270px
 	right: 0
@@ -145,39 +168,69 @@
 		width: 100%
 	&.is-hide
 		display: none
+	&.chat_user
+		.baron-wrap
+			margin-bottom: 135px
+		.scroller
+			min-width: 234px
 	.chat__fixed
 		position: fixed
 		top: 20px
 		bottom: 0
 		padding-right: 16px
-		+r(w990)
-			position: static
 		+r(w767)
-			padding-right: 0
-		&.js-fixed
-			position: fixed
-			+r(w767)
-				position: static
+			left: 16px
+			right: 0
+			// padding-right: 0
+		&.js-absolute
+			position: absolute
+			left: 16px
+			right: 0
+			padding-right: 16px
 	.chat__topper
 		margin-bottom: 15px
 		+clr
+		+r(w990)
+			width: 236px
+		+r(w767)
+			width: auto
 		.fa
-			margin-left: 20px
+			margin-right: 20px
 			font-size: 30px
 			color: #3F4B4F
 			+transition
 			cursor: pointer
+			&:last-child
+				margin-right: 0
 			&:hover, &.is-active
 				color: #FFF
 				+transition
 	.chat__topper-title
 		float: left
+		width: 113px
+		+text-overflow
+		text-align: left
+		+r(w990)
+			width: 100px
 	.chat__topper-icons
 		height: 30px
 		line-height: 30px
 		float: right
 	.chat__in
-		height: 230px
+		position: fixed
+		top: 75px
+		bottom: 190px
+		padding-right: 16px
+		+r(w767)
+			left: 16px
+			right: 0
+		&.js-absolute
+			position: absolute
+			top: 55px
+			+r(w767)
+				left: 0
+				right: 16px
+				padding-right: 0
 	.chat__btn
 		+clr
 		.chat__enter, .chat__update
@@ -273,6 +326,10 @@
 				height: 30px
 				margin-bottom: 10px
 				display: block
+				+r(w1401)
+					display: inline-block
+					height: auto
+					margin-bottom: 1px
 				+r(w767)
 					display: inline-block
 					margin-bottom: 0
@@ -397,10 +454,16 @@
 	text-align: left
 	+r(w990)
 		left: 0
+	+r(w767)
+		position: relative
+		right: 0
 	+r(w600)
 		font-size: 12px
 	+r(w480)
 		font-size: 10px
+	&.translation_mod
+		+r(w990)
+			position: relative
 	.translation__play
 		color: #FFF
 		a
@@ -423,42 +486,6 @@
 		margin-top: -16px
 		right: 20px
 		cursor: pointer
-
-.cb-icon-dota2
-	+svg(dota2, 26, 26)
-	-moz-background-size: 26px 26px
-	-webkit-background-size: 26px 26px
-	background-size: 26px 26px
-.cb-icon-sc
-	+svg(cs, 26, 26)
-	-moz-background-size: 26px 26px
-	-webkit-background-size: 26px 26px
-	background-size: 26px 26px
-.cb-icon-to
-	+svg(TO, 26, 26)
-	-moz-background-size: 26px 26px
-	-webkit-background-size: 26px 26px
-	background-size: 26px 26px
-.cb-icon-WoT
-	+svg(WoT, 26, 26)
-	-moz-background-size: 26px 26px
-	-webkit-background-size: 26px 26px
-	background-size: 26px 26px
-	&.cb-icon-WoT_gray
-		+svg(WoT_gray, 26, 26)
-		-moz-background-size: 26px 26px
-		-webkit-background-size: 26px 26px
-		background-size: 26px 26px
-		&.is-active
-			+svg(WoT_white, 26, 26)
-			-moz-background-size: 26px 26px
-			-webkit-background-size: 26px 26px
-			background-size: 26px 26px
-.cb-icon-pb
-	+svg(pb, 26, 26)
-	-moz-background-size: 26px 26px
-	-webkit-background-size: 26px 26px
-	background-size: 26px 26px
 
 .cb-bet-item
 	display: block
@@ -636,6 +663,16 @@
 		-o-transform: scaleY(1)
 		-ms-transform: scaleY(1)
 		transform: scaleY(1)
+		&:before
+			content: ""
+			height: 100%
+			width: 100%
+			position: absolute
+			left: 0
+			top: 0
+			bottom: 0
+			z-index: -1
+			background: #181d1f
 		+r(w767)
 			flex: 0 0 100%
 .baron-wrap
@@ -670,10 +707,11 @@
 				display: inline-block
 				vertical-align: middle
 		.cb-icon
+			font-size: 21px
 			display: inline-block
 			vertical-align: middle
 			margin-right: 10px
-			color: red
+			color: #2e373a
 	.match__top
 		position: relative
 		.match__close 
@@ -689,7 +727,8 @@
 				+transition
 	.match__items
 		width: 69%
-		height: 650px
+		min-height: 450px 
+		height: 450px
 		float: left
 		+clr
 		+r(w1280)
@@ -875,8 +914,157 @@
 	.popup__next
 		padding: 15px 50px
 		background: #3DC7FE
-		color: #fff  
-			
+		color: #fff
+
+// 
+// --------------------------------------------------
+.cb-totalisator
+	flex: 1
+	padding: 0 20px 72px
+	margin-top: 67px
+	text-align: left
+	&.is-hide
+		display: none
+	+r(w990)
+		margin-top: 20px
+		padding-bottom: 20px
+		flex: 0 0 100%
+.cb-news
+	flex: 0 0 250px
+	margin-top: 67px
+	padding-right: 20px
+	margin-bottom: 72px
+	text-align: left
+	&.is-hide
+		display: none
+	+r(w990)
+		margin-top: 0
+		padding-left: 20px
+		flex: 0 0 100%
+.news
+	margin-bottom: 20px
+	background: #F3F3F3 
+	.news__top
+		padding: 25px 20px
+		border-bottom: 1px solid #e3e3e3 
+	.news__top-title
+		+ossb
+		color: #999
+		text-align: center
+	.news__in
+		padding: 20px
+	.news__item
+		margin-top: 20px
+		padding: 15px 20px
+		background: #fff
+		&:first-child
+			margin-top: 0
+	.news__item-title
+		margin-bottom: 5px
+		+ossb
+		color: #3dc7fe
+		a
+			color: #3dc7fe
+
+.totalisator
+	.totalisator__item
+		padding: 20px
+		background: #F3F3F3
+		border-bottom: 1px solid #e3e3e3
+		+r(w1600)
+			+clr
+	.totalisator__item-left
+		text-align: center
+		margin-bottom: 10px
+		+r(w1600)
+			width: 50%
+			float: left
+			text-align: left
+		.cb-icon
+			display: inline-block
+			vertical-align: middle
+	.totalisator__item-content
+		display: inline-block
+		vertical-align: middle
+		color: #242B2E 
+	.totalisator__item-meta
+		display: inline-block
+		vertical-align: middle
+		+r(w1600)
+			width: 270px
+	.totalisator__item-date
+		margin: 0 20px
+		display: inline-block
+		vertical-align: middle
+		color: #999 
+	.totalisator__item-right
+		text-align: center
+		font-size: 0
+		+r(w1600)
+			width: 50%
+			float: right
+			text-align: right
+		.lbl
+			margin-left: 20px
+			font-size: 14px
+			display: inline-block
+			vertical-align: middle
+			text-align: center
+			&:first-child
+				margin-left: 0
+		.btn-info
+			margin-left: 20px
+			display: inline-block
+			vertical-align: middle
+				
+
+.bonus
+	margin-bottom: 20px
+	padding: 40px 20px
+	background: #3dc7fe
+	color: #fff 
+	text-align: center
+	.bonus__percent
+		font-size: 60px
+	.bonus__meta
+		padding: 0 20px
+		font-size: 18px
+
+.clip
+	width: 28px
+	height: 28px
+	background: #FFF 
+	border-radius: 50%
+	position: absolute
+	right: 60px
+	top: 50%
+	margin-top: -14px
+	cursor: pointer
+	&:before
+		content: ""
+		+s(clip)
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-left: -6px
+		margin-top: -10px
+
+.lbl
+	display: inline-block
+	width: 70px
+	padding: 6px 
+	background: #FFF 
+	font-size: 14px
+	color: #000
+	&:hover
+		color: #000
+		text-decoration: none 
+	&.lbl_sucess
+		background: #8BD859
+		color: #fff
+	&.lbl_gray
+		background: #e3e3e3 
+
 
 			 
 

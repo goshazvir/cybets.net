@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'Cybets';
+	src:url('../fonts/Cybets.eot?-ag1czp');
+	src:url('../fonts/Cybets.eot?#iefix-ag1czp') format('embedded-opentype'),
+		url('../fonts/Cybets.woff?-ag1czp') format('woff'),
+		url('../fonts/Cybets.ttf?-ag1czp') format('truetype'),
+		url('../fonts/Cybets.svg?-ag1czp#Cybets') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.cb-icon {
+	font-family: 'Cybets';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.cb-icon-cs:before {
+	content: "\e600";
+}
+.cb-icon-dota2:before {
+	content: "\e601";
+}
+.cb-icon-logo:before {
+	content: "\e602";
+}
+.cb-icon-logo2:before {
+	content: "\e603";
+}
+.cb-icon-lol:before {
+	content: "\e604";
+}
+.cb-icon-pb:before {
+	content: "\e605";
+}
+.cb-icon-q:before {
+	content: "\e606";
+}
+.cb-icon-sc2:before {
+	content: "\e607";
+}
+.cb-icon-to:before {
+	content: "\e608";
+}
+.cb-icon-wot:before {
+	content: "\e609";
+}
+.cb-icon-all:before {
+	content: "\e60d";
+}
+.cb-icon-heart:before {
+	content: "\e60b";
+}
+.cb-icon-heart2:before {
+	content: "\e60c";
+}

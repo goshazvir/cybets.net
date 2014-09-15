@@ -4,6 +4,9 @@ head.ready(function() {
 	 $(".cb-bet-translation").addClass("is-active");
 	 $(".cb-bet-list").addClass("is-hide");
 	 $(".cb-selection-rates").addClass("is-hide");
+	 
+	 $(".cb-totalisator").addClass("is-hide");
+	 $(".cb-news").addClass("is-hide");
 	});
 
 	$('.js-match-close').on('click', function() {
@@ -24,26 +27,48 @@ head.ready(function() {
 	 $(".shares").addClass("is-open");
 	});
 
-	var windowheight = $(window).height();
-	var chatheight = (windowheight);
-	var chatheight2 = (windowheight);
-	$(".js-chat-set-height").css('height', chatheight);
-	$(".js-chat-set-height2").css('height', chatheight - 250);
 
-
+	function match_height() {
+		var windowheight = $(window).height();
+		var matchheight = (windowheight - 100);
+		$(".match__items").css("height",matchheight);
+	}
+	if ($(".match__items").length > 0){
+	  match_height();
+	}
+	// var chatheight = (windowheight);
+	// var chatheight2 = (windowheight);
+	// $(".js-chat-set-height").css('height', chatheight);
+	// $(".js-chat-set-height2").css('height', chatheight - 250);
 	function chat_fixed() {
 		var position = $(".cb-nav-filter").offset().top;
 		var position_2 = $(".chat").offset().top;
 		if ($(window).scrollTop() >= position) {
-		  $(".chat__fixed").addClass("js-fixed");
+		  // $(".chat__fixed").addClass("js-fixed");
+		  $(".chat__fixed").removeClass("js-absolute");
+		  $(".chat__in").removeClass("js-absolute");
 		}
 		if ($(window).scrollTop() < position_2) {
-		  $(".chat__fixed").removeClass("js-fixed");
+		  // $(".chat__fixed").removeClass("js-fixed");
+		  $(".chat__fixed").addClass("js-absolute");
+		  $(".chat__in").addClass("js-absolute");
 		}
 	}
+
 	if ($(".cb-nav-filter").length > 0){
 	  chat_fixed();
 	}
+
+	$(window).resize(function(){
+	  chat_fixed();
+	  match_height();
+	});
+
+	$(window).scroll(function(){
+	  if ($(".cb-nav-filter").length > 0){
+	  	chat_fixed();
+		}
+	});
 
 	function modals() {
 		$(document).on("click", function(){
@@ -69,14 +94,5 @@ head.ready(function() {
 	} modals();
 
 
-	$(window).resize(function(){
-	  if ($(".cb-nav-filter").length > 0){
-	  	chat_fixed();
-	  }
-	});
-	$(window).scroll(function(){
-	  if ($(".cb-nav-filter").length > 0){
-	  	chat_fixed();
-		}
-	});
+
 });
