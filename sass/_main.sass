@@ -29,6 +29,7 @@
 	position: relative
 	background: #242B2E
 	color: #fff
+	+r(w1800)
 	+r(w767)
 		max-width: 100%
 	&.cb-bet-panel-mod
@@ -105,8 +106,8 @@
 	padding-top: 20px
 	padding-right: 20px
 	padding-bottom: 72px
-	+r(w1401)
-		min-width: 400px
+	+r(w1800)
+		min-width: 360px
 	+r(w1024)
 		padding-right: 10px
 	+r(w767)
@@ -447,15 +448,19 @@
 	padding: 20px
 	background: #181D1F
 	color: #fff
-	position: absolute
+	// position: absolute
+	position: fixed
 	bottom: 0
-	left: -50px
+	left: 88px
 	right: 270px
 	text-align: left
+	z-index: 9999
+	+r(w1401)
+		left: 140px
 	+r(w990)
 		left: 0
 	+r(w767)
-		position: relative
+		// position: relative
 		right: 0
 	+r(w600)
 		font-size: 12px
@@ -654,6 +659,20 @@
 
 	background: #181d1f
 	color: #fff
+	
+	position: fixed
+	top: 0px
+	bottom: 0px
+	left: 140px
+	right: 270px
+	z-index: 9999
+	+r(w1401)
+		left: 190px
+	+r(w990)
+		left: 0
+		right: 0
+	+r(h500)
+		position: static
 	&.is-active
 		+opacity(1)
 
@@ -663,6 +682,8 @@
 		-o-transform: scaleY(1)
 		-ms-transform: scaleY(1)
 		transform: scaleY(1)
+		+r(h500)
+			height: auto
 		&:before
 			content: ""
 			height: 100%
@@ -675,9 +696,22 @@
 			background: #181d1f
 		+r(w767)
 			flex: 0 0 100%
+	.scroller
+		// height: 60%
+		height: 80%
+		+r(w990)
+			height: 60%
+		+r(h500)
+			height: 100%
+	.scroller__bar-wrapper
+		// bottom: 40%
+		bottom: 20%
+		+r(w990)
+			bottom: 40%
+		+r(h500)
+			height: 100%
 .baron-wrap
 	width: 100%
-
 .match
 	padding: 20px 30px 30px
 	text-align: left

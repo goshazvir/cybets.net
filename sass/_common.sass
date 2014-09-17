@@ -129,12 +129,17 @@ body
 	padding: 25px 0px
 	+r(w767)
 	padding: 25px 0 0
+	+r(w1400)
+		padding-top: 7px
 	li
 		padding: 25px 10px
 		border-top: 1px solid #2e373a 
 		text-align: center
+		&:first-child
+			+r(w1400)
+				padding: 0 0 20px
 		+r(w1400)
-			padding: 25px 0
+			padding: 20px 10px
 		&:hover
 			background: #2E373A 
 		&:first-child
@@ -152,6 +157,8 @@ body
 			color: $blue
 			+ossb
 			+transition
+			+r(w1400)
+				padding: 0 6px 
 			&:hover
 				+opacity(0.6)
 		&.back
@@ -217,6 +224,9 @@ body
 		font-size: 36px
 		vertical-align: middle
 		display: inline-block
+		+r(w1400)
+			font-size: 26px
+			margin-bottom: 0
 // Header
 // --------------------------------------------------
 
