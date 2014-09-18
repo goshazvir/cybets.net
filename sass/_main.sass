@@ -655,6 +655,8 @@
 		margin-left: 5px
 		font-size: 21px
 		color: #E3E3E3
+		+r(w1601)
+			margin-bottom: 8px
 	// .fa-user
 	// 	margin-top: -3px
 	.fa-user-dgray
@@ -999,10 +1001,16 @@
 	text-align: left
 	&.is-hide
 		display: none
+	+r(w1801)
+		min-width: 378px
+	+r(w1024)
+		max-width: 210px
 	+r(w990)
-		margin-top: 0
-		padding-left: 20px
+		// margin-top: 0
+		// padding-left: 20px
 		flex: 0 0 100%
+		max-width: 100%
+
 .news
 	margin-bottom: 20px
 	background: #F3F3F3 
@@ -1035,6 +1043,9 @@
 		border-bottom: 1px solid #e3e3e3
 		+r(w1600)
 			+clr
+		.btn
+			+r(w1601)
+				font-size: 12px
 	.totalisator__item-left
 		text-align: center
 		margin-bottom: 10px
@@ -1046,19 +1057,25 @@
 			display: inline-block
 			vertical-align: middle
 	.totalisator__item-content
-		display: inline-block
+		// display: inline-block
 		vertical-align: middle
 		color: #242B2E 
 	.totalisator__item-meta
 		display: inline-block
 		vertical-align: middle
+		font-size: 14px
 		+r(w1600)
 			width: 270px
+		+r(w1400)
+			font-size: 12px
 	.totalisator__item-date
 		margin: 0 20px
 		display: inline-block
 		vertical-align: middle
-		color: #999 
+		font-size: 14px
+		color: #999
+		+r(w1400)
+			font-size: 12px
 	.totalisator__item-right
 		text-align: center
 		font-size: 0
@@ -1117,6 +1134,7 @@
 	padding: 6px 
 	background: #FFF 
 	font-size: 14px
+	text-align: center
 	color: #000
 	&:hover
 		color: #000
