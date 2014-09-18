@@ -29,7 +29,8 @@
 	position: relative
 	background: #242B2E
 	color: #fff
-	+r(w1800)
+	+r(w1801)
+		max-width: 378px 
 	+r(w767)
 		max-width: 100%
 	&.cb-bet-panel-mod
@@ -106,12 +107,14 @@
 	padding-top: 20px
 	padding-right: 20px
 	padding-bottom: 72px
-	+r(w1800)
-		min-width: 360px
+	+r(w1801)
+		min-width: 378px
 	+r(w1024)
+		max-width: 210px
 		padding-right: 10px
 	+r(w767)
 		flex: 0 0 100%
+		max-width: 100%
 		padding-left: 10px
 		margin-bottom: 10px
 	&.is-hide
@@ -163,6 +166,8 @@
 	right: 0
 	top: 0px
 	bottom: 0
+	+r(w1801)
+		width: 378px
 	+r(w990)
 		position: static
 	+r(w767)
@@ -185,7 +190,7 @@
 			// padding-right: 0
 		&.js-absolute
 			position: absolute
-			left: 16px
+			left: 20px
 			right: 0
 			padding-right: 16px
 	.chat__topper
@@ -292,8 +297,8 @@
 	margin-top: 20px
 	padding: 15px 20px
 	background: #FFF
-	+r(w1024)
-		margin-right: 10px
+	// +r(w1024)
+	// 	margin-right: 10px
 	&:first-child
 		margin-top: 0
 	.rate__top
@@ -316,7 +321,7 @@
 		+clr
 		strong
 			+ossb
-		+r(w1400)
+		+r(w1800)
 			height: auto
 			line-height: 1.4
 		&.rate__row_mod
@@ -330,7 +335,7 @@
 				+r(w1401)
 					display: inline-block
 					height: auto
-					margin-bottom: 1px
+					margin-bottom: 2px
 				+r(w767)
 					display: inline-block
 					margin-bottom: 0
@@ -340,7 +345,7 @@
 			&.rate__label_left
 				width: 98px
 				float: left
-				+r(w1400)
+				+r(w1800)
 					width: auto
 					float: none
 					margin-bottom: 10px
@@ -350,7 +355,7 @@
 			&.rate__label_right
 				text-align: right
 				float: right
-				+r(w1400)
+				+r(w1800)
 					width: auto
 					float: none
 					text-align: left
@@ -368,7 +373,7 @@
 				color: #999 
 				+placeholder
 					color: #999 
-				+r(w1400)
+				+r(w1800)
 					margin-left: 0
 	.rate__label-note
 		color: #999
@@ -496,6 +501,14 @@
 	display: block
 	position: relative
 	+clr
+
+	.cb-icon
+		float: left
+	.cb-bet-item-lbl
+		float: right
+	.b-bet-item-center
+		overflow: hidden
+
 	.cb-bet-item-buttons
 		display: inline-block
 		+r(w1400)
@@ -504,6 +517,8 @@
 			display: block
 	.cb-bet-item-lbl
 		display: inline-block
+		+r(w1601)
+			width: 70px
 	.cb-bet-item-left
 		width: 420px
 		float: left
@@ -554,15 +569,23 @@
 		text-align: left
 		+ossb
 		+text-overflow
+		+r(w1601)
+			width: auto
+			margin-right: 0
+		+r(w1270)
+			font-size: 12px
 		+r(w990)
 			width: auto
 			max-width: 80px
-		// +r(w560)
-		// 	display: none
+		+r(w560)
+			max-width: 60px
 	.cb-bet-item-date
 		display: inline-block
 		vertical-align: middle
 		margin-right: 10px
+		font-size: 14px
+		+r(w1270)
+			font-size: 12px
 		+r(w990)
 			font-size: 10px
 	.cb-bet-item-flag
@@ -590,9 +613,11 @@
 		text-align: center
 		+r(w560)
 			display: block
-			width: 80px
+			width: 60px
 			padding: 3px 5px
 			margin: 0 auto 10px
+		+r(w360)
+			width: auto
 	.cb-bet-item-ico
 		display: inline-block
 		vertical-align: middle
@@ -605,6 +630,8 @@
 		font-size: 14px
 		color: #fff
 		text-align: center
+		+r(w1601)
+			margin-bottom: 8px
 		&.cb-bet-item-ico_gray
 			color: #999 
 		&.cb-bet-item-ico_red
@@ -624,7 +651,8 @@
 	.fa
 		display: inline-block
 		vertical-align: middle
-		margin-left: 10px
+		// margin-left: 10px
+		margin-left: 5px
 		font-size: 21px
 		color: #E3E3E3
 	// .fa-user

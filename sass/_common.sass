@@ -232,3 +232,49 @@ body
 
 // Footer
 // --------------------------------------------------
+.cb-greed
+	width: 100%
+	font-size: 0
+	.cb-greed-15
+		width: 15%
+		display: inline-block
+		vertical-align: middle
+	.cb-greed-70
+		width: 70%
+		display: inline-block
+		vertical-align: middle
+
+
+.flex-container
+	padding: 0
+	margin: 0
+	list-style: none
+
+	-ms-box-orient: horizontal
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -moz-flex
+	display: -webkit-flex
+	display: flex
+	&.m-center
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		align-items: center
+	&.m-1600
+		+r(w1601)
+			width: 100%
+			flex-direction: column
+
+.block-1600
+	width: 100%
+	display: flex
+	-webkit-justify-content: space-between
+	justify-content: space-between
+	align-items: center
+	+r(w1601)
+		flex-direction: row
+		width: 80%
+		margin-bottom: 10px
+
+
