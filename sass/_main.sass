@@ -46,9 +46,17 @@
 				left: 0
 				right: 16px
 				padding-right: 0
+				
+				position: absolute
+				top: 55px
 		.chat__fixed
 			+r(w990)
 				padding-right: 0
+				
+				position: absolute
+				left: 20px
+				right: 0px
+				padding-right: 16px
 		.chat__topper
 			width: auto
 	.chat
@@ -187,12 +195,14 @@
 		+r(w767)
 			left: 16px
 			right: 0
-			// padding-right: 0
 		&.js-absolute
 			position: absolute
 			left: 20px
 			right: 0
 			padding-right: 16px
+			+r(w767)
+				left: 16px
+				right: 0
 	.chat__topper
 		margin-bottom: 15px
 		+clr
@@ -460,6 +470,8 @@
 	right: 270px
 	text-align: left
 	z-index: 9999
+	+r(w1801)
+		right: 378px
 	+r(w1401)
 		left: 140px
 	+r(w990)
@@ -1046,6 +1058,49 @@
 		.btn
 			+r(w1601)
 				font-size: 12px
+		.cb-greed-5
+			+r(w1280)
+				display: block
+				width: 100%
+				margin-bottom: 10px
+				text-align: center
+			+r(w990)
+				width: 5%
+				display: inline-block
+				text-align: left
+			+r(w760)
+				display: block
+				width: 100%
+				margin-bottom: 10px
+				text-align: center
+		.cb-greed-75
+			+r(w1280)
+				display: block
+				width: 100%
+				margin-bottom: 10px
+				text-align: center
+			+r(w990)
+				width: 75%
+				display: inline-block
+				text-align: left
+			+r(w760)
+				display: block
+				width: 100%
+				margin-bottom: 10px
+				text-align: center
+		.cb-greed-20
+			+r(w1280)
+				width: 100%
+				display: block
+				text-align: center
+			+r(w990)
+				width: 20%
+				display: inline-block
+				text-align: right
+			+r(w760)
+				display: block
+				width: 100%
+				text-align: center
 	.totalisator__item-left
 		text-align: center
 		margin-bottom: 10px
@@ -1068,6 +1123,13 @@
 			width: 270px
 		+r(w1400)
 			font-size: 12px
+	.totalisator__item-content-label
+		display: flex
+		justify-content: space-between
+		+r(w1601)
+			width: 94%
+			padding: 0 3%
+			margin-bottom: 10px
 	.totalisator__item-date
 		margin: 0 20px
 		display: inline-block
@@ -1075,6 +1137,7 @@
 		font-size: 14px
 		color: #999
 		+r(w1400)
+			min-width: 60px
 			font-size: 12px
 	.totalisator__item-right
 		text-align: center
@@ -1143,7 +1206,10 @@
 		background: #8BD859
 		color: #fff
 	&.lbl_gray
-		background: #e3e3e3 
+		background: #e3e3e3
+	+r(w560)
+		width: 60px
+		font-size: 12px
 
 
 			 
