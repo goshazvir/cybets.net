@@ -137,6 +137,18 @@ body
 .cb-primaty-nav
 	background: #242B2E
 	padding: 25px 0px
+	&.m-user
+		padding-top: 0
+		max-width: 132px
+		+r(w1801)
+			max-width: 160px 
+		+r(w990)
+			max-width: 100%
+		li
+			&:first-child
+				padding: 25px 10px
+				+r(w1400)
+					padding: 20px 10px
 	+r(w767)
 	padding: 25px 0 0
 	+r(w1400)
@@ -183,6 +195,9 @@ body
 				vertical-align: middle
 				margin-right: 10px
 				+s(back)
+				+r(w1800)
+					margin-right: 0
+					margin-bottom: 10px
 			&:hover
 				+transition
 				+opacity(0.8)
@@ -202,6 +217,12 @@ body
 			height: 120px
 			border-radius: 50%
 			overflow: hidden
+			+r(w1800)
+				width: 60px
+				height: 60px
+			+r(w990)
+				width: 120px
+				height: 120px
 			img
 				max-width: 100% 
 				height: auto
@@ -220,15 +241,29 @@ body
 			z-index: 100
 		.user__name
 			margin-bottom: 5px
+			+ossb
+			font-size: 14px
+			+r(w1400)
+				font-size: 12px
+			a
+				font-size: 14px
+				+r(w1400)
+					font-size: 12px
 		.user__bal
 			display: inline-block
 			font-size: 14px
+			+osb
 			color: #666
 			border-bottom: 1px dotted #666
+			+r(w1400)
+				font-size: 12px
 			&:hover
 				border-color: transparent 
 			a
 				color: #666
+				font-size: 14px
+				+r(w1400)
+					font-size: 12px
 	.cb-primaty-nav-ico
 		margin-bottom: 20px
 		font-size: 36px

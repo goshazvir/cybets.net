@@ -120,11 +120,12 @@
 	+r(w1024)
 		max-width: 210px
 		padding-right: 10px
-	+r(w767)
+	+r(w990)
 		flex: 0 0 100%
 		max-width: 100%
 		padding-left: 10px
 		margin-bottom: 10px
+		padding-bottom: 0px
 	&.is-hide
 		display: none
 	.selection-rates
@@ -187,11 +188,18 @@
 			margin-bottom: 135px
 		.scroller
 			min-width: 234px
+		.chat__in
+			min-width: 348px
+			+r(w1800)
+				min-width: initial
 	.chat__fixed
 		position: fixed
 		top: 20px
 		bottom: 0
 		padding-right: 16px
+		min-width: 348px
+		+r(w1800)
+			min-width: initial
 		+r(w767)
 			left: 16px
 			right: 0
@@ -486,6 +494,12 @@
 	&.translation_mod
 		+r(w990)
 			position: relative
+	&.m-user
+		left: 131px
+		+r(w1801)
+			left: 160px
+		+r(w990)
+			left: 0
 	.translation__play
 		color: #FFF
 		a
@@ -708,6 +722,8 @@
 	left: 140px
 	right: 270px
 	z-index: 9999
+	+r(w1801)
+		right: 378px
 	+r(w1401)
 		left: 190px
 	+r(w990)

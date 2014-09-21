@@ -13,6 +13,9 @@ head.ready(function() {
 		$(".cb-bet-translation").removeClass("is-active");
 		$(".cb-bet-list").removeClass("is-hide");
 		$(".cb-selection-rates").removeClass("is-hide");
+
+		$(".cb-totalisator").removeClass("is-hide");
+		$(".cb-news").removeClass("is-hide");
 	});
 
 	window.dima = baron({
@@ -41,7 +44,7 @@ head.ready(function() {
 	// $(".js-chat-set-height").css('height', chatheight);
 	// $(".js-chat-set-height2").css('height', chatheight - 250);
 	function chat_fixed() {
-		var position = $(".cb-nav-filter").offset().top;
+		var position = $(".js-set-absolute").offset().top;
 		var position_2 = $(".chat").offset().top;
 		if ($(window).scrollTop() >= position) {
 		  // $(".chat__fixed").addClass("js-fixed");
@@ -55,7 +58,7 @@ head.ready(function() {
 		}
 	}
 
-	if ($(".cb-nav-filter").length > 0){
+	if ($(".js-set-absolute").length > 0){
 	  chat_fixed();
 	}
 
@@ -65,7 +68,7 @@ head.ready(function() {
 	});
 
 	$(window).scroll(function(){
-	  if ($(".cb-nav-filter").length > 0){
+	  if ($(".js-set-absolute").length > 0){
 	  	chat_fixed();
 		}
 	});
