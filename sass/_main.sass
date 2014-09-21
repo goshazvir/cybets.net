@@ -413,6 +413,8 @@
 					float: right
 			&.rate__label_long
 				width: 150px
+				+r(w990)
+					width: 50%
 			&.rate__label_small
 				+r(w1801)
 					width: 90px
@@ -562,14 +564,21 @@
 	display: block
 	position: relative
 	+clr
-
+	&.m-normal
+		.cb-bet-item-flag
+			+r(w990)
+				display: inline-block
+		.cb-bet-item-team
+			+r(w990)
+				display: inline-block
+			+r(w560)
+				display: block
 	.cb-icon
 		float: left
 	.cb-bet-item-lbl
 		float: right
 	.b-bet-item-center
 		overflow: hidden
-
 	.cb-bet-item-buttons
 		display: inline-block
 		+r(w1400)
@@ -631,9 +640,12 @@
 		+ossb
 		+text-overflow
 		+r(w1601)
-			width: auto
+			// width: auto
 			margin-right: 0
 		+r(w1270)
+			display: block
+			margin-left: auto
+			margin-right: auto
 			font-size: 12px
 		+r(w990)
 			width: auto
