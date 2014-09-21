@@ -317,6 +317,10 @@
 	background: #FFF
 	// +r(w1024)
 	// 	margin-right: 10px
+	&.is-error
+		border: 1px solid #f15b5b
+		.rate__top
+			margin-bottom: 10px
 	&:first-child
 		margin-top: 0
 	.rate__top
@@ -327,6 +331,10 @@
 			font-size: 14px
 			+ossb
 			color: $blue
+	.rate__note
+		line-height: 1.2
+		&.state-error
+			color: #f15b5b 
 	.rate__close
 		float: right
 		color: $blue
@@ -342,6 +350,11 @@
 		+r(w1800)
 			height: auto
 			line-height: 1.4
+		&.m-error
+			margin-bottom: 5px
+			text-align: center
+			height: auto
+			line-height: 1.4
 		&.rate__row_mod
 			margin-top: 20px
 		.rate__label
@@ -354,19 +367,33 @@
 					display: inline-block
 					height: auto
 					margin-bottom: 2px
+				+r(w990)
+					display: inline-block
+					margin-bottom: 2px
 				+r(w767)
 					display: inline-block
 					margin-bottom: 0
+				+r(w560)
+					display: block
+					width: 60px
+					margin-left: auto
+					margin-bottom: 10px
 			.sort
 				+r(w767)
 					vertical-align: middle
 			&.rate__label_left
 				width: 98px
 				float: left
+				+r(w1801)
+					width: 170px
+					+text-overflow
 				+r(w1800)
 					width: auto
 					float: none
 					margin-bottom: 10px
+				+r(w990)
+					width: 50%
+					float: left
 				+r(w767)
 					width: 98px
 					float: left
@@ -377,11 +404,18 @@
 					width: auto
 					float: none
 					text-align: left
+				+r(w990)
+					width: 50%
+					text-align: right
+					float: left
 				+r(w767)
 					text-align: right
 					float: right
 			&.rate__label_long
 				width: 150px
+			&.rate__label_small
+				+r(w1801)
+					width: 90px
 			.rate__input
 				width: 78px
 				height: 30px
@@ -484,6 +518,7 @@
 		left: 140px
 	+r(w990)
 		left: 0
+		right: 0
 	+r(w767)
 		// position: relative
 		right: 0

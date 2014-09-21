@@ -79,6 +79,8 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 
 .align-left { text-align: left; }
 
+.align-center { text-align: center; }
+
 .h2 { margin: 0; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 28px; color: black; }
 @media only screen and (max-width: 991px) { .h2 { font-size: 21px; } }
 @media only screen and (max-width: 767px) { .h2 { font-size: 16px; } }
@@ -249,28 +251,39 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .chat .chat__item .chat__item-user span { display: inline-block; vertical-align: middle; }
 
 .rate { margin-top: 20px; padding: 15px 20px; background: white; }
+.rate.is-error { border: 1px solid #f15b5b; }
+.rate.is-error .rate__top { margin-bottom: 10px; }
 .rate:first-child { margin-top: 0; }
 .rate .rate__top { margin-bottom: 20px; *zoom: 1; }
 .rate .rate__top:after { content: " "; display: table; clear: both; }
 .rate .rate__top .rate__top-title { float: left; font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #3dc7fe; }
+.rate .rate__note { line-height: 1.2; }
+.rate .rate__note.state-error { color: #f15b5b; }
 .rate .rate__close { float: right; color: #3dc7fe; cursor: pointer; }
 .rate .rate__row { height: 30px; line-height: 30px; margin-bottom: 10px; font-size: 12px; *zoom: 1; }
 .rate .rate__row:after { content: " "; display: table; clear: both; }
 .rate .rate__row strong { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 @media only screen and (max-width: 1800px) { .rate .rate__row { height: auto; line-height: 1.4; } }
+.rate .rate__row.m-error { margin-bottom: 5px; text-align: center; height: auto; line-height: 1.4; }
 .rate .rate__row.rate__row_mod { margin-top: 20px; }
 .rate .rate__row .rate__label { color: #242b2e; }
 .rate .rate__row .rate__label .btn-group { height: 30px; margin-bottom: 10px; display: block; }
 @media only screen and (min-width: 1401px) { .rate .rate__row .rate__label .btn-group { display: inline-block; height: auto; margin-bottom: 2px; } }
+@media only screen and (max-width: 991px) { .rate .rate__row .rate__label .btn-group { display: inline-block; margin-bottom: 2px; } }
 @media only screen and (max-width: 767px) { .rate .rate__row .rate__label .btn-group { display: inline-block; margin-bottom: 0; } }
+@media only screen and (max-width: 560px) { .rate .rate__row .rate__label .btn-group { display: block; width: 60px; margin-left: auto; margin-bottom: 10px; } }
 @media only screen and (max-width: 767px) { .rate .rate__row .rate__label .sort { vertical-align: middle; } }
 .rate .rate__row .rate__label.rate__label_left { width: 98px; float: left; }
+@media only screen and (min-width: 1801px) { .rate .rate__row .rate__label.rate__label_left { width: 170px; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; } }
 @media only screen and (max-width: 1800px) { .rate .rate__row .rate__label.rate__label_left { width: auto; float: none; margin-bottom: 10px; } }
+@media only screen and (max-width: 991px) { .rate .rate__row .rate__label.rate__label_left { width: 50%; float: left; } }
 @media only screen and (max-width: 767px) { .rate .rate__row .rate__label.rate__label_left { width: 98px; float: left; } }
 .rate .rate__row .rate__label.rate__label_right { text-align: right; float: right; }
 @media only screen and (max-width: 1800px) { .rate .rate__row .rate__label.rate__label_right { width: auto; float: none; text-align: left; } }
+@media only screen and (max-width: 991px) { .rate .rate__row .rate__label.rate__label_right { width: 50%; text-align: right; float: left; } }
 @media only screen and (max-width: 767px) { .rate .rate__row .rate__label.rate__label_right { text-align: right; float: right; } }
 .rate .rate__row .rate__label.rate__label_long { width: 150px; }
+@media only screen and (min-width: 1801px) { .rate .rate__row .rate__label.rate__label_small { width: 90px; } }
 .rate .rate__row .rate__label .rate__input { width: 78px; height: 30px; margin-left: 10px; padding: 5px 12px; display: inline-block; color: #999999; }
 .rate .rate__row .rate__label .rate__input:-ms-input-placeholder { color: #999999; }
 .rate .rate__row .rate__label .rate__input:-moz-placeholder { color: #999999; }
@@ -308,7 +321,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .translation { padding: 20px; background: #181d1f; color: white; position: fixed; bottom: 0; left: 88px; right: 270px; text-align: left; z-index: 9999; }
 @media only screen and (min-width: 1801px) { .translation { right: 378px; } }
 @media only screen and (min-width: 1401px) { .translation { left: 140px; } }
-@media only screen and (max-width: 991px) { .translation { left: 0; } }
+@media only screen and (max-width: 991px) { .translation { left: 0; right: 0; } }
 @media only screen and (max-width: 767px) { .translation { right: 0; } }
 @media only screen and (max-width: 480px) { .translation { font-size: 10px; } }
 @media only screen and (max-width: 991px) { .translation.translation_mod { position: relative; } }
