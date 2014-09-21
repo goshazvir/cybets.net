@@ -537,6 +537,8 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .lbl.lbl_gray { background: #e3e3e3; }
 @media only screen and (max-width: 560px) { .lbl { width: 60px; font-size: 12px; } }
 
+.ante .ante-top { background: white; }
+
 /*
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
