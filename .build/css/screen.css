@@ -110,7 +110,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 @media only screen and (max-width: 1400px) { .cb-primaty-nav a.home { padding: 0 6px; } }
 .cb-primaty-nav a.home:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; }
 .cb-primaty-nav a.back { padding-right: 10px; font-size: 14px; color: #3dc7fe; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
-.cb-primaty-nav a.back:before { content: ""; display: inline-block; vertical-align: middle; margin-right: 10px; background: url('../img/icons-s4147fc3b40.png') 0 -353px no-repeat; width: 30px; height: 30px; }
+.cb-primaty-nav a.back:before { content: ""; display: inline-block; vertical-align: middle; margin-right: 10px; background: url('../img/icons-s280be24816.png') 0 -353px no-repeat; width: 30px; height: 30px; }
 @media only screen and (max-width: 1800px) { .cb-primaty-nav a.back:before { margin-right: 0; margin-bottom: 10px; } }
 .cb-primaty-nav a.back:hover { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
 .cb-primaty-nav a.bet:hover .usd-wrap { border-color: #3dc7fe; }
@@ -250,7 +250,11 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .chat .chat__item .chat__item-user .chat__item-user-ico { display: inline-block; vertical-align: middle; margin-right: 10px; font-size: 21px; }
 .chat .chat__item .chat__item-user span { display: inline-block; vertical-align: middle; }
 
-.rate { margin-top: 20px; padding: 15px 20px; background: white; }
+.rate { margin-top: 20px; padding: 15px 20px; background: white; border: 1px solid transparent; }
+.rate.is-invalid { border-color: #f15b5b; }
+.rate.is-invalid .rate-in { display: none; }
+.rate.is-invalid .rate-invalid { display: block; }
+.rate .rate-invalid { display: none; }
 .rate.is-error { border: 1px solid #f15b5b; }
 .rate.is-error .rate__top { margin-bottom: 10px; }
 .rate:first-child { margin-top: 0; }
@@ -312,11 +316,11 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 
 .payment { padding-top: 40px; padding-bottom: 30px; padding-right: 70px; text-align: right; }
 @media only screen and (max-width: 900px) { .payment { padding-right: 0; text-align: center; } }
-.payment .payment-1 { margin-bottom: -10px; display: inline-block; margin-left: 90px; background: url('../img/icons-s4147fc3b40.png') 0 -137px no-repeat; width: 29px; height: 46px; }
+.payment .payment-1 { margin-bottom: -10px; display: inline-block; margin-left: 90px; background: url('../img/icons-s280be24816.png') 0 -137px no-repeat; width: 29px; height: 46px; }
 @media only screen and (max-width: 1270px) { .payment .payment-1 { display: block; margin: 0 auto 15px; } }
-.payment .payment-2 { display: inline-block; margin-left: 30px; background: url('../img/icons-s4147fc3b40.png') 0 -46px no-repeat; width: 103px; height: 31px; }
+.payment .payment-2 { display: inline-block; margin-left: 30px; background: url('../img/icons-s280be24816.png') 0 -46px no-repeat; width: 103px; height: 31px; }
 @media only screen and (max-width: 1270px) { .payment .payment-2 { display: block; margin: 0 auto 15px; } }
-.payment .payment-3 { display: inline-block; margin-left: 0px; background: url('../img/icons-s4147fc3b40.png') 0 0 no-repeat; width: 140px; height: 36px; }
+.payment .payment-3 { display: inline-block; margin-left: 0px; background: url('../img/icons-s280be24816.png') 0 0 no-repeat; width: 140px; height: 36px; }
 @media only screen and (max-width: 1270px) { .payment .payment-3 { display: block; margin: 0 auto 15px; } }
 
 .translation { padding: 20px; background: #181d1f; color: white; position: fixed; bottom: 0; left: 88px; right: 270px; text-align: left; z-index: 9999; }
@@ -529,7 +533,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .bonus .bonus__meta { padding: 0 20px; font-size: 18px; }
 
 .clip { width: 28px; height: 28px; background: white; border-radius: 50%; position: absolute; right: 60px; top: 50%; margin-top: -14px; cursor: pointer; }
-.clip:before { content: ""; background: url('../img/icons-s4147fc3b40.png') 0 -323px no-repeat; width: 12px; height: 20px; position: absolute; top: 50%; left: 50%; margin-left: -6px; margin-top: -10px; }
+.clip:before { content: ""; background: url('../img/icons-s280be24816.png') 0 -323px no-repeat; width: 12px; height: 20px; position: absolute; top: 50%; left: 50%; margin-left: -6px; margin-top: -10px; }
 
 .lbl { display: inline-block; width: 70px; padding: 6px; background: white; font-size: 14px; text-align: center; color: black; }
 .lbl:hover { color: black; text-decoration: none; }
@@ -537,7 +541,16 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .lbl.lbl_gray { background: #e3e3e3; }
 @media only screen and (max-width: 560px) { .lbl { width: 60px; font-size: 12px; } }
 
-.ante .ante-top { background: white; }
+.ante .ante-top { padding: 15px 20px; background: white; font-size: 14px; position: relative; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.ante .ante-top.is-open:before { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.ante .ante-top:before { content: ""; position: absolute; top: 50%; margin-top: -5px; right: 25px; background: url('../img/icons-s280be24816.png') 0 -423px no-repeat; width: 10px; height: 6px; }
+.ante .ante-content { background: white; padding: 0 20px 20px; margin-bottom: 20px; }
+.ante .ante-content-row { padding: 10px 0; border-bottom: 1px solid #f3f3f3; }
+.ante .ante-content-row:first-child { border-top: 1px solid #f3f3f3; }
+.ante .ante-content-title { height: 30px; line-height: 30px; *zoom: 1; }
+.ante .ante-content-title:after { content: " "; display: table; clear: both; }
+.ante .ante-content-heading { float: left; font-size: 14px; color: #3dc7fe; }
+.ante .label { float: right; padding: 8px 25px; }
 
 /*
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome

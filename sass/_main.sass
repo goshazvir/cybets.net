@@ -315,8 +315,15 @@
 	margin-top: 20px
 	padding: 15px 20px
 	background: #FFF
-	// +r(w1024)
-	// 	margin-right: 10px
+	border: 1px solid transparent
+	&.is-invalid
+		border-color: #f15b5b 
+		.rate-in
+			display: none
+		.rate-invalid
+			display: block
+	.rate-invalid
+		display: none
 	&.is-error
 		border: 1px solid #f15b5b
 		.rate__top
@@ -1276,8 +1283,41 @@
 		
 .ante
 	.ante-top
-		background: #FFF 
+		padding: 15px 20px
+		background: #FFF
+		font-size: 14px
+		position: relative
+		+nosel
+		&.is-open
+			&:before
+				+rotate(180)
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			margin-top: -5px
+			right: 25px
+			+s(i-arr)
 	.ante-content
+		background: #FFF
+		padding: 0 20px 20px
+		margin-bottom: 20px
+	.ante-content-row
+		padding: 10px 0
+		border-bottom: 1px solid #f3f3f3
+		&:first-child
+			border-top: 1px solid #f3f3f3
+	.ante-content-title
+		height: 30px
+		line-height: 30px
+		+clr
+	.ante-content-heading
+		float: left
+		font-size: 14px
+		color: #3DC7FE 
+	.label
+		float: right
+		padding: 8px 25px
 
 
 
