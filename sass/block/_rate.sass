@@ -1,0 +1,138 @@
+.cb-rate
+	margin-top: 20px
+	padding: 15px 20px
+	background: #FFF
+	border: 1px solid transparent
+	&.is-invalid
+		border-color: #f15b5b 
+		.rate-in
+			display: none
+		.rate-invalid
+			display: block
+	.rate-invalid
+		display: none
+	&.is-error
+		border: 1px solid #f15b5b
+		.cb-rate-top
+			margin-bottom: 10px
+	&:first-child
+		margin-top: 0
+	.cb-rate-top
+		margin-bottom: 20px
+		+clr
+		.cb-rate-top-title
+			float: left
+			font-size: 14px
+			+ossb
+			color: $blue
+	.rate__note
+		line-height: 1.2
+		&.state-error
+			color: #f15b5b
+			cursor: pointer
+			&:hover
+				+opacity(0.6)
+	.cb-rate-close
+		float: right
+		color: $blue
+		cursor: pointer
+	.cb-rate-row
+		height: 30px
+		line-height: 30px
+		margin-bottom: 10px
+		font-size: 12px
+		+clr
+		strong
+			+ossb
+		+r(w1800)
+			height: auto
+			line-height: 1.4
+		&.m-error
+			margin-bottom: 5px
+			text-align: center
+			height: auto
+			line-height: 1.4
+		&.m-mod
+			margin-top: 20px
+		.cb-rate-label
+			color: $black 
+			.btn-group
+				height: 30px
+				margin-bottom: 10px
+				display: block
+				+r(w1401)
+					display: inline-block
+					height: auto
+					margin-bottom: 2px
+				+r(w990)
+					display: inline-block
+					margin-bottom: 2px
+				+r(w767)
+					display: inline-block
+					margin-bottom: 0
+				+r(w560)
+					display: block
+					width: 60px
+					margin-left: auto
+					margin-bottom: 10px
+			.cb-sort
+				+r(w767)
+					vertical-align: middle
+			&.m-left
+				width: 98px
+				float: left
+				+r(w1801)
+					width: 170px
+					+text-overflow
+				+r(w1800)
+					width: auto
+					float: none
+					margin-bottom: 10px
+				+r(w990)
+					width: 50%
+					float: left
+				+r(w767)
+					width: 98px
+					float: left
+			&.m-right
+				text-align: right
+				float: right
+				+r(w1800)
+					width: auto
+					float: none
+					text-align: left
+				+r(w990)
+					width: 50%
+					text-align: right
+					float: left
+				+r(w767)
+					text-align: right
+					float: right
+			&.m-long
+				width: 150px
+				+r(w990)
+					width: 50%
+			&.m-small
+				+r(w1801)
+					width: 90px
+			.cb-rate-input
+				width: 78px
+				height: 30px
+				margin-left: 10px
+				padding: 5px 12px 
+				display: inline-block
+				color: #999 
+				+placeholder
+					color: #999 
+				+r(w1800)
+					margin-left: 0
+	.cb-rate-label-note
+		color: #999
+		+r(w1400)
+			margin-right: 5px
+	.cb-rate-reset 
+		color: #242B2E
+		border-bottom: 1px dotted #242b2e
+		&:hover
+			text-decoration: none
+			border-color: transparent

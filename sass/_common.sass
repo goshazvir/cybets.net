@@ -50,21 +50,14 @@ body
 	position: relative
 
 .cb-bet-list 
-	min-width: 270px
-	padding: 0 20px 72px
-	+r(w1024)
-		padding: 0 10px 72px
-	+r(w860)
-		min-width: 200px
-	+r(w767)
-		padding-bottom: 0
 	&.is-hide
 		display: none
-	.h2
+	.cb-h2
 		margin-top: 20px
 		margin-bottom: 15px
 		text-align: left
-
+.cb-nav
+	background-color: #f3f3f3
 .cb-nav>ul
 	margin-top: 67px
 	+r(w990)
@@ -86,7 +79,7 @@ body
 .w20
 	width: 35%
 
-.align-right
+.cb-align-right
 	text-align: right
 .align-left
 	text-align: left
@@ -94,6 +87,18 @@ body
 	text-align: center
 // Headings
 // --------------------------------------------------
+.cb-h2
+	margin: 0
+	+ossb
+	font-size: 28px
+	color: #000
+	+r(w990)
+		font-size: 21px
+	+r(w767)
+		font-size: 16px
+	&.m-white
+		color: #FFF
+
 .h2
 	margin: 0
 	+ossb
@@ -107,7 +112,7 @@ body
 		color: #FFF 
 // Nav
 // --------------------------------------------------
-.logo
+.cb-logo
 	display: inline-block
 	width: 120px
 	height: 120px
@@ -136,7 +141,7 @@ body
 			font-size: 48px
 			top: 14px
 			left: 14px
-.cb-primaty-nav
+.cb-primary-nav
 	background: #242B2E
 	padding: 25px 0px
 	&.m-user
@@ -151,6 +156,8 @@ body
 				padding: 25px 10px
 				+r(w1400)
 					padding: 20px 10px
+	span
+		display: block
 	+r(w767)
 	padding: 25px 0 0
 	+r(w1400)
@@ -177,7 +184,7 @@ body
 		&:hover
 			text-decoration: none
 			color: $blue
-		&.home
+		&.cb-home
 			color: $blue
 			+ossb
 			+transition
@@ -266,7 +273,7 @@ body
 				font-size: 14px
 				+r(w1400)
 					font-size: 12px
-	.cb-primaty-nav-ico
+	.cb-primary-nav-ico
 		margin-bottom: 20px
 		font-size: 36px
 		vertical-align: middle
@@ -312,7 +319,7 @@ body
 		vertical-align: middle
 
 
-.flex-container
+.cb-flex-container
 	padding: 0
 	margin: 0
 	list-style: none
@@ -333,7 +340,7 @@ body
 			width: 100%
 			flex-direction: column
 
-.block-1600
+.cb-block-1600
 	width: 100%
 	display: flex
 	-webkit-justify-content: space-between

@@ -1,0 +1,127 @@
+.has-open-popup
+	overflow: hidden
+.cb-overlay
+	display: none
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	z-index: 20000
+	background: #000
+	background: rgba(#000, 0.8)
+	text-align: center
+	overflow: auto
+	font-size: 0
+	&:before
+		content: ""
+		display: inline-block
+		vertical-align: middle
+		width: 0
+		height: 100%
+.cb-popup
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	margin: 115px 0
+	width: 540px
+	+box-shadow(0 0 40px rgba(0,0,0,.1))
+	.cb-popup-in
+		padding: 30px 40px 30px 40px
+		background: #f3f3f3
+		text-align: left
+		overflow: hidden
+		font-size: 14px
+	.cb-popup-top
+		margin-bottom: 15px
+		padding-bottom: 15px
+		border-bottom: 1px solid #e3e3e3
+		position: relative
+		&.m-mod
+			border-bottom: none
+			margin-bottom: 40px
+			padding-bottom: 0 
+	.cb-popup-meta
+		margin-bottom: 15px
+		font-size: 14px
+		+ossb
+	.cb-popup-close
+		cursor: pointer
+		position: absolute
+		top: 0
+		right: 0px
+		font-size: 30px
+		color: #242b2e
+		+transition
+		&:hover
+			color: #3dc7fe
+			+transition
+	.cb-popup-step
+		width: 20px
+		position: absolute
+		top: 0
+		bottom: 0
+		font-size: 14px
+		color: #fff
+		&.m-step2
+			right: -20px
+			background: #3DC7FE 
+		&.m-step3
+			right: -40px
+			background: #1CAFE9
+		span
+			width: 20px
+			position: absolute
+			left: 0
+			bottom: 45px
+			text-align: center
+	.cb-popup-row
+		margin-top: 20px
+		&:first-child
+			margin-top: 0
+		&.m-btn
+			text-align: right
+	.cb-popup-ico1, .cb-popup-ico2, .cb-popup-ico3
+		position: absolute
+		font-size: 21px
+	.cb-popup-ico1
+		left: 15px
+		top: 12px
+	.cb-popup-ico2
+		left: 15px
+		top: 14px
+	.cb-popup-ico3
+		left: 17px
+		top: 15px
+	.cb-input-wrap
+		height: 48px
+		background: #FFF
+		position: relative
+		color: #3dc7fe 
+	.cb-popup-input
+		width: 100%
+		height: 100%
+		padding-left: 45px
+		+box
+		border: 1px solid #e3e3e3
+		border-radius: 3px
+		font-size: 14px
+		color: #999
+		+placeholder
+			font-size: 14px
+			color: #999
+		&:focus
+			border-color: #3DC7FE 
+			+placeholder
+				color: transparent
+	.cb-popup-cansel
+		margin: 0 40px
+		color: #999
+		text-decoration: none
+		border-bottom: 1px dotted #999
+		&:hover
+			border-color: transparent 
+	.cb-popup-next
+		padding: 15px 50px
+		background: #3DC7FE
+		color: #fff
