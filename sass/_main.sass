@@ -66,26 +66,6 @@
 		+r(w1024)
 			padding: 10px 0 0
 
-.btn
-	padding: 5px 11px
-	&.cb-btn-my
-		width: 30px
-		height: 30px
-		line-height: 30px
-		padding: 0
-.btn-primary
-	background: #3dc7fe
-	border: 0
-	+box-shadow(none) 
-	&.active
-		background: #35afe0
-
-.btn-danger
-	background: #f15b5b
-	border-color: #f15b5b
-	font-size: 14px
-	+os
-
 .cb-sort
 	display: inline-block
 	position: relative
@@ -224,10 +204,6 @@
 			margin: 0 auto 10px
 			float: none
 			text-align: center
-		// +r(w1280)
-		// 	width: 100%
-		// 	margin: 0 auto 10px
-		// 	text-align: center
 	.cb-bet-item-right
 		width: 320px
 		height: 42px
@@ -241,10 +217,6 @@
 			float: none
 			line-height: 1.4
 			text-align: center
-		// +r(w1280)
-		// 	width: 100%
-		// 	float: left
-		// 	text-align: center
 		+r(w560)
 			height: auto
 			line-height: 1.4
@@ -266,7 +238,6 @@
 		+ossb
 		+text-overflow
 		+r(w1601)
-			// width: auto
 			margin-right: 0
 		+r(w1270)
 			display: block
@@ -351,22 +322,19 @@
 		width: 20px
 		display: inline-block
 		vertical-align: middle
-		// margin-left: 10px
 		margin-left: 5px
 		font-size: 21px
 		color: #E3E3E3
 		+r(w1601)
 			margin-bottom: 8px
-	// .fa-user
-	// 	margin-top: -3px
 	.fa-user-dgray
 		color: #999 
 	.fa-play-circle
-		// color: #cccccc
 
 .baron-wrap
 	+r(w767)
 		width: 100%
+
 .cb-bet-translation
 	+opacity(0)
 	height: 0
@@ -413,7 +381,7 @@
 		-webkit-transform: scaleY(1)
 		-o-transform: scaleY(1)
 		-ms-transform: scaleY(1)
-		// transform: scaleY(1)
+		transform: scaleY(1)
 		// +r(h500)
 		// 	height: auto
 		&:before
@@ -429,14 +397,12 @@
 		+r(w767)
 			flex: 0 0 100%
 	.scroller
-		// height: 60%
 		height: 80%
 		+r(w990)
 			height: 60%
 		+r(h500)
 			height: 100%
 	.scroller-bar-wrapper
-		// bottom: 40%
 		bottom: 20%
 		+r(w990)
 			bottom: 40%
@@ -460,25 +426,6 @@
 		padding: 0 20px
 		font-size: 18px
 
-.clip
-	width: 28px
-	height: 28px
-	background: #FFF 
-	border-radius: 50%
-	position: absolute
-	right: 60px
-	top: 50%
-	margin-top: -14px
-	cursor: pointer
-	&:before
-		content: ""
-		+s(clip)
-		position: absolute
-		top: 50%
-		left: 50%
-		margin-left: -6px
-		margin-top: -10px
-
 .cb-lbl
 	display: inline-block
 	width: 70px
@@ -499,8 +446,8 @@
 		width: 60px
 		font-size: 12px
 		
-.ante
-	.ante-top
+.cb-ante
+	.cb-ante-top
 		padding: 15px 20px
 		background: #FFF
 		font-size: 14px
@@ -517,27 +464,46 @@
 			margin-top: -5px
 			right: 25px
 			+s(i-arr)
-	.ante-content
+	.cb-ante-content
 		background: #FFF
 		padding: 0 20px 20px
 		margin-bottom: 20px
-	.ante-content-row
+	.cb-ante-content-row
 		padding: 10px 0
 		border-bottom: 1px solid #f3f3f3
 		&:first-child
 			border-top: 1px solid #f3f3f3
-	.ante-content-title
+	.cb-ante-content-title
 		height: 30px
 		line-height: 30px
 		+clr
-	.ante-content-heading
+	.cb-ante-content-heading
 		float: left
 		font-size: 14px
 		color: #3DC7FE 
-	.label-info
+	.cb-label-info
 		float: right
 
-.label-info
+.cb-clip
+	width: 28px
+	height: 28px
+	background: #FFF 
+	border-radius: 50%
+	position: absolute
+	right: 60px
+	top: 50%
+	margin-top: -14px
+	cursor: pointer
+	&:before
+		content: ""
+		+s(clip)
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-left: -6px
+		margin-top: -10px
+
+.cb-label-info
 	display: inline-block
 	vertical-align: middle
 	margin-left: 5px
@@ -549,6 +515,35 @@
 	font-weight: normal
 	color: #fff 
 	text-align: center
+
+// SOFT
+.btn
+	padding: 5px 11px
+	&.cb-btn-my
+		width: 30px
+		height: 30px
+		line-height: 30px
+		padding: 0
+.btn-primary
+	background: #3dc7fe
+	border: 0
+	+box-shadow(none) 
+	&.active
+		background: #35afe0
+
+.btn-danger
+	background: #f15b5b
+	border-color: #f15b5b
+	font-size: 14px
+	+os
+
+.ie
+	.scroller
+		-ms-overflow-y: hidden
+		overflow-y: hidden
+
+// END SOFT
+
 
 
 			 

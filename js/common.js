@@ -1,18 +1,18 @@
 head.ready(function() {
 	// accorderon
 	function accorderon(){
-	 $(".js-accordion .js-accordion__content").hide();
-	 $(".js-accordion .js-accordion__content").first().show();
-	 $(".js-accordion__title").each(function(){
+	 $(".js-accordion .js-accordion-content").hide();
+	 $(".js-accordion .js-accordion-content").first().show();
+	 $(".js-accordion-title").each(function(){
 	  $(this).on('click', function(){
 	   if ($(this).hasClass('is-open')) {
 	    $(this).removeClass('is-open');
 	    $(this).next().slideUp('fast');
 	   }
 	   else {
-	    $(".js-accordion__title").removeClass('is-open');
+	    $(".js-accordion-title").removeClass('is-open');
 	    $(this).addClass('is-open');
-	    $(".js-accordion__content").slideUp('fast');
+	    $(".js-accordion-content").slideUp('fast');
 	    $(this).next().slideDown('fast');
 	   }
 	  });
