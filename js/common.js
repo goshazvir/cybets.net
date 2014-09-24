@@ -25,8 +25,10 @@ head.ready(function() {
 
 	$('.js-translation').on('click', function() {
 	 $(".cb-bet-translation").addClass("is-active");
-	 // $(".cb-bet-list").addClass("is-hide");
+	 $(".cb-bet-list").hide();
+	 $(".cb-selection-rates").hide();
 	 $(".cb-selection-rates").addClass("is-hide");
+	 $(".cb-translation").hide();
 
 	 $(".cb-totalisator").addClass("is-hide");
 	 $(".cb-news").addClass("is-hide");
@@ -34,8 +36,10 @@ head.ready(function() {
 
 	$('.js-match-close').on('click', function() {
 		$(".cb-bet-translation").removeClass("is-active");
-		// $(".cb-bet-list").removeClass("is-hide");
+		$(".cb-bet-list").show();
+		$(".cb-selection-rates").show();
 		$(".cb-selection-rates").removeClass("is-hide");
+		$(".cb-translation").show();
 
 		$(".cb-totalisator").removeClass("is-hide");
 		$(".cb-news").removeClass("is-hide");

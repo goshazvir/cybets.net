@@ -1,0 +1,41 @@
+.cb-news
+	flex: 0 0 250px
+	margin-top: 47px
+	margin-bottom: 72px
+	text-align: left
+	&.is-hide
+		display: none
+	+r(w1801)
+		min-width: 378px
+	+r(w1024)
+		max-width: 210px
+	+r(w990)
+		flex: 0 0 100%
+		max-width: 100%
+		margin-top: 0
+	.cb-news-in
+		margin-bottom: 20px
+		background: #F3F3F3 
+		+r(w990)
+			margin-bottom: 10px
+		.cb-news-top
+			padding: 25px 20px
+			border-bottom: 1px solid #e3e3e3 
+		.cb-news-top-title
+			+ossb
+			color: #999
+			text-align: center
+		.cb-news-in
+			padding: 20px
+		.cb-news-item
+			margin-top: 20px
+			padding: 15px 20px
+			background: #fff
+			&:first-child
+				margin-top: 0
+		.cb-news-item-title
+			margin-bottom: 5px
+			+ossb
+			color: #3dc7fe
+			a
+				color: #3dc7fe

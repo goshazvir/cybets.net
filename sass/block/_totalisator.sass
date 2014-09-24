@@ -10,8 +10,8 @@
 		margin-top: 10px
 		flex: 0 0 100%
 
-.totalisator
-	.totalisator__item
+.cb-totalisator-in
+	.cb-totalisator-item
 		padding: 20px
 		background: #F3F3F3
 		border-bottom: 1px solid #e3e3e3
@@ -63,21 +63,11 @@
 				display: block
 				width: 100%
 				text-align: center
-	.totalisator__item-left
-		text-align: center
-		margin-bottom: 10px
-		+r(w1600)
-			width: 50%
-			float: left
-			text-align: left
-		.cb-icon
-			display: inline-block
-			vertical-align: middle
-	.totalisator__item-content
+	.cb-totalisator-item-content
 		// display: inline-block
 		vertical-align: middle
 		color: #242B2E 
-	.totalisator__item-meta
+	.cb-totalisator-item-meta
 		display: inline-block
 		vertical-align: middle
 		font-size: 14px
@@ -85,14 +75,14 @@
 			width: 270px
 		+r(w1400)
 			font-size: 12px
-	.totalisator__item-content-label
+	.cb-totalisator-item-content-label
 		display: flex
 		justify-content: space-between
 		+r(w1601)
 			width: 94%
 			padding: 0 3%
 			margin-bottom: 10px
-	.totalisator__item-date
+	.cb-totalisator-item-date
 		margin: 0 20px
 		display: inline-block
 		vertical-align: middle
@@ -101,22 +91,3 @@
 		+r(w1400)
 			min-width: 60px
 			font-size: 12px
-	.totalisator__item-right
-		text-align: center
-		font-size: 0
-		+r(w1600)
-			width: 50%
-			float: right
-			text-align: right
-		.lbl
-			margin-left: 20px
-			font-size: 14px
-			display: inline-block
-			vertical-align: middle
-			text-align: center
-			&:first-child
-				margin-left: 0
-		.btn-info
-			margin-left: 20px
-			display: inline-block
-			vertical-align: middle

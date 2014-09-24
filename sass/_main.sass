@@ -393,7 +393,7 @@
 	position: fixed
 	top: 0px
 	bottom: 0px
-	left: 140px
+	left: 138px
 	right: 270px
 	z-index: 9999
 	+r(w1801)
@@ -403,8 +403,8 @@
 	+r(w990)
 		left: 0
 		right: 0
-	+r(h500)
-		position: static
+	// +r(h500)
+	// 	position: static
 	&.is-active
 		+opacity(1)
 
@@ -413,9 +413,9 @@
 		-webkit-transform: scaleY(1)
 		-o-transform: scaleY(1)
 		-ms-transform: scaleY(1)
-		transform: scaleY(1)
-		+r(h500)
-			height: auto
+		// transform: scaleY(1)
+		// +r(h500)
+		// 	height: auto
 		&:before
 			content: ""
 			height: 100%
@@ -446,34 +446,7 @@
 	width: 100%
 // 
 // --------------------------------------------------
-.news
-	margin-bottom: 20px
-	background: #F3F3F3 
-	+r(w990)
-		margin-bottom: 10px
-	.news__top
-		padding: 25px 20px
-		border-bottom: 1px solid #e3e3e3 
-	.news__top-title
-		+ossb
-		color: #999
-		text-align: center
-	.news__in
-		padding: 20px
-	.news__item
-		margin-top: 20px
-		padding: 15px 20px
-		background: #fff
-		&:first-child
-			margin-top: 0
-	.news__item-title
-		margin-bottom: 5px
-		+ossb
-		color: #3dc7fe
-		a
-			color: #3dc7fe
-
-.bonus
+.cb-bonus
 	margin-bottom: 20px
 	padding: 40px 20px
 	background: #3dc7fe
@@ -481,9 +454,9 @@
 	text-align: center
 	+r(w990)
 		margin-bottom: 10px
-	.bonus__percent
+	.cb-bonus-percent
 		font-size: 60px
-	.bonus__meta
+	.cb-bonus-meta
 		padding: 0 20px
 		font-size: 18px
 
@@ -506,7 +479,7 @@
 		margin-left: -6px
 		margin-top: -10px
 
-.lbl
+.cb-lbl
 	display: inline-block
 	width: 70px
 	padding: 6px 
@@ -517,10 +490,10 @@
 	&:hover
 		color: #000
 		text-decoration: none 
-	&.lbl_sucess
+	&.m-sucess
 		background: #8BD859
 		color: #fff
-	&.lbl_gray
+	&.m-gray
 		background: #e3e3e3
 	+r(w560)
 		width: 60px
@@ -563,23 +536,7 @@
 		color: #3DC7FE 
 	.label-info
 		float: right
-		
-.cb-news
-	flex: 0 0 250px
-	margin-top: 47px
-	margin-bottom: 72px
-	text-align: left
-	&.is-hide
-		display: none
-	+r(w1801)
-		min-width: 378px
-	+r(w1024)
-		max-width: 210px
-	+r(w990)
-		flex: 0 0 100%
-		max-width: 100%
-		margin-top: 0
-				
+
 .label-info
 	display: inline-block
 	vertical-align: middle
