@@ -1,0 +1,106 @@
+section.cb-selection-rates
+  .cb-selection-rates.cb-selection-rates-tabs
+    ul.nav.nav-tabs(role='tablist')
+      li.active
+        a(data-toggle='tab', href='#home', role='tab') Home
+      li
+        a(data-toggle='tab', href='#profile', role='tab') Profile
+    .tab-content
+      #home.tab-pane.fade.in.active
+        .cb-rate.is-invalid
+          .cb-rate-top
+            .cb-rate-top-title Эрмис -АПОЭЛ
+            i.cb-rate-close.fa.fa-close
+          .cb-rate-in
+            .cb-rate-row
+              span Ставки (основное время)
+            .cb-rate-row
+              .cb-rate-label.m-left
+                span Исход: Ничья
+              .cb-rate-label.m-right
+                span.cb-rate-label-note k
+                input.cb-rate-input.form-control(type='text', value='3.25')
+            .cb-rate-row
+              .cb-rate-label.m-left.m-small
+                span Ставка:
+              .cb-rate-label.m-right
+                .btn-group(data-toggle='buttons')
+                  label.cb-btn-my.btn.btn-primary.active
+                    input#option1(checked='', name='options', type='radio')
+                    i.fa.fa-usd
+                  label.cb-btn-my.btn.btn-primary
+                    input#option2(name='options', type='radio')
+                    i.fa.fa-database
+                .cb-sort
+                  input.cb-rate-input.form-control(type='text', value='5')
+                  i.cb-sort-up.fa.fa-sort-up
+                  i.cb-sort-down.fa.fa-sort-desc
+          .cb-rate-invalid
+            .cb-rate-row.m-error
+              .cb-rate-note Этот рынок закрыт
+            .cb-rate-row.m-error
+              .cb-rate-note.m-error Удалить рынок из купона ?
+        .cb-rate.is-invalid
+          .cb-rate-top
+            .cb-rate-top-title Эрмис -АПОЭЛ
+            i.cb-rate-close.fa.fa-close
+          .cb-rate-in
+            .cb-rate-row
+              span Ставки (основное время)
+            .cb-rate-row
+              .cb-rate-label.m-left
+                span Исход: Ничья
+              .cb-rate-label.m-right
+                span.cb-rate-label-note k
+                input.cb-rate-input.form-control(type='text', value='3.25')
+            .cb-rate-row
+              .cb-rate-label.m-left.m-small
+                span Ставка:
+              .cb-rate-label.m-right
+                .btn-group(data-toggle='buttons')
+                  label.cb-btn-my.btn.btn-primary.active
+                    input#option1(checked='', name='options', type='radio')
+                    i.fa.fa-usd
+                  label.cb-btn-my.btn.btn-primary
+                    input#option2(name='options', type='radio')
+                    i.fa.fa-database
+                .cb-sort
+                  input.cb-rate-input.form-control(type='text', value='5')
+                  i.cb-sort-up.fa.fa-sort-up
+                  i.cb-sort-down.fa.fa-sort-desc
+          .cb-rate-invalid
+            .cb-rate-row.m-error
+              .cb-rate-note Этот рынок закрыт
+            .cb-rate-row.m-error
+              .cb-rate-note.m-error Удалить рынок из купона ?
+        .cb-rate
+          .cb-rate-row
+            .cb-rate-label.m-left
+              span Ставка:
+            .cb-rate-label.m-right
+              span
+                p
+                  strong 2
+          .cb-rate-row
+            .cb-rate-label.m-left
+              span Вся ставка:
+            .cb-rate-label.m-right
+              span
+                p
+                  strong 10.00
+          .cb-rate-row
+            .cb-rate-label.m-long.m-left
+              span Возможная выплата:
+            .cb-rate-label.m-right
+              span
+                p
+                  strong $ 33.50
+          .cb-rate-row.m-mod
+            .cb-rate-label.m-left.m-small
+              a.cb-rate-reset(href='#') Очистить
+            .cb-rate-label.m-right
+              a.btn.btn-danger(href='#') Подтвердить
+      #profile.tab-pane.fade
+        .cb-rate
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque laudantium, laboriosam autem recusandae doloribus facilis soluta id voluptatem modi quidem amet dicta excepturi ullam, aspernatur veritatis incidunt ipsam assumenda aliquid!
+          

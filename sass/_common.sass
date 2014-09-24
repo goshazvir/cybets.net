@@ -192,7 +192,7 @@ body
 				padding: 0 6px 
 			&:hover
 				+opacity(0.6)
-		&.back
+		&.cb-back
 			padding-right: 10px
 			font-size: 14px
 			color: #3dc7fe
@@ -200,12 +200,14 @@ body
 			+transition
 			&:before
 				content: ""
-				display: inline-block
+				// display: inline-block
+				display: block
 				vertical-align: middle
 				margin-right: 10px
 				+s(back)
 				+r(w1800)
-					margin-right: 0
+					margin-right: auto
+					margin-left: auto 
 					margin-bottom: 10px
 			&:hover
 				+transition
@@ -214,14 +216,14 @@ body
 			&:hover
 				.usd-wrap
 					border-color: $blue
-	.user
+	.cb-user
 		padding: 0 10px
-		.user__media
+		.cb-user-media
 			margin-bottom: 5px
 			position: relative
 			display: inline-block
 			text-align: center
-		.user__media-ava
+		.cb-user-media-ava
 			width: 120px
 			height: 120px
 			border-radius: 50%
@@ -235,7 +237,7 @@ body
 			img
 				max-width: 100% 
 				height: auto
-		.user__media-num
+		.cb-user-media-num
 			width: 32px
 			height: 32px
 			line-height: 32px
@@ -248,7 +250,7 @@ body
 			top: 0
 			right: 0
 			z-index: 100
-		.user__name
+		.cb-user-name
 			margin-bottom: 5px
 			+ossb
 			font-size: 14px
@@ -258,7 +260,7 @@ body
 				font-size: 14px
 				+r(w1400)
 					font-size: 12px
-		.user__bal
+		.cb-user-bal
 			display: inline-block
 			font-size: 14px
 			+osb

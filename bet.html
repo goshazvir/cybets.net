@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cybets template</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/screen.css" rel="stylesheet">
+    <script>
+      if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement("style");
+        var mq = "@@-ms-viewport{width:auto!important}";
+        msViewportStyle.appendChild(document.createTextNode(mq));
+        document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+      }
+    </script>
+  </head>
+  <body>
+    <div style="display: none;" class="cb-overlay js-overlay">
+      <div class="cb-popup js-popup js-popup-reg">
+        <div class="cb-popup-in">
+          <div class="cb-popup-top">
+            <h2 class="cb-h2">Регистрация</h2><i class="cb-popup-close fa fa-close js-popup-close"></i>
+          </div>
+          <div class="cb-popup-meta">1. Регистрационные данные</div>
+          <div class="cb-popup-row">
+            <div class="cb-input-wrap"><i class="cb-popup-ico1 fa fa-user"></i>
+              <input placeholder="Ваше имя" type="text" class="cb-popup-input input">
+            </div>
+          </div>
+          <div class="cb-popup-row">
+            <div class="cb-input-wrap"><i class="cb-popup-ico2 fa fa-envelope-o"></i>
+              <input placeholder="Email" type="text" class="cb-popup-input input">
+            </div>
+          </div>
+          <div class="cb-popup-row">
+            <div class="cb-input-wrap"><i class="cb-popup-ico3 fa fa-phone"></i>
+              <input placeholder="Телефон" type="text" class="cb-popup-input input">
+            </div>
+          </div>
+          <div class="cb-popup-row m-btn"><a href="#" class="cb-popup-cansel">Отмена</a><a href="#" class="cb-popup-next btn">Дальше</a></div>
+        </div>
+        <div class="cb-popup-step m-step2"><span>2</span></div>
+        <div class="cb-popup-step m-step3"><span>3</span></div>
+      </div>
+    </div>
+    <div style="display: none;" class="cb-overlay js-overlay">
+      <div class="cb-popup js-popup js-popup-enter">
+        <div class="cb-popup-in">
+          <div class="cb-popup-top m-mod">
+            <h2 class="h2">Вход в систему</h2><i class="cb-popup-close fa fa-close js-popup-close"></i>
+          </div>
+          <div class="cb-popup-row">
+            <div class="cb-input-wrap"><i class="cb-popup-ico1 fa fa-user"></i>
+              <input placeholder="Логин" type="text" class="cb-popup-input input">
+            </div>
+          </div>
+          <div class="cb-popup-row">
+            <div class="cb-input-wrap"><i class="cb-popup-ico2 fa fa-lock"></i>
+              <input placeholder="Пароль" type="text" class="cb-popup-input input">
+            </div>
+          </div>
+          <div class="cb-popup-row m-btn"><a href="#" class="cb-popup-cansel">Отмена</a><a href="#" class="cb-popup-next btn">Войти</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="applicationHost">
+      <section class="cb-viewport-container cb-r-viewport-container">
+        <div class="cb-primary-nav m-user js-set-absolute">
+          <ul>
+            <li><a href="#" class="cb-back">Сybets.net</a></li>
+            <li>
+              <div class="cb-user">
+                <div class="cb-user-media">
+                  <div class="cb-user-media-num">5</div>
+                  <div class="cb-user-media-ava"><img src="http://placehold.it/120x120" alt="img"></div>
+                </div>
+                <div class="cb-user-name"><a href="#">NirtS</a></div>
+                <div class="cb-user-bal"><a href="#">На счету: $0.00</a></div>
+              </div>
+            </li>
+            <li><a href="#" class="bet"><span class="cb-primary-nav-ico usd-wrap"><i class="fa fa-usd"></i></span><span>Ставки</span></a></li>
+            <li><a href="#"><i class="cb-primary-nav-ico fa fa-users"></i><span>Тотализатор</span></a></li>
+            <li><a href="#"><i class="cb-primary-nav-ico fa fa-cog"></i><span>Настройки</span></a></li>
+            <li><a href="#"><i class="cb-primary-nav-ico fa fa-headphones"></i><span>Задать вопрос</span></a></li>
+            <li><a href="#"><i class="cb-primary-nav-ico fa fa-arrow-circle-o-left"></i><span>Выход</span></a></li>
+          </ul>
+        </div>
+        <div class="cb-l">
+          <div class="cb-l-col1">
+            <p> 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae vitae animi, suscipit consequatur eos aperiam natus veritatis delectus vel, quisquam quod doloremque, quia ducimus pariatur ad iusto deserunt excepturi vero.</p>
+          </div>
+          <div class="cb-l-col2">
+            <section class="cb-selection-rates">
+              <div class="cb-selection-rates cb-selection-rates-tabs">
+                <ul role="tablist" class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#home" role="tab">Home</a></li>
+                  <li><a data-toggle="tab" href="#profile" role="tab">Profile</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div id="home" class="tab-pane fade in active">
+                    <div class="cb-rate is-invalid">
+                      <div class="cb-rate-top">
+                        <div class="cb-rate-top-title">Эрмис -АПОЭЛ</div><i class="cb-rate-close fa fa-close"></i>
+                      </div>
+                      <div class="cb-rate-in">
+                        <div class="cb-rate-row"><span>Ставки (основное время)</span></div>
+                        <div class="cb-rate-row">
+                          <div class="cb-rate-label m-left"><span>Исход: Ничья</span></div>
+                          <div class="cb-rate-label m-right"><span class="cb-rate-label-note">k</span>
+                            <input type="text" value="3.25" class="cb-rate-input form-control">
+                          </div>
+                        </div>
+                        <div class="cb-rate-row">
+                          <div class="cb-rate-label m-left m-small"><span>Ставка:</span></div>
+                          <div class="cb-rate-label m-right">
+                            <div data-toggle="buttons" class="btn-group">
+                              <label class="cb-btn-my btn btn-primary active">
+                                <input id="option1" checked="" name="options" type="radio"><i class="fa fa-usd"></i>
+                              </label>
+                              <label class="cb-btn-my btn btn-primary">
+                                <input id="option2" name="options" type="radio"><i class="fa fa-database"></i>
+                              </label>
+                            </div>
+                            <div class="cb-sort">
+                              <input type="text" value="5" class="cb-rate-input form-control"><i class="cb-sort-up fa fa-sort-up"></i><i class="cb-sort-down fa fa-sort-desc"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cb-rate-invalid">
+                        <div class="cb-rate-row m-error">
+                          <div class="cb-rate-note">Этот рынок закрыт</div>
+                        </div>
+                        <div class="cb-rate-row m-error">
+                          <div class="cb-rate-note m-error">Удалить рынок из купона ?</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cb-rate is-invalid">
+                      <div class="cb-rate-top">
+                        <div class="cb-rate-top-title">Эрмис -АПОЭЛ</div><i class="cb-rate-close fa fa-close"></i>
+                      </div>
+                      <div class="cb-rate-in">
+                        <div class="cb-rate-row"><span>Ставки (основное время)</span></div>
+                        <div class="cb-rate-row">
+                          <div class="cb-rate-label m-left"><span>Исход: Ничья</span></div>
+                          <div class="cb-rate-label m-right"><span class="cb-rate-label-note">k</span>
+                            <input type="text" value="3.25" class="cb-rate-input form-control">
+                          </div>
+                        </div>
+                        <div class="cb-rate-row">
+                          <div class="cb-rate-label m-left m-small"><span>Ставка:</span></div>
+                          <div class="cb-rate-label m-right">
+                            <div data-toggle="buttons" class="btn-group">
+                              <label class="cb-btn-my btn btn-primary active">
+                                <input id="option1" checked="" name="options" type="radio"><i class="fa fa-usd"></i>
+                              </label>
+                              <label class="cb-btn-my btn btn-primary">
+                                <input id="option2" name="options" type="radio"><i class="fa fa-database"></i>
+                              </label>
+                            </div>
+                            <div class="cb-sort">
+                              <input type="text" value="5" class="cb-rate-input form-control"><i class="cb-sort-up fa fa-sort-up"></i><i class="cb-sort-down fa fa-sort-desc"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cb-rate-invalid">
+                        <div class="cb-rate-row m-error">
+                          <div class="cb-rate-note">Этот рынок закрыт</div>
+                        </div>
+                        <div class="cb-rate-row m-error">
+                          <div class="cb-rate-note m-error">Удалить рынок из купона ?</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cb-rate">
+                      <div class="cb-rate-row">
+                        <div class="cb-rate-label m-left"><span>Ставка:</span></div>
+                        <div class="cb-rate-label m-right"><span>
+                            <p><strong>2</strong></p></span></div>
+                      </div>
+                      <div class="cb-rate-row">
+                        <div class="cb-rate-label m-left"><span>Вся ставка:</span></div>
+                        <div class="cb-rate-label m-right"><span>
+                            <p><strong>10.00</strong></p></span></div>
+                      </div>
+                      <div class="cb-rate-row">
+                        <div class="cb-rate-label m-long m-left"><span>Возможная выплата:</span></div>
+                        <div class="cb-rate-label m-right"><span>
+                            <p><strong>$ 33.50</strong></p></span></div>
+                      </div>
+                      <div class="cb-rate-row m-mod">
+                        <div class="cb-rate-label m-left m-small"><a href="#" class="cb-rate-reset">Очистить</a></div>
+                        <div class="cb-rate-label m-right"><a href="#" class="btn btn-danger">Подтвердить</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="profile" class="tab-pane fade">
+                    <div class="cb-rate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque laudantium, laboriosam autem recusandae doloribus facilis soluta id voluptatem modi quidem amet dicta excepturi ullam, aspernatur veritatis incidunt ipsam assumenda aliquid!</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="cb-l-col3 m-mod">
+            <section class="cb-shares">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi explicabo hic temporibus, rerum obcaecati fugiat nesciunt repellendus earum laudantium fugit perferendis accusamus repellat officiis itaque iste optio minus veritatis. Error assumenda corporis nisi a, tenetur culpa. Saepe sit aliquam veniam sequi repellendus labore deserunt ab voluptas sapiente eaque voluptatum neque eligendi vel incidunt eius, ullam quibusdam. Et at ipsum libero enim distinctio architecto reprehenderit quia, esse dolores? Laboriosam in, minima reiciendis libero recusandae itaque necessitatibus, fugit laborum. Quibusdam quo sunt facere, adipisci fugiat temporibus. Voluptates eligendi laborum rem, laudantium, nemo cum sapiente facilis doloribus ratione fugiat quam accusamus iste?</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor numquam aperiam, aut, incidunt neque in quod impedit saepe suscipit perferendis, doloribus debitis dignissimos, sit laborum laudantium ipsa odio veniam aspernatur eos quisquam rem nihil aliquam odit. Repellat asperiores cumque ipsam debitis? Voluptatibus maxime consectetur expedita! Aperiam cum illum, iste libero nostrum repudiandae ullam, consequuntur nam cupiditate corporis voluptatum dolor quia id, laborum tempore recusandae et est illo debitis! Voluptate fuga accusamus inventore deleniti adipisci animi error, consectetur, non rem quis ipsa, magni, repellat laboriosam repellendus nisi impedit! Nisi error dolorum necessitatibus eum minus. Nostrum tempore eligendi ratione. Culpa, veritatis perferendis qui quam adipisci? Perferendis neque, ullam eveniet ex. Odio qui sint voluptatibus blanditiis minus excepturi quod exercitationem, fuga voluptatem sequi quo sed delectus, error laboriosam corrupti expedita dicta tempore voluptate nulla atque. Architecto eos dolor ipsum, hic enim nobis blanditiis facilis sint dolore in quae temporibus omnis odit corrupti necessitatibus aut, labore nemo cupiditate, deleniti ab! Optio sequi accusamus, tempora, sit vitae quasi, error doloribus quaerat ad nemo architecto temporibus nesciunt nulla ipsam voluptatem qui impedit ab natus culpa debitis corporis libero perspiciatis nihil nobis minima. Error maxime iusto, necessitatibus eveniet quod ducimus quibusdam, consectetur deserunt, voluptates nostrum sunt voluptate impedit reiciendis mollitia velit at ipsum, a ut quos laboriosam! Quasi fugiat ea maiores facere ipsum ipsa molestiae et voluptatibus perspiciatis ducimus. Quidem eos cum quaerat deserunt qui autem reprehenderit eligendi magni aliquam aperiam delectus, iste dicta repellat placeat enim assumenda rem quisquam maiores modi, vitae facilis. Blanditiis exercitationem veritatis odit dignissimos praesentium atque dolore sunt deleniti eius quis dolor totam, nemo repellendus aspernatur iste. Sunt architecto eligendi vero voluptas facere reiciendis maiores tempore ad ea minus iusto ipsum officia quae temporibus nobis voluptatibus, accusantium rerum. Maiores esse itaque perferendis cupiditate et nam cumque ut quia? Sequi dolore adipisci accusamus recusandae earum temporibus cupiditate fuga placeat ratione laborum. Esse labore numquam illum reiciendis accusantium! Reprehenderit, excepturi cupiditate voluptates, quisquam aperiam optio eius veniam quod! Eaque, suscipit dolore veniam, doloremque expedita alias iure cum reprehenderit assumenda sed! Ratione provident laboriosam id sed non quisquam incidunt deleniti sint ut ipsa nulla, ex soluta nam, impedit, mollitia, beatae tempore quos! Iure consequuntur vitae ipsum laborum facilis voluptates dolorum! Nulla numquam ut dicta praesentium. Deserunt ea saepe rerum amet ut similique harum possimus accusantium, placeat. Rem quidem doloremque mollitia dignissimos delectus officia molestias error pariatur, esse harum nesciunt iusto amet enim, temporibus veritatis sit. Voluptate sapiente architecto neque aut quia dolore voluptates hic esse fugiat illo minima a eum possimus quo, ducimus nesciunt praesentium natus et voluptatem quasi dolorum earum magni. Eius modi enim nam quibusdam rem, quidem? Odit ipsa commodi, enim magnam molestias laudantium, ullam quidem fugiat autem! Fuga velit harum vel quae itaque laudantium alias labore voluptates necessitatibus sint magnam, illo magni sed quod assumenda eligendi debitis vero voluptatem corrupti, repudiandae asperiores! Ab dolore ullam delectus maiores dolor error fuga saepe tempore cupiditate eligendi ad enim sapiente reprehenderit id minima nostrum facilis neque, placeat adipisci, numquam doloribus maxime? Vitae maxime, veniam quod.</p>
+            </section>
+            <section class="cb-chat">
+              <div class="cb-chat-fixed js-chat-set-height">
+                <div class="cb-chat-topper"><span class="cb-chat-topper-title h2 h2_white">Dota 2</span><span class="cb-chat-topper-icons"><i class="fa fa-cog"></i><i class="fa fa-user"></i><i class="fa fa-close js-chat-close"></i></span></div>
+                <div class="cb-chat-in js-chat-set-height2">
+                  <div class="baron-wrap js-baron">
+                    <div class="scroller">
+                      <div class="baron-text">
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">3apy:</div>
+                          <div class="cb-chat-item-content">
+                            <p>А как в следующих патчах порежут котов?</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">Basalt_ru:</div>
+                          <div class="cb-chat-item-content">
+                            <p>Просто кот почти платина, а бм серебро, этим всё сказано )</p>
+                          </div>
+                        </div>
+                        <div class="cb-chat-item">
+                          <div class="cb-chat-item-title">HungryCutie:</div>
+                          <div class="cb-chat-item-content">
+                            <p>11111111Мне чат разблокировали</p>
+                          </div>
+                        </div>
+                        <div class="load">
+                          <div class="load-value"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="scroller-bar-wrapper">
+                      <div class="scroller-bar"></div>
+                    </div>
+                  </div>
+                  <div class="cb-chat-textarea-wrap">
+                    <textarea placeholder="Введите сообщение" class="cb-chat-textarea"></textarea><i class="cb-chat-textarea-smile fa fa-smile-o"></i><i class="cb-chat-textarea-cross fa fa-close"></i>
+                  </div>
+                  <div class="cb-chat-btn"><a href="js-popup-reg" class="cb-chat-enter btn js-popup-link">Войти в чат</a><a href="js-popup-enter" class="cb-chat-update btn js-popup-link">Обновить</a></div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script data-headjs-load="js/init.js" src="js/lib/head.js"></script>
+  </body>
+</html>
