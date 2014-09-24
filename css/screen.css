@@ -3335,7 +3335,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 @media only screen and (max-width: 1400px) { .cb-logo:before { font-size: 48px; top: 14px; left: 14px; } }
 
 .cb-primary-nav { background: #242b2e; padding: 25px 0px; padding: 25px 0 0; }
-.cb-primary-nav.m-user { padding-top: 0; max-width: 132px; }
+.cb-primary-nav.m-user { padding-top: 0; max-width: 138px; min-width: 138px; }
 @media only screen and (min-width: 1801px) { .cb-primary-nav.m-user { max-width: 160px; } }
 @media only screen and (max-width: 991px) { .cb-primary-nav.m-user { max-width: 100%; } }
 .cb-primary-nav.m-user li:first-child { padding: 25px 10px; }
@@ -3455,10 +3455,10 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 @media only screen and (max-width: 991px) { .cb-chat { position: static; } }
 @media only screen and (max-width: 767px) { .cb-chat { width: 100%; } }
 .cb-chat.is-hide { display: none; }
-.cb-chat.chat_user .baron-wrap { margin-bottom: 135px; }
-.cb-chat.chat_user .scroller { min-width: 234px; }
-.cb-chat.chat_user .cb-chat-in { min-width: 348px; }
-@media only screen and (max-width: 1800px) { .cb-chat.chat_user .cb-chat-in { min-width: initial; } }
+.cb-chat.m-user .cb-baron-wrap { margin-bottom: 135px; }
+.cb-chat.m-user .scroller { min-width: 234px; }
+.cb-chat.m-user .cb-chat-in { min-width: 348px; }
+@media only screen and (max-width: 1800px) { .cb-chat.m-user .cb-chat-in { min-width: initial; } }
 .cb-chat .cb-chat-fixed { position: fixed; top: 20px; bottom: 0; padding-right: 16px; min-width: 348px; }
 @media only screen and (max-width: 991px) { .cb-l-col3.m-mod .cb-chat .cb-chat-fixed { padding-right: 0; position: absolute; left: 20px; right: 0px; padding-right: 16px; } }
 @media only screen and (max-width: 1800px) { .cb-chat .cb-chat-fixed { min-width: initial; } }
@@ -3490,18 +3490,18 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .cb-chat .cb-chat-btn .cb-chat-update { float: right; }
 .cb-chat .cb-chat-item { padding: 15px 0; border-bottom: 1px solid #2e373a; color: #3dc7fe; }
 .cb-chat .cb-chat-item a { color: #3dc7fe; }
-.cb-chat .cb-chat-item.chat__item_mod { color: #33d7c9; }
-.cb-chat .cb-chat-item.chat__item_mod a { color: #33d7c9; }
-.cb-chat .cb-chat-item.chat__item_warning { color: #fda556; }
-.cb-chat .cb-chat-item.chat__item_warning a { color: #fda556; }
-.cb-chat .cb-chat-item.chat__item_danger { color: #f15b5b; }
-.cb-chat .cb-chat-item.chat__item_danger a { color: #f15b5b; }
+.cb-chat .cb-chat-item.m-mod { color: #33d7c9; }
+.cb-chat .cb-chat-item.m-mod a { color: #33d7c9; }
+.cb-chat .cb-chat-item.m-warning { color: #fda556; }
+.cb-chat .cb-chat-item.m-warning a { color: #fda556; }
+.cb-chat .cb-chat-item.m-danger { color: #f15b5b; }
+.cb-chat .cb-chat-item.m-danger a { color: #f15b5b; }
 .cb-chat .cb-chat-item:first-child { border-top: 1px solid #2e373a; }
 .cb-chat .cb-chat-item .cb-chat-item-title { margin-bottom: 5px; color: #3dc7fe; }
 .cb-chat .cb-chat-item .cb-chat-item-content { color: white; }
-.cb-chat .cb-chat-item .chat__item-user { font-size: 14px; }
-.cb-chat .cb-chat-item .chat__item-user .chat__item-user-ico { display: inline-block; vertical-align: middle; margin-right: 10px; font-size: 21px; }
-.cb-chat .cb-chat-item .chat__item-user span { display: inline-block; vertical-align: middle; }
+.cb-chat .cb-chat-item .cb-chat-item-user { font-size: 14px; }
+.cb-chat .cb-chat-item .cb-chat-item-user .cb-chat-item-user-ico { display: inline-block; vertical-align: middle; margin-right: 10px; font-size: 21px; }
+.cb-chat .cb-chat-item .cb-chat-item-user span { display: inline-block; vertical-align: middle; }
 
 .cb-chat { overflow: hidden; padding: 20px; height: 100%; background: #242b2e; }
 
@@ -3698,7 +3698,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 @media only screen and (max-width: 767px) { .cb-translation { right: 0; } }
 @media only screen and (max-width: 480px) { .cb-translation { font-size: 10px; } }
 @media only screen and (max-width: 991px) { .cb-translation.m-mod { position: relative; } }
-.cb-translation.m-user { left: 131px; }
+.cb-translation.m-user { left: 138px; }
 @media only screen and (min-width: 1801px) { .cb-translation.m-user { left: 160px; } }
 @media only screen and (max-width: 991px) { .cb-translation.m-user { left: 0; } }
 .cb-translation .cb-translation-play { color: white; }
