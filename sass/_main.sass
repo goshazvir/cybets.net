@@ -171,6 +171,7 @@
 	position: relative
 	+clr
 	&.m-normal
+		padding: 15px 20px
 		.cb-bet-item-flag
 			+r(w990)
 				display: inline-block
@@ -232,13 +233,17 @@
 	.cb-bet-item-team
 		display: inline-block
 		vertical-align: middle
-		width: 80px
+		width: 110px
 		margin-right: 10px
 		text-align: left
 		+ossb
 		+text-overflow
+		+r(w1801)
+			width: 170px
 		+r(w1601)
 			margin-right: 0
+		+r(w1401)
+			width: 130px
 		+r(w1270)
 			display: block
 			margin-left: auto
@@ -246,9 +251,11 @@
 			font-size: 12px
 		+r(w990)
 			width: auto
-			max-width: 80px
+			max-width: 150px
+		+r(w767)
+			max-width: 95px
 		+r(w560)
-			max-width: 60px
+			max-width: 120px
 	.cb-bet-item-date
 		display: inline-block
 		vertical-align: middle

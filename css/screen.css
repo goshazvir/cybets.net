@@ -3352,7 +3352,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 @media only screen and (max-width: 1400px) { .cb-primary-nav a.cb-home { padding: 0 6px; } }
 .cb-primary-nav a.cb-home:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; }
 .cb-primary-nav a.cb-back { padding-right: 10px; font-size: 14px; color: #3dc7fe; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
-.cb-primary-nav a.cb-back:before { content: ""; display: block; vertical-align: middle; margin-right: 10px; background: url('../img/icons-sac588f73e0.png') 0 -56px no-repeat; width: 30px; height: 30px; }
+.cb-primary-nav a.cb-back:before { content: ""; display: block; vertical-align: middle; margin-right: auto; margin-left: auto; background: url('../img/icons-sac588f73e0.png') 0 -56px no-repeat; width: 30px; height: 30px; }
 @media only screen and (max-width: 1800px) { .cb-primary-nav a.cb-back:before { margin-right: auto; margin-left: auto; margin-bottom: 10px; } }
 .cb-primary-nav a.cb-back:hover { -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
 .cb-primary-nav a.bet:hover .usd-wrap { border-color: #3dc7fe; }
@@ -3605,7 +3605,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 
 .cb-news { flex: 0 0 250px; margin-top: 47px; margin-bottom: 20px; text-align: left; }
 .cb-news.is-hide { display: none; }
-@media only screen and (min-width: 1801px) { .cb-news { min-width: 378px; } }
+@media only screen and (min-width: 1801px) { .cb-news { min-width: 358px; } }
 @media only screen and (max-width: 1024px) { .cb-news { max-width: 210px; } }
 @media only screen and (max-width: 991px) { .cb-news { flex: 0 0 100%; max-width: 100%; margin-top: 0; margin-bottom: 0px; } }
 .cb-news .cb-news-in { margin-bottom: 20px; background: #f3f3f3; }
@@ -3700,6 +3700,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 
 .cb-bet-item { display: block; position: relative; *zoom: 1; }
 .cb-bet-item:after { content: " "; display: table; clear: both; }
+.cb-bet-item.m-normal { padding: 15px 20px; }
 @media only screen and (max-width: 991px) { .cb-bet-item.m-normal .cb-bet-item-flag { display: inline-block; } }
 @media only screen and (max-width: 991px) { .cb-bet-item.m-normal .cb-bet-item-team { display: inline-block; } }
 @media only screen and (max-width: 560px) { .cb-bet-item.m-normal .cb-bet-item-team { display: block; } }
@@ -3719,11 +3720,14 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .cb-bet-item .cb-bet-item-right .cb-bet-item-label:first-child { margin-left: 0; }
 @media only screen and (max-width: 560px) { .cb-bet-item .cb-bet-item-right .cb-bet-item-label:first-child { margin: 0 auto 5px; } }
 .cb-bet-item .cb-icon { display: inline-block; vertical-align: middle; margin-right: 10px; }
-.cb-bet-item .cb-bet-item-team { display: inline-block; vertical-align: middle; width: 80px; margin-right: 10px; text-align: left; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
+.cb-bet-item .cb-bet-item-team { display: inline-block; vertical-align: middle; width: 110px; margin-right: 10px; text-align: left; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
+@media only screen and (min-width: 1801px) { .cb-bet-item .cb-bet-item-team { width: 170px; } }
 @media only screen and (max-width: 1601px) { .cb-bet-item .cb-bet-item-team { margin-right: 0; } }
+@media only screen and (min-width: 1401px) { .cb-bet-item .cb-bet-item-team { width: 130px; } }
 @media only screen and (max-width: 1270px) { .cb-bet-item .cb-bet-item-team { display: block; margin-left: auto; margin-right: auto; font-size: 12px; } }
-@media only screen and (max-width: 991px) { .cb-bet-item .cb-bet-item-team { width: auto; max-width: 80px; } }
-@media only screen and (max-width: 560px) { .cb-bet-item .cb-bet-item-team { max-width: 60px; } }
+@media only screen and (max-width: 991px) { .cb-bet-item .cb-bet-item-team { width: auto; max-width: 150px; } }
+@media only screen and (max-width: 767px) { .cb-bet-item .cb-bet-item-team { max-width: 95px; } }
+@media only screen and (max-width: 560px) { .cb-bet-item .cb-bet-item-team { max-width: 120px; } }
 .cb-bet-item .cb-bet-item-date { display: inline-block; vertical-align: middle; margin-right: 10px; font-size: 14px; }
 @media only screen and (max-width: 1270px) { .cb-bet-item .cb-bet-item-date { font-size: 12px; } }
 @media only screen and (max-width: 991px) { .cb-bet-item .cb-bet-item-date { font-size: 10px; } }
