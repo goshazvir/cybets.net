@@ -22,6 +22,27 @@ head.ready(function() {
 	 accorderon();
 	};
 
+	function chart(){
+		$('.js-chart').easyPieChart({
+			easing: 'easeOutBounce',
+			barColor: "#8bd859",
+			trackColor: "#f3f3f3",
+			scaleColor: "transparent",
+			lineWidth: "20",
+			lineCap: "butt",
+			size: "200",
+			onStep: function(from, to, percent) {
+				$(this.el).find('.cb-chart-percent').text(Math.round(percent));
+			}
+		});
+		var chart = window.chart = $('.js-chart').data('easyPieChart');
+		$('.js_update').on('click', function() {
+			chart.update(Math.random()*200-100);
+		});
+	}
+	if ($('.js-chart').length) {
+	 chart();
+	};
 
 	$('.js-translation').on('click', function() {
 	 $(".cb-bet-translation").addClass("is-active");

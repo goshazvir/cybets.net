@@ -202,5 +202,21 @@
 .cb-profile-bonus
 	margin-top: 85px
 	text-align: center
-
-
+	.cb-profile-bonus-note
+		font-size: 14px
+		color: #999 
+	.cb-profile-bonus-tooltip
+		padding: 15px 40px
+		margin-bottom: 10px
+		background: #F3F3F3
+		font-size: 14px
+		color: #242B2E
+		position: relative
+		&:before
+			content: ""
+			+arr(20,10,#F3F3F3,bottom)
+			display: inline-block
+			position: absolute
+			bottom: -10px
+			left: 50%
+			margin-left: -10px

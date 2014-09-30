@@ -209,7 +209,12 @@ html
             include includes/_translation
           .cb-l-col2.cb-hide16001
             .cb-profile-bonus
-              img(src="img/role.jpg", alt="")
+              .cb-profile-bonus-tooltip Активный бонус
+              span.cb-chart.js-chart(data-percent='86')
+                span.cb-chart-percent(style='line-height: 200px;')
+              .cb-profile-bonus-note
+                p +123 Ставка
+                p +230 Участие в тотализаторе
           .cb-l-col3.m-mod
             include includes/_chat
     script(data-headjs-load='js/init.js', src='js/lib/head.js')

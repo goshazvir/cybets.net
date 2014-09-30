@@ -3287,6 +3287,18 @@ button.close { -webkit-appearance: none; padding: 0; cursor: pointer; background
 
 .fa-database:before { content: "\f1c0"; }
 
+.cb-chart { width: 200px; height: 200px; margin-bottom: 30px; position: relative; display: inline-block; text-align: center; }
+
+.cb-chart canvas { position: absolute; top: 0; left: 0; }
+
+.cb-chart-percent { display: inline-block; z-index: 2; }
+
+.cb-chart-percent:after { content: '%'; margin-left: 0.1em; font-size: .8em; }
+
+.angular { margin-top: 100px; }
+
+.angular .cb-chart { margin-top: 0; }
+
 #applicationHost { min-height: 100%; }
 
 body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; line-height: 1.4; }
@@ -3720,6 +3732,9 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .cb-status.cb-status-none { color: #999999; }
 
 .cb-profile-bonus { margin-top: 85px; text-align: center; }
+.cb-profile-bonus .cb-profile-bonus-note { font-size: 14px; color: #999999; }
+.cb-profile-bonus .cb-profile-bonus-tooltip { padding: 15px 40px; margin-bottom: 10px; background: #f3f3f3; font-size: 14px; color: #242b2e; position: relative; }
+.cb-profile-bonus .cb-profile-bonus-tooltip:before { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 10px 10px 0 10px; border-color: #f3f3f3 transparent transparent transparent; display: inline-block; position: absolute; bottom: -10px; left: 50%; margin-left: -10px; }
 
 .cb-shares { padding: 20px; display: none; }
 .cb-shares.is-open { display: block; }
