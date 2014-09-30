@@ -10,12 +10,206 @@ html
         include includes/_sidebar
         include includes/_filter
         .cb-l
-          .cb-l-col1
+          .cb-l-col1.cb-minw990
             include includes/_translation-sticked2
-            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae vitae animi, suscipit consequatur eos aperiam natus veritatis delectus vel, quisquam quod doloremque, quia ducimus pariatur ad iusto deserunt excepturi vero.
+            h2.cb-profile-title.cb-h2 Пользователь
+            .cb-profile
+              .cb-profile-nav
+                ul
+                  li
+                    a(href="#").is-active Профиль
+                  li
+                    a(href="#") Касса
+                  li
+                    a(href="#") История
+              .cb-profile-user
+                .cb-profile-ava
+                  <img src="http://placehold.it/64x64" alt="img">
+                .cb-profile-info
+                  .cb-profile-info-nick StoneNuts
+                  .cb-profile-info-row
+                    span.cb-profile-info-data Имя:
+                    span.cb-profile-info-item Павел
+                  .cb-profile-info-row
+                    span.cb-profile-info-data Фамилия:
+                    span.cb-profile-info-item Петров
+                  .cb-profile-info-row
+                    span.cb-profile-info-data Отчество:
+                    span.cb-profile-info-item Сергеевич
+                  .cb-profile-info-row
+                    span.cb-profile-info-data Год рождения:
+                    span.cb-profile-info-item 1985
+                .cb-profile-read
+                  .cb-profile-read-title Редактировать профиль
+                  .cb-profile-read-row
+                    span.cb-profile-read-row-data Баланс:
+                    span.cb-profile-read-row-item 114.000
+                  .cb-profile-read-row
+                    span.cb-profile-read-row-data Ср. уверенность:
+                    span.cb-profile-read-row-item 119.00%
+                  .cb-profile-read-row.cb-open1600
+                    span.cb-profile-read-row-data Активный бонус:
+                    span.cb-profile-read-row-item 123
+            .cb-table
+              .cb-table-top
+                .cb-table-top-title Предыдущие прогнозы
+                .cb-table-list
+                  ul.cb-table-list-nav.nav.nav-tabs(role='tablist')
+                    li.cb-table-list-item.active
+                      a(href='#one', role='tab', data-toggle='tab') Рассчитанные
+                    li.cb-table-list-item
+                      a(href='#two', role='tab', data-toggle='tab') Активные
+              .cb-table-content.tab-content
+                #one.cb-table-content-item.tab-pane.active
+                  table.cb-table-table
+                    thead
+                      tr
+                        td Событие и дата
+                        td Рынок / Исход
+                        td Коэф. / Ставка
+                        td Статус
+                    tbody
+                      tr
+                        td 
+                          i.cb-icon.cb-r-icon.cb-icon-wot
+                          span.cb-table-table-note 
+                            p Манчестер Юнайтед - Челси
+                            p 25.05.2014 / 20:45
+                        td 
+                          span.cb-table-table-note 
+                            p Ставки (основное время)
+                            p Манчестер Юнайтед
+                        td 
+                          span.cb-table-table-note 
+                            p 2.75
+                            p 100%
+                        td 
+                          span.cb-table-table-note
+                            span.cb-status.cb-status-income +174.00
+                      tr
+                        td 
+                          i.cb-icon.cb-r-icon.cb-icon-wot
+                          span.cb-table-table-note 
+                            p Манчестер Юнайтед - Челси
+                            p 25.05.2014 / 20:45
+                        td 
+                          span.cb-table-table-note 
+                            p Ставки (основное время)
+                            p Манчестер Юнайтед
+                        td 
+                          span.cb-table-table-note 
+                            p 2.75
+                            p 100%
+                        td 
+                          span.cb-table-table-note
+                            span.cb-status.cb-status-loss -100.00
+                      tr
+                        td 
+                          i.cb-icon.cb-r-icon.cb-icon-wot
+                          span.cb-table-table-note 
+                            p Манчестер Юнайтед - Челси
+                            p 25.05.2014 / 20:45
+                        td 
+                          span.cb-table-table-note 
+                            p Ставки (основное время)
+                            p Манчестер Юнайтед
+                        td 
+                          span.cb-table-table-note 
+                            p 2.75
+                            p 100%
+                        td 
+                          span.cb-table-table-note
+                            span.cb-status.cb-status-none 0.00
+                      tr
+                        td 
+                          i.cb-icon.cb-r-icon.cb-icon-wot
+                          span.cb-table-table-note 
+                            p Манчестер Юнайтед - Челси
+                            p 25.05.2014 / 20:45
+                        td 
+                          span.cb-table-table-note 
+                            p Ставки (основное время)
+                            p Манчестер Юнайтед
+                        td 
+                          span.cb-table-table-note 
+                            p 2.75
+                            p 100%
+                        td 
+                          span.cb-table-table-note
+                            span.cb-status.cb-status-income +174.00
+                      tr
+                        td 
+                          i.cb-icon.cb-r-icon.cb-icon-wot
+                          span.cb-table-table-note 
+                            p Манчестер Юнайтед - Челси
+                            p 25.05.2014 / 20:45
+                        td 
+                          span.cb-table-table-note 
+                            p Ставки (основное время)
+                            p Манчестер Юнайтед
+                        td 
+                          span.cb-table-table-note 
+                            p 2.75
+                            p 100%
+                        td 
+                          span.cb-table-table-note
+                            span.cb-status.cb-status-loss -100.00
+                      tr
+                        td 
+                          i.cb-icon.cb-r-icon.cb-icon-wot
+                          span.cb-table-table-note 
+                            p Манчестер Юнайтед - Челси
+                            p 25.05.2014 / 20:45
+                        td 
+                          span.cb-table-table-note 
+                            p Ставки (основное время)
+                            p Манчестер Юнайтед
+                        td 
+                          span.cb-table-table-note 
+                            p 2.75
+                            p 100%
+                        td 
+                          span.cb-table-table-note
+                            span.cb-status.cb-status-none 0.00
+                      tr
+                        td 
+                          i.cb-icon.cb-r-icon.cb-icon-wot
+                          span.cb-table-table-note 
+                            p Манчестер Юнайтед - Челси
+                            p 25.05.2014 / 20:45
+                        td 
+                          span.cb-table-table-note 
+                            p Ставки (основное время)
+                            p Манчестер Юнайтед
+                        td 
+                          span.cb-table-table-note 
+                            p 2.75
+                            p 100%
+                        td 
+                          span.cb-table-table-note
+                            span.cb-status.cb-status-income +174.00
+                      tr
+                        td 
+                          i.cb-icon.cb-r-icon.cb-icon-wot
+                          span.cb-table-table-note 
+                            p Манчестер Юнайтед - Челси
+                            p 25.05.2014 / 20:45
+                        td 
+                          span.cb-table-table-note 
+                            p Ставки (основное время)
+                            p Манчестер Юнайтед
+                        td 
+                          span.cb-table-table-note 
+                            p 2.75
+                            p 100%
+                        td 
+                          span.cb-table-table-note
+                            span.cb-status.cb-status-loss -100.00
+                #two.cb-table-content-item.tab-pane 222
             include includes/_translation
-          .cb-l-col2
-            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quod nisi eligendi, at reprehenderit velit laboriosam nam, asperiores quisquam tempora earum ullam quos, ratione non enim assumenda expedita aliquid obcaecati!
+          .cb-l-col2.cb-hide16001
+            .cb-profile-bonus
+              img(src="img/role.jpg", alt="")
           .cb-l-col3.m-mod
             include includes/_chat
     script(data-headjs-load='js/init.js', src='js/lib/head.js')

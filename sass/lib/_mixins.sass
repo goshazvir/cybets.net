@@ -25,6 +25,7 @@ $w1401: 1401px
 $w1400: 1400px
 $w1280: 1280px
 $w1270: 1270px
+$w1100: 1100px
 $w1024: 1024px
 $w990: 991px
 $w900: 900px
@@ -64,6 +65,9 @@ $h500: 500px
 			@content
 	@if $media == w1270
 		@media only screen and (max-width: $w1270)
+			@content
+	@if $media == w1100
+		@media only screen and (max-width: $w1100)
 			@content
 	@if $media == w1024
 		@media only screen and (max-width: $w1024)
