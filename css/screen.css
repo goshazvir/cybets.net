@@ -3291,7 +3291,7 @@ button.close { -webkit-appearance: none; padding: 0; cursor: pointer; background
 
 .cb-chart canvas { position: absolute; top: 0; left: 0; }
 
-.cb-chart-percent { display: inline-block; z-index: 2; }
+.cb-chart-percent { display: inline-block; line-height: 200px; z-index: 2; }
 
 .cb-chart-percent:after { content: '%'; margin-left: 0.1em; font-size: .8em; }
 
