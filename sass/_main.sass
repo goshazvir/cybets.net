@@ -734,19 +734,63 @@
 			+ossb
 
 .cb-pagi
+	margin-bottom: 40px
+	text-align: center
 	.cb-pagi-list
+		display: inline-block
 		+clr
 	.cb-pagi-item
+		width: 30px
+		height: 30px
+		line-height: 30px
 		float: left
-		margin-left: 1px
-		background: red
+		margin-left: 2px
+		background: #3dc7fe
+		border-radius: 5px
+		color: #fff 
 		&:first-child
 			margin-left: 0
+		&.is-active
+			background: #8bd859
+		&.m-prev, &.m-next
+			background: #ccc
+			position: relative
+			&:before
+				content: ""
+				position: absolute
+				top: 50%
+				left: 50%
+				margin-top: -5px
+				margin-left: -3px
+		&.m-prev
+			&:before
+				+s(i-left)
+		&.m-next
+			&:before
+				+s(i-right)
 	.cb-pagi-link
 		display: block
-		// &.m-prev
-		// &.m-next
-		
+		height: 100%
+		color: #FFF
+		+os
+		cursor: pointer
+		&:hover
+			text-decoration: none
+
+.cb-question-center
+	text-align: center
+.cb-reg
+	padding: 10px 11px
+	font-size: 14px
+	+ossb
+	.fa
+		display: inline-block
+		vertical-align: middle
+		margin-right: 20px
+		font-size: 16px
+	span
+		display: inline-block
+		vertical-align: middle
 
 
 
