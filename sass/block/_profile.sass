@@ -90,9 +90,17 @@
 			.cb-table-list-item
 				a
 					padding: 0 10px
+					+r(w767)
+						font-size: 12px
 			.cb-table-list
 				float: none
 				text-align: left
+				+r(w1400)
+					height: auto
+					line-height: 1.4
+					font-size: 0
+		.cb-table-content-item
+			overflow-x: auto
 	.cb-table-top
 		padding: 0px 0 0 20px
 		+clr
@@ -140,6 +148,8 @@
 				color: #666 
 				&:hover
 					border: 0
+				+r(w1400)
+					font-size: 12px
 	.cb-table-content
 		padding: 20px
 		background: #F3F3F3
@@ -185,6 +195,7 @@
 		.cb-icon, .cb-table-table-note
 			display: inline-block
 		.cb-icon
+			color: #cccccc 
 			+r(w1401)
 				margin-right: 10px
 			+r(w767)
