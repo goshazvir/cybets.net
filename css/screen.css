@@ -3929,3 +3929,10 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .cb-btn-gray .fa { color: white; }
 
 .btn-info.m-mod { background: transparent; color: #999999; }
+
+.cb-faq { padding: 40px 20px 0; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 14px; color: #666666; }
+.cb-faq .cb-faq-top { font-size: 28px; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; text-transform: uppercase; }
+.cb-faq .cb-faq-top .cb-faq-top-title { color: #242b2e; }
+.cb-faq .cb-faq-top .cb-faq-top-note { color: #cccccc; }
+.cb-faq .cb-faq-h3 { margin: 10px 0; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 14px; color: #242b2e; }
+.cb-faq p { margin-bottom: 20px; }
