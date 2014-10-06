@@ -643,8 +643,6 @@
 		margin-bottom: 20px
 
 .cb-faq-nav
-	ul
-	li
 	a
 		display: block
 		padding: 5px 20px
@@ -653,7 +651,57 @@
 		&:hover
 			text-decoration: none
 			background: #3dc7fe
-			color: #fff  
+			color: #fff 
+
+.cb-news-list
+	.cb-news-list-ul
+	.cb-news-list-item
+		padding: 10px 20px
+		font-size: 12px
+		+clr
+		position: relative
+		&:before
+			content: ""
+			height: 1px
+			background: #e3e3e3
+			position: absolute
+			bottom: -1px
+			left: 20px
+			right: 20px
+		&.is-active
+			background: #8BD859 
+			color: #FFF
+			&:before
+				background: transparent 
+		.cb-news-list-descr
+			width: 75%
+			float: left
+		.cb-news-list-num
+			width: 25%
+			float: right
+			text-align: right
+
+.cb-news-koef
+	background: #fff 
+	.cb-news-koef-ul
+		padding: 20px
+	.cb-news-koef-item
+		padding: 10px 0
+		+clr
+		border-bottom: 1px solid #f3f3f3
+		&:first-child
+			border-top: 1px solid #f3f3f3
+		.cb-news-koef-meta
+			width: 50%
+			height: 25px
+			line-height: 25px
+			float: left
+			font-size: 12px
+			color: #000 
+		.cb-news-koef-btn
+			width: 50%
+			float: right
+			text-align: right
 
 		
 
