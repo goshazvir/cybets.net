@@ -702,7 +702,50 @@
 			width: 50%
 			float: right
 			text-align: right
+			
+.cb-question-list
+	margin-bottom: 20px
+	padding: 15px 20px
+	background: #F3F3F3
+	.cb-question-list-title
+		padding-top: 20px
+		padding-bottom: 20px
+		+ossb
+		font-size: 14px
+		text-align: center
+		color: #000 
+	.cb-question-list-ul
+		margin: 0
+	.cb-question-list-item
+		margin-bottom: 20px
+		padding: 10px 20px
+		background: #fff
+		cursor: pointer 
+		+clr
+		&:hover
+			color: #3dc7fe
+		&.is-active
+			background: #8bd859
+			color: #fff  
+		.cb-question-list-item-meta
+			float: left
+		.cb-question-list-item-num
+			float: right
+			+ossb
 
+.cb-pagi
+	.cb-pagi-list
+		+clr
+	.cb-pagi-item
+		float: left
+		margin-left: 1px
+		background: red
+		&:first-child
+			margin-left: 0
+	.cb-pagi-link
+		display: block
+		// &.m-prev
+		// &.m-next
 		
 
 

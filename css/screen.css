@@ -3624,6 +3624,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 
 .cb-news { flex: 0 0 250px; margin-top: 47px; margin-bottom: 20px; text-align: left; }
 .cb-news.is-hide { display: none; }
+.cb-news.m-mod { margin-top: 0; }
 @media only screen and (min-width: 1801px) { .cb-news { min-width: 358px; } }
 @media only screen and (max-width: 1024px) { .cb-news { max-width: 210px; } }
 @media only screen and (max-width: 991px) { .cb-news { flex: 0 0 100%; max-width: 100%; margin-top: 0; margin-bottom: 0px; } }
@@ -3955,3 +3956,19 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .cb-news-koef .cb-news-koef-item:first-child { border-top: 1px solid #f3f3f3; }
 .cb-news-koef .cb-news-koef-item .cb-news-koef-meta { width: 50%; height: 25px; line-height: 25px; float: left; font-size: 12px; color: black; }
 .cb-news-koef .cb-news-koef-item .cb-news-koef-btn { width: 50%; float: right; text-align: right; }
+
+.cb-question-list { margin-bottom: 20px; padding: 15px 20px; background: #f3f3f3; }
+.cb-question-list .cb-question-list-title { padding-top: 20px; padding-bottom: 20px; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 14px; text-align: center; color: black; }
+.cb-question-list .cb-question-list-ul { margin: 0; }
+.cb-question-list .cb-question-list-item { margin-bottom: 20px; padding: 10px 20px; background: white; cursor: pointer; *zoom: 1; }
+.cb-question-list .cb-question-list-item:after { content: " "; display: table; clear: both; }
+.cb-question-list .cb-question-list-item:hover { color: #3dc7fe; }
+.cb-question-list .cb-question-list-item.is-active { background: #8bd859; color: white; }
+.cb-question-list .cb-question-list-item .cb-question-list-item-meta { float: left; }
+.cb-question-list .cb-question-list-item .cb-question-list-item-num { float: right; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+
+.cb-pagi .cb-pagi-list { *zoom: 1; }
+.cb-pagi .cb-pagi-list:after { content: " "; display: table; clear: both; }
+.cb-pagi .cb-pagi-item { float: left; margin-left: 1px; background: red; }
+.cb-pagi .cb-pagi-item:first-child { margin-left: 0; }
+.cb-pagi .cb-pagi-link { display: block; }
