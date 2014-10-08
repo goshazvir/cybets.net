@@ -4,7 +4,7 @@ html
   head
     title Cybets cashbox
     include includes/_head
-  body
+  body(style="min-width: 500px;")
     #applicationHost
       section.cb-viewport-container.cb-r-viewport-container
         include includes/_sidebar
@@ -214,7 +214,7 @@ html
                             input(type='checkbox', value='')
                             i.checkbox__ico
             include includes/_translation
-          .cb-l-col2.cb-hide1600
+          .cb-l-col2.m-questions.cb-hide1600
             .cb-profile-bonus
               .cb-profile-bonus-tooltip Активный бонус
               span.cb-chart.js-chart(data-percent='86')

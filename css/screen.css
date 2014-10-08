@@ -3418,6 +3418,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 @media only screen and (max-width: 767px) { .cb-l .cb-l-col1 { padding-bottom: 0; } }
 .cb-l .cb-l-col2 { flex: 0 0 250px; padding-top: 20px; padding-right: 20px; padding-bottom: 72px; }
 .cb-l .cb-l-col2.is-hide { display: none; }
+@media only screen and (min-width: 1801px) { .cb-l .cb-l-col2.m-questions { min-width: initial; } }
 @media only screen and (min-width: 1801px) { .cb-l .cb-l-col2 { min-width: 378px; } }
 @media only screen and (max-width: 1024px) { .cb-l .cb-l-col2 { max-width: 210px; padding-right: 10px; } }
 @media only screen and (max-width: 991px) { .cb-l .cb-l-col2 { flex: 0 0 100%; max-width: 100%; padding-left: 10px; margin-bottom: 10px; padding-bottom: 0px; } }
@@ -3906,7 +3907,15 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 
 .cb-progress .cb-progress-items { *zoom: 1; }
 .cb-progress .cb-progress-items:after { content: " "; display: table; clear: both; }
-.cb-progress .cb-progress-item { float: left; width: 20px; height: 6px; margin-left: 1px; background: #e3e3e3; }
+.cb-progress .cb-progress-item { float: left; width: 10px; height: 6px; margin-left: 1px; background: #e3e3e3; }
+@media only screen and (min-width: 1901px) { .cb-progress .cb-progress-item { width: 20px; } }
+@media only screen and (max-width: 1900px) { .cb-progress .cb-progress-item { width: 15px; } }
+@media only screen and (max-width: 1800px) { .cb-progress .cb-progress-item { width: 10px; } }
+@media only screen and (max-width: 1601px) { .cb-progress .cb-progress-item { width: 10px; } }
+@media only screen and (max-width: 1280px) { .cb-progress .cb-progress-item { width: 3px; } }
+@media only screen and (max-width: 991px) { .cb-progress .cb-progress-item { width: 10px; } }
+@media only screen and (max-width: 860px) { .cb-progress .cb-progress-item { width: 5px; } }
+@media only screen and (max-width: 640px) { .cb-progress .cb-progress-item { width: 3px; } }
 .cb-progress .cb-progress-item:first-child { margin-left: 0; }
 .cb-progress .cb-progress-item.is-active { background: #3dc7fe; }
 
