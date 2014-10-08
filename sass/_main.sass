@@ -52,7 +52,8 @@
 			padding: 0
 			border: none
 			font-size: 14px
-			
+			line-height: 1.5
+			// lh - new
 			color: #999
 			border-bottom: 1px dotted #999 
 			background: transparent 
@@ -740,20 +741,12 @@
 		display: inline-block
 		+clr
 	.cb-pagi-item
-		width: 30px
-		height: 30px
-		line-height: 30px
 		float: left
 		margin-left: 2px
-		background: #3dc7fe
-		border-radius: 5px
 		color: #fff 
 		&:first-child
 			margin-left: 0
-		&.is-active
-			background: #8bd859
 		&.m-prev, &.m-next
-			background: #ccc
 			position: relative
 			&:before
 				content: ""
@@ -772,8 +765,17 @@
 		display: block
 		height: 100%
 		color: #FFF
+		width: 30px
+		height: 30px
+		line-height: 30px
+		background: #3dc7fe
+		border-radius: 5px
 		+os
 		cursor: pointer
+		&.is-active
+			background: #8bd859
+		&.is-disabled
+			background: #ccc
 		&:hover
 			text-decoration: none
 
@@ -786,7 +788,7 @@
 	.fa
 		display: inline-block
 		vertical-align: middle
-		margin-right: 20px
+		margin-right: 10px
 		font-size: 16px
 	span
 		display: inline-block
