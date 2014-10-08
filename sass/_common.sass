@@ -46,14 +46,18 @@ body
 	+os
 	line-height: 1.4
 
-.cb-bet-list 
-	padding: 0 20px 72px
+.cb-container
 	position: relative
-	.h2
+
+.cb-bet-list 
+	&.is-hide
+		display: none
+	.cb-h2
 		margin-top: 20px
 		margin-bottom: 15px
 		text-align: left
-
+.cb-nav
+	background-color: #f3f3f3
 .cb-nav>ul
 	margin-top: 67px
 	+r(w990)
@@ -66,44 +70,108 @@ body
 .cb-nav>ul>li>a
 	padding: 0
 	vertical-align: middle
+	color: #000
+.cb-r-icon
+	color: #000
+
+.w80
+	width: 65%
+.w20
+	width: 35%
+
+.cb-align-right
+	text-align: right
+.align-left
+	text-align: left
+.align-center
+	text-align: center
 // Headings
 // --------------------------------------------------
+.cb-h2
+	margin: 0
+	+ossb
+	font-size: 28px
+	color: #000
+	+r(w990)
+		font-size: 21px
+	+r(w767)
+		font-size: 16px
+	&.m-white
+		color: #FFF
+
 .h2
 	margin: 0
 	+ossb
 	font-size: 28px
 	color: #000
+	+r(w990)
+		font-size: 21px
 	+r(w767)
 		font-size: 16px
 	&.h2_white
 		color: #FFF 
 // Nav
 // --------------------------------------------------
-.logo
+.cb-logo
 	display: inline-block
 	width: 120px
 	height: 120px
 	border-radius: 50%
 	background: #2e373a
 	position: relative
+	+r(w1400)
+		width: 76px
+		height: 76px
 	&:before
-		content: ""
-		+s(logo)
+		content: "\e602"
+		font-family: 'Cybets'
+		speak: none
+		font-style: normal
+		font-weight: normal
+		font-variant: normal
+		text-transform: none
+		line-height: 1 
+		-webkit-font-smoothing: antialiased
+		-moz-osx-font-smoothing: grayscale
+		font-size: 100px
 		position: absolute
-		top: 50%
-		left: 50%
-		margin-top: -35px
-		margin-left: -40px
-
-.cb-primaty-nav
+		top: 10px
+		left: 10px
+		+r(w1400)
+			font-size: 48px
+			top: 14px
+			left: 14px
+.cb-primary-nav
 	background: #242B2E
 	padding: 25px 0px
+	&.m-user
+		padding-top: 0
+		max-width: 138px
+		min-width: 138px
+		+r(w1801)
+			max-width: 160px 
+		+r(w990)
+			max-width: 100%
+		li
+			&:first-child
+				padding: 25px 10px
+				+r(w1400)
+					padding: 20px 10px
+	span
+		display: block
 	+r(w767)
 	padding: 25px 0 0
+	+r(w1400)
+		padding-top: 7px
 	li
 		padding: 25px 10px
 		border-top: 1px solid #2e373a 
 		text-align: center
+		&:first-child
+			+r(w1400)
+				padding: 0 0 20px
+		+r(w1400)
+			padding: 20px 10px
 		&:hover
 			background: #2E373A 
 		&:first-child
@@ -112,26 +180,37 @@ body
 	a
 		display: block
 		color: #FFF
+		+r(w1400)
+			font-size: 0
 		&:hover
 			text-decoration: none
 			color: $blue
-		&.home
+		&.cb-home
 			color: $blue
 			+ossb
 			+transition
+			+r(w1400)
+				padding: 0 6px 
 			&:hover
 				+opacity(0.6)
-		&.back
+		&.cb-back
 			padding-right: 10px
+			font-size: 14px
 			color: #3dc7fe
 			+ossb
 			+transition
 			&:before
 				content: ""
-				display: inline-block
+				// display: inline-block
+				display: block
 				vertical-align: middle
-				margin-right: 10px
+				margin-right: auto
+				margin-left: auto 
 				+s(back)
+				+r(w1800)
+					margin-right: auto
+					margin-left: auto 
+					margin-bottom: 10px
 			&:hover
 				+transition
 				+opacity(0.8)
@@ -139,19 +218,28 @@ body
 			&:hover
 				.usd-wrap
 					border-color: $blue
-	.user
-		.user__media
+	.cb-user
+		padding: 0 10px
+		.cb-user-media
 			margin-bottom: 5px
 			position: relative
-		.user__media-ava
+			display: inline-block
+			text-align: center
+		.cb-user-media-ava
 			width: 120px
 			height: 120px
 			border-radius: 50%
 			overflow: hidden
+			+r(w1800)
+				width: 60px
+				height: 60px
+			+r(w990)
+				width: 120px
+				height: 120px
 			img
 				max-width: 100% 
 				height: auto
-		.user__media-num
+		.cb-user-media-num
 			width: 32px
 			height: 32px
 			line-height: 32px
@@ -164,24 +252,120 @@ body
 			top: 0
 			right: 0
 			z-index: 100
-		.user__name
+		.cb-user-name
 			margin-bottom: 5px
-		.user__bal
+			+ossb
+			font-size: 14px
+			+r(w1400)
+				font-size: 12px
+			a
+				font-size: 14px
+				+r(w1400)
+					font-size: 12px
+		.cb-user-bal
 			display: inline-block
 			font-size: 14px
+			+osb
 			color: #666
 			border-bottom: 1px dotted #666
+			+r(w1400)
+				font-size: 12px
 			&:hover
 				border-color: transparent 
 			a
 				color: #666
-	.cb-primaty-nav-ico
+				font-size: 14px
+				+r(w1400)
+					font-size: 12px
+	.cb-primary-nav-ico
 		margin-bottom: 20px
 		font-size: 36px
 		vertical-align: middle
 		display: inline-block
+		+r(w1400)
+			font-size: 26px
+			margin-bottom: 0
 // Header
 // --------------------------------------------------
 
 // Footer
 // --------------------------------------------------
+.cb-greed
+	width: 100%
+	font-size: 0
+	.cb-greed-5
+		width: 5%
+		display: inline-block
+		vertical-align: middle
+	.cb-greed-10
+		width: 10%
+		display: inline-block
+		vertical-align: middle
+	.cb-greed-15
+		width: 15%
+		display: inline-block
+		vertical-align: middle
+	.cb-greed-20
+		width: 20%
+		display: inline-block
+		vertical-align: middle
+	.cb-greed-70
+		width: 70%
+		display: inline-block
+		vertical-align: middle
+	.cb-greed-75
+		width: 75%
+		display: inline-block
+		vertical-align: middle
+	.cb-greed-80
+		width: 80%
+		display: inline-block
+		vertical-align: middle
+
+
+.cb-flex-container
+	padding: 0
+	margin: 0
+	list-style: none
+
+	-ms-box-orient: horizontal
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -moz-flex
+	display: -webkit-flex
+	display: flex
+	&.m-center
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		align-items: center
+	&.m-1600
+		+r(w1601)
+			width: 100%
+			flex-direction: column
+
+.cb-block-1600
+	width: 100%
+	display: flex
+	-webkit-justify-content: space-between
+	justify-content: space-between
+	align-items: center
+	+r(w1601)
+		flex-direction: row
+		width: 80%
+		margin-bottom: 10px
+
+.cb-hide1600
+	display: none
+	+r(w1600)
+		display: block
+.cb-open1600
+	display: block
+	+r(w1600)
+		display: none
+
+
+	
+
+
+

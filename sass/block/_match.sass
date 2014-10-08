@@ -1,0 +1,105 @@
+.cb-match
+	padding: 20px 30px 30px
+	text-align: left
+	+clr
+	+r(w990)
+		padding: 20px
+	.cb-h2
+		margin-bottom: 70px
+	.cb-match-nav
+		width: 30%
+		padding-right: 5%
+		float: left
+		+r(w1280)
+			width: 40%
+		+r(w990)
+			width: 100%
+		li
+			margin-bottom: 15px
+		a
+			display: block
+			color: $blue
+			&.is-active
+				color: #fff
+				.cb-icon
+					color: #FFF
+			span
+				display: inline-block
+				vertical-align: middle
+		.cb-icon
+			font-size: 21px
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+			color: #2e373a
+	.cb-match-top
+		position: relative
+		.cb-match-close 
+			position: absolute
+			top: 0
+			right: 0px
+			cursor: pointer
+			font-size: 30px
+			color: #3f4b4f
+			+transition
+			&:hover
+				color: #fff
+				+transition
+	.cb-match-items
+		width: 69%
+		min-height: 450px 
+		height: 450px
+		float: left
+		+clr
+		+r(w1280)
+			width: 59%
+		+r(w990)
+			width: 100%
+	.cb-match-item
+		width: 46%
+		margin-right: 4%
+		margin-bottom: 4%
+		float: left
+		+r(w1280)
+			width: 96%
+	.cb-match-item-media
+		position: relative
+		cursor: pointer
+		&:hover
+			.cb-match-item-media-ico
+				background: rgba(#000, 1)
+				+transition
+	.cb-match-item-media-play
+		img
+			max-width: 100%
+			height: auto 
+			display: block
+	.cb-match-item-media-ico
+		width: 40px
+		height: 40px
+		background: rgba(#000, .5)
+		border-radius: 50%
+		position: absolute
+		top: 50%
+		margin-top: -20px
+		left: 50%
+		margin-left: -20px
+		+transition
+		&:before
+			content: ""
+			+arr(14,14,#3dc7fe,right)
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-top: -7px
+			margin-left: -5px
+	.cb-match-item-descr
+		padding: 15px
+		background: #242B2E
+		text-align: center 
+	.cb-match-item-descr-name
+		color: #FFF
+		a
+			color: #FFF
+			&:hover
+				text-decoration: underline

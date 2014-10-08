@@ -17,10 +17,17 @@
 // responsive example, edit or remove
 // just write +r(w1280)
 $min1920: 1920px
+$w1800: 1800px
+$w1801: 1801px
+$w1600: 1600px
+$w1601: 1601px
+$w1401: 1401px
+$w1400: 1400px
 $w1280: 1280px
 $w1270: 1270px
+$w1100: 1100px
 $w1024: 1024px
-$w990: 990px
+$w990: 991px
 $w900: 900px
 $w860: 860px
 $w800: 800px
@@ -32,12 +39,35 @@ $w480: 480px
 $w360: 360px
 $w320: 320px
 
+$h500: 500px
+
 =r($media)
+	@if $media == w1801
+		@media only screen and (min-width: $w1801)
+			@content
+	@if $media == w1800
+		@media only screen and (max-width: $w1800)
+			@content
+	@if $media == w1601
+		@media only screen and (max-width: $w1601)
+			@content
+	@if $media == w1600
+		@media only screen and (min-width: $w1600)
+			@content
+	@if $media == w1401
+		@media only screen and (min-width: $w1401)
+			@content
+	@if $media == w1400
+		@media only screen and (max-width: $w1400)
+			@content
 	@if $media == w1280
 		@media only screen and (max-width: $w1280)
 			@content
 	@if $media == w1270
 		@media only screen and (max-width: $w1270)
+			@content
+	@if $media == w1100
+		@media only screen and (max-width: $w1100)
 			@content
 	@if $media == w1024
 		@media only screen and (max-width: $w1024)
@@ -77,6 +107,10 @@ $w320: 320px
 			@content
 	@if $media == min1920
 		@media only screen and (min-width: $min1920)
+			@content
+
+	@if $media == h500
+		@media only screen and (max-height: $h500)
 			@content
 
 =fs($sizeValue: 16)

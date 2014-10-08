@@ -1,0 +1,242 @@
+.cb-profile-title
+	margin-top: 20px
+	margin-bottom: 15px
+.cb-profile
+	position: relative
+	margin-bottom: 20px
+	.cb-profile-nav
+		margin: 0 0 20px
+		ul
+			+clr
+		li
+			float: left
+			margin-left: 50px
+			&:first-child
+				margin-left: 0
+		a
+			+ossb
+			color: #999
+			&.is-active
+				color: #3dc7fe
+	.cb-profile-user
+		background: #F3F3F3
+		padding: 20px
+		+clr
+	.cb-profile-ava
+		width: 64px
+		height: 64px
+		margin-right: 20px
+		overflow: hidden
+		float: left
+		+r(w480)
+			float: none
+			margin: 0 auto
+	.cb-profile-info
+		width: 250px
+		float: left
+		+r(w1100)
+			width: auto
+			float: none
+			overflow: hidden
+	.cb-profile-info-nick
+		margin-bottom: 15px
+		font-size: 14px
+		+ossb
+		color: #242B2E
+	.cb-profile-info-row
+		margin-top: 1px
+		padding: 5px 20px
+		background: #FFF
+		+clr
+		&:first-child
+			margin-top: 0
+		.cb-profile-info-data
+			float: left
+			color: #999 
+		.cb-profile-info-item
+			float: right
+			color: #242B2E
+	.cb-profile-read
+		width: 250px
+		float: right
+		text-align: right
+		+r(w1100)
+			width: auto
+			float: none
+			margin-top: 10px
+		.cb-profile-read-title
+			margin-bottom: 15px
+			font-size: 14px
+			color: #999 
+		.cb-profile-read-row
+			margin-top: 1px
+			padding: 5px 20px
+			background: #e3e3e3
+			+clr
+			&:first-child
+				margin-top: 0
+			.cb-profile-read-row-data
+				float: left
+				color: #999 
+			.cb-profile-read-row-item
+				float: right
+				color: #242b2e
+
+.cb-table
+	margin-bottom: 20px
+	&.m-long
+		.cb-table-top
+			padding: 0
+			.cb-table-list-item
+				a
+					padding: 0 10px
+					+r(w767)
+						font-size: 12px
+			.cb-table-list
+				float: none
+				text-align: left
+				+r(w1400)
+					height: auto
+					line-height: 1.4
+					font-size: 0
+		.cb-table-content-item
+			overflow-x: auto
+	.cb-table-top
+		padding: 0px 0 0 20px
+		+clr
+		background: #e3e3e3 
+		.cb-table-top-title
+			height: 50px
+			line-height: 50px
+			float: left
+			font-size: 14px
+			+ossb
+			color: #242B2E
+			+r(w560)
+				float: none
+				display: block
+				text-align: center
+		.cb-table-list
+			height: 50px
+			line-height: 50px
+			float: right
+			text-align: right
+			+r(w560)
+				float: none
+				display: block
+				text-align: center
+			.nav-tabs
+				display: inline-block
+		.cb-table-list-nav
+			border: 0
+		.cb-table-list-item
+			height: 50px
+			line-height: 50px
+			margin-bottom: 0 
+			&.active
+				a
+					background: #F3F3F3
+					color: #242B2E 
+			a
+				display: block
+				height: 50px
+				line-height: 50px
+				padding: 0 20px
+				margin: 0
+				border: 0
+				+border-radius(0)
+				color: #666 
+				&:hover
+					border: 0
+				+r(w1400)
+					font-size: 12px
+	.cb-table-content
+		padding: 20px
+		background: #F3F3F3
+		+r(w560)
+			padding: 10px
+	.cb-table-table
+		// margin-bottom: 20px
+		border: 1px solid #f3f3f3
+		thead
+			tr
+			td
+				padding: 15px
+				border: 1px solid #f3f3f3
+				background: #FFF 
+				vertical-align: middle
+				font-size: 12px
+				color: #242b2e 
+				+os
+				+r(w1401)
+					font-size: 14px
+				+r(w767)
+					padding: 10px
+					font-size: 10px
+				+r(w480)
+					padding: 5px
+		tbody
+			tr
+				td
+					padding: 15px
+					border: 1px solid #f3f3f3
+					background: #FFF 
+					vertical-align: middle
+					font-size: 12px
+					color: #999 
+					+os
+					+r(w1401)
+						font-size: 14px
+					+r(w767)
+						padding: 10px
+						font-size: 10px
+					+r(w480)
+						padding: 5px
+		.cb-icon, .cb-table-table-note
+			display: inline-block
+		.cb-icon
+			color: #cccccc 
+			+r(w1401)
+				margin-right: 10px
+			+r(w767)
+				display: block
+				margin: 0 auto 10px
+				text-align: center
+		.cb-table-table-note
+			p
+				margin-bottom: 5px
+
+.cb-status
+	font-size: 12px
+	+r(w1401)
+		font-size: 14px
+	+r(w560)
+		font-size: 10px
+	&.cb-status-income
+		color: #8bd859
+	&.cb-status-loss
+		color: #F15B5B
+	&.cb-status-none
+		color: #999
+
+.cb-profile-bonus
+	margin-top: 85px
+	text-align: center
+	.cb-profile-bonus-note
+		font-size: 14px
+		color: #999 
+	.cb-profile-bonus-tooltip
+		padding: 15px 40px
+		margin-bottom: 10px
+		background: #F3F3F3
+		font-size: 14px
+		color: #242B2E
+		position: relative
+		&:before
+			content: ""
+			+arr(20,10,#F3F3F3,bottom)
+			display: inline-block
+			position: absolute
+			bottom: -10px
+			left: 50%
+			margin-left: -10px

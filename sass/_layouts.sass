@@ -1,9 +1,54 @@
 // default layout
-.l
-	+clr
-	.l-col1
-		float: left
-		width: 20%
-	.l-col2
-		float: right
-		width: 70%
+.cb-l
+	display: flex
+	flex: 1
+	flex-wrap: wrap
+	.cb-l-col1
+		flex: 1
+		min-width: 270px
+		padding: 0 20px 72px
+		position: relative
+		&.m-mod
+			// min-width: 100% 
+		&.cb-minw990
+			+r(w990)
+				min-width: 100%
+		+r(w1024)
+			padding: 0 10px 72px
+		+r(w990)
+			padding-bottom: 0
+		+r(w860)
+			min-width: 200px
+		+r(w767)
+			padding-bottom: 0
+	.cb-l-col2
+		flex: 0 0 250px
+		padding-top: 20px
+		padding-right: 20px
+		padding-bottom: 72px
+		&.is-hide
+			display: none
+		+r(w1801)
+			min-width: 378px
+		+r(w1024)
+			max-width: 210px
+			padding-right: 10px
+		+r(w990)
+			flex: 0 0 100%
+			max-width: 100%
+			padding-left: 10px
+			margin-bottom: 10px
+			padding-bottom: 0px
+	.cb-l-col3
+		// max-width: 330px
+		max-width: 270px
+		position: relative
+		background: #242B2E
+		color: #fff
+		+r(w1801)
+			max-width: 378px 
+		+r(w767)
+			max-width: 100%
+		&.m-mod
+			+r(w990)
+				max-width: 100%
