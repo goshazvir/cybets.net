@@ -3926,10 +3926,10 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 
 .cb-cash { *zoom: 1; }
 .cb-cash:after { content: " "; display: table; clear: both; }
-.cb-cash .cb-cash-ico { margin-right: 20px; float: left; background: url('../img/icons-s8b4e4f7db4.png') 0 -170px no-repeat; width: 64px; height: 48px; }
+.cb-cash .cb-cash-ico { margin-top: 15px; margin-right: 20px; float: left; background: url('../img/icons-s8b4e4f7db4.png') 0 -170px no-repeat; width: 64px; height: 48px; }
 .cb-cash .cb-cash-row { overflow: hidden; margin-bottom: 10px; }
 .cb-cash .cb-cash-row .cb-cash-row-label { width: 105px; display: inline-block; }
-.cb-cash .cb-cash-row .cb-cash-row-label .btn { width: 34px; }
+.cb-cash .cb-cash-row .cb-cash-row-label .btn { width: 30px; padding: 5px 0; }
 .cb-cash .cb-cash-row .cb-cash-row-note { margin-left: 3px; display: inline-block; color: #999999; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 .cb-cash .cb-cash-row .cb-cash-row-note.is-active { color: #242b2e; }
 .cb-cash .cb-cash-row .btn-info { padding: 5px 35px; background: #3dc7fe; }
