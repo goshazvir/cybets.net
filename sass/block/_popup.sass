@@ -26,6 +26,12 @@
 	margin: 115px 0
 	width: 540px
 	+box-shadow(0 0 40px rgba(0,0,0,.1))
+	+r(w640)
+		width: 300px
+	+r(w480)
+		width: 240px
+	&.js-popup-reg
+		margin-left: -40px // new
 	.cb-popup-in
 		padding: 30px 40px 30px 40px
 		background: #f3f3f3
@@ -81,6 +87,8 @@
 			margin-top: 0
 		&.m-btn
 			text-align: right
+			+r(w640)
+				text-align: center
 	.cb-popup-ico1, .cb-popup-ico2, .cb-popup-ico3
 		position: absolute
 		font-size: 21px
@@ -120,8 +128,10 @@
 		text-decoration: none
 		border-bottom: 1px dotted #999
 		&:hover
-			border-color: transparent 
+			border-color: transparent
 	.cb-popup-next
 		padding: 15px 50px
 		background: #3DC7FE
 		color: #fff
+		+r(w640)
+			margin-top: 20px
