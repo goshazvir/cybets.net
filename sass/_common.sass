@@ -68,6 +68,86 @@ body
 	+r(w990)
 		// new
 		position: static
+.cb-sexy-nav
+	display: none
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	z-index: 9999
+	height: 36px
+	line-height: 36px
+	padding-right: 20px
+	background: #242b2e
+	+clr 
+	+r(w1280)
+		display: block
+	.cb-sexy-nav-left
+		width: 50%
+		float: left
+		ul
+			font-size: 0
+		li
+			display: inline-block
+		a
+			display: block
+			font-size: 16px
+			color: #E1E1E1 
+			padding: 0 10px
+			&:hover
+				background: #333a3d
+				color: #c1c2c2
+				text-decoration: none  
+	.cb-sexy-nav-right
+		width: 50%
+		float: right
+		text-align: right
+	.cb-sexy-nav-user
+		ul
+			font-size: 0
+		li
+			font-size: 14px
+			display: inline-block
+			color: #989898 
+		a
+			color: #989898 
+			&:hover
+				text-decoration: none
+				color: #c1c2c2 
+		.fa
+			margin: 0 5px
+			display: inline-block
+			vertical-align: middle
+			font-size: 21px
+		.fa-user
+			color: #989898 
+		.cb-user-nick
+			margin: 0 5px 
+	.cb-sexy-nav-guest
+		ul
+			font-size: 0
+		li
+			margin-left: 30px
+			display: inline-block
+			font-size: 12px
+			&:first-child
+				margin-left: 0
+		a
+			font-size: 12px
+			color: #989898 
+			border-bottom: 1px dashed #989898
+			&:hover
+				color: #c1c2c2
+				border-color: #c1c2c2 
+				text-decoration: none
+	.cb-sexy-logo
+		font-size: 21px
+		.cb-icon-logo
+			display: inline-block
+			vertical-align: middle
+			color: #3dc7fe
+			margin-left: 10px
+			margin-right: 10px
 .cb-nav
 	width: 50px
 	background-color: #f3f3f3

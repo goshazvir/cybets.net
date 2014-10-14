@@ -173,6 +173,10 @@ head.ready(function() {
 	if ($('.js-nav-each').length) {
 		nav_position();
 	};
+	$('.js-nav-guest').on('click', function() {
+	 	$(".cb-sexy-nav-user").toggle();
+	 	$(".cb-sexy-nav-guest").toggle();
+	});
 
 	$(window).resize(function(){
 	  chat_fixed();
