@@ -29,8 +29,8 @@
 		overflow: hidden
 		float: left
 		+r(w480)
-			float: none
-			margin: 0 auto
+			margin-bottom: 20px
+			margin-bottom: 20px
 	.cb-profile-info
 		width: 250px
 		float: left
@@ -38,6 +38,8 @@
 			width: auto
 			float: none
 			overflow: hidden
+		+r(w480)
+			clear: both
 	.cb-profile-info-nick
 		margin-bottom: 15px
 		font-size: 14px
@@ -61,13 +63,22 @@
 		float: right
 		text-align: right
 		+r(w1100)
+			padding-left: 84px
 			width: auto
 			float: none
 			margin-top: 10px
+		+r(w480)
+			padding-left: 0
 		.cb-profile-read-title
 			margin-bottom: 15px
 			font-size: 14px
-			color: #999 
+			color: #999
+			a
+				font-size: 14px
+				color: #999
+				text-decoration: none
+				&:hover
+					text-decoration: underline
 		.cb-profile-read-row
 			margin-top: 1px
 			padding: 5px 20px

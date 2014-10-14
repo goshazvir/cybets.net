@@ -52,7 +52,8 @@
 			padding: 0
 			border: none
 			font-size: 14px
-			
+			line-height: 1.5
+			// lh - new
 			color: #999
 			border-bottom: 1px dotted #999 
 			background: transparent 
@@ -117,7 +118,7 @@
 	color: #fff
 	position: fixed
 	bottom: 0
-	left: 88px
+	left: 103px
 	right: 270px
 	text-align: left
 	z-index: 9999
@@ -125,11 +126,14 @@
 		right: 378px
 	+r(w1401)
 		left: 140px
+	+r(w1280)
+		display: none
+		left: 20px
+	+r(w1024)
+		left: 10px
+		right: 220px
 	+r(w990)
-		left: 0
-		right: 0
-	+r(w767)
-		right: 0
+		right: 10px
 	+r(w600)
 		font-size: 12px
 	+r(w480)
@@ -368,13 +372,17 @@
 	position: fixed
 	top: 0px
 	bottom: 0px
-	left: 138px
+	// left: 138px
+	left: 153px
 	right: 270px
 	z-index: 9999
 	+r(w1801)
 		right: 378px
 	+r(w1401)
 		left: 190px
+	+r(w1280)
+		left: 0
+		right: 0
 	+r(w990)
 		left: 0
 		right: 0
@@ -555,10 +563,26 @@
 		+clr
 	.cb-progress-item
 		float: left
-		width: 20px
+		width: 10px
 		height: 6px
 		margin-left: 1px
-		background: #e3e3e3 
+		background: #e3e3e3
+		+r(w1901)
+			width: 20px
+		+r(w1900)
+			width: 15px
+		+r(w1800)
+			width: 10px
+		+r(w1601)
+			width: 10px
+		+r(w1280)
+			width: 3px
+		+r(w990)
+			width: 10px
+		+r(w860)
+			width: 5px
+		+r(w640)
+			width: 3px
 		&:first-child
 			margin-left: 0
 		&.is-active
@@ -588,6 +612,7 @@
 .cb-cash
 	+clr
 	.cb-cash-ico
+		margin-top: 15px
 		margin-right: 20px
 		float: left
 		+s(build)
@@ -598,7 +623,8 @@
 			width: 105px
 			display: inline-block
 			.btn
-				width: 34px
+				width: 30px
+				padding: 5px 0
 		.cb-cash-row-note
 			margin-left: 3px
 			display: inline-block
@@ -648,10 +674,14 @@
 		padding: 5px 20px
 		+os
 		color: #999
+		border-left: 4px solid transparent
 		&:hover
 			text-decoration: none
 			background: #3dc7fe
-			color: #fff 
+			color: #fff
+		&.is-active
+			border-color: #3dc7fe 
+
 
 .cb-news-list
 	.cb-news-list-ul
@@ -740,20 +770,12 @@
 		display: inline-block
 		+clr
 	.cb-pagi-item
-		width: 30px
-		height: 30px
-		line-height: 30px
 		float: left
 		margin-left: 2px
-		background: #3dc7fe
-		border-radius: 5px
 		color: #fff 
 		&:first-child
 			margin-left: 0
-		&.is-active
-			background: #8bd859
 		&.m-prev, &.m-next
-			background: #ccc
 			position: relative
 			&:before
 				content: ""
@@ -772,8 +794,17 @@
 		display: block
 		height: 100%
 		color: #FFF
+		width: 30px
+		height: 30px
+		line-height: 30px
+		background: #3dc7fe
+		border-radius: 5px
 		+os
 		cursor: pointer
+		&.is-active
+			background: #8bd859
+		&.is-disabled
+			background: #ccc
 		&:hover
 			text-decoration: none
 
@@ -786,7 +817,7 @@
 	.fa
 		display: inline-block
 		vertical-align: middle
-		margin-right: 20px
+		margin-right: 10px
 		font-size: 16px
 	span
 		display: inline-block

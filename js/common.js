@@ -73,12 +73,36 @@ head.ready(function() {
 	    barOnCls: 'baron'
 	});
 
+	function mybaron(){
+		var getHeightWindow = $(".js-nav-get-height").height();
+		var getHeight = $(".js-nav-calc-height").height();
+
+		var setHeight = (getHeightWindow - 10);
+		if (getHeight >= getHeightWindow) 
+		{
+		  $(".cb-primary-nav").addClass('is-scroll');
+		  $(".js-nav-calc-height").css('height', setHeight);
+		  window.dima = baron({
+	      root: '.js-baron2',
+	      scroller: '.scroller',
+	      bar: '.scroller-bar',
+	      barOnCls: 'baron'
+		  });
+		}
+		else
+		{
+			$(".cb-primary-nav").removeClass('is-scroll');
+			$(".js-nav-calc-height").css('height', 'auto');
+		};
+	}
+	if ($(".js-baron2").length > 0){
+	  mybaron();
+	}
+
 	$('.js-chat-close').on('click', function() {
 	 $(".cb-chat").addClass("is-hide");
 	 $(".cb-shares").addClass("is-open");
 	});
-
-
 	function match_height() {
 		var windowheight = $(window).height();
 		var matchheight = (windowheight - 100);
@@ -110,17 +134,6 @@ head.ready(function() {
 	  chat_fixed();
 	}
 
-	$(window).resize(function(){
-	  chat_fixed();
-	  match_height();
-	});
-
-	$(window).scroll(function(){
-	  if ($(".js-set-absolute").length > 0){
-	  	chat_fixed();
-		}
-	});
-
 	function modals() {
 		$(document).on("click", function(){
 			$(".js-overlay").hide();
@@ -144,4 +157,37 @@ head.ready(function() {
 		});
 	} modals();
 
+	function nav_position() {
+		var num = $('.js-nav-each li').length;
+		var numHeight = ((num * 60) + 67);
+		var windowheight = $(window).height();
+		if (numHeight >= windowheight) 
+		{
+			$(".cb-nav ul").addClass("is-absolute");
+		}
+		else
+		{
+			$(".cb-nav ul").removeClass("is-absolute");
+		};
+	}
+	if ($('.js-nav-each').length) {
+		nav_position();
+	};
+	$('.js-nav-guest').on('click', function() {
+	 	$(".cb-sexy-nav-user").toggle();
+	 	$(".cb-sexy-nav-guest").toggle();
+	});
+
+	$(window).resize(function(){
+	  chat_fixed();
+	  match_height();
+	  mybaron();
+	  nav_position();
+	});
+
+	$(window).scroll(function(){
+	  if ($(".js-set-absolute").length > 0){
+	  	chat_fixed();
+		}
+	});
 });

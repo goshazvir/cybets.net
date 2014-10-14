@@ -9,7 +9,7 @@ html
       section.cb-viewport-container.cb-r-viewport-container
         include includes/_sidebar
         include includes/_filter
-        .cb-l
+        .cb-l.m-nav
           .cb-l-col1.cb-minw990
             include includes/_translation-sticked2
             h2.cb-profile-title.cb-h2 Пользователь
@@ -25,8 +25,8 @@ html
               .cb-profile-user
                 .cb-profile-ava
                   img(src="img/icons/ava.png", alt="")
+                .cb-profile-info-nick StoneNuts
                 .cb-profile-info
-                  .cb-profile-info-nick StoneNuts
                   .cb-profile-info-row
                     span.cb-profile-info-data Имя:
                     span.cb-profile-info-item Павел
@@ -40,7 +40,8 @@ html
                     span.cb-profile-info-data Год рождения:
                     span.cb-profile-info-item 1985
                 .cb-profile-read
-                  .cb-profile-read-title Редактировать профиль
+                  .cb-profile-read-title 
+                    a(href="#") Редактировать профиль
                   .cb-profile-read-row
                     span.cb-profile-read-row-data Баланс:
                     span.cb-profile-read-row-item 114.000
