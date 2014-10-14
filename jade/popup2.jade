@@ -1,0 +1,24 @@
+doctype html
+
+html
+  head
+    title Cybets index
+    include includes/_head
+  body
+    .cb-overlay.js-overlay(style='display: block;')
+      .cb-popup.js-popup.js-popup-enter
+        .cb-popup-in
+          .cb-popup-top.m-mod
+            h2.h2 Вход в систему
+            i.cb-popup-close.fa.fa-close.js-popup-close
+          .cb-popup-row
+            .cb-input-wrap
+              i.cb-popup-ico1.fa.fa-user
+              input.cb-popup-input.input(placeholder='Логин', type='text')
+          .cb-popup-row
+            .cb-input-wrap
+              i.cb-popup-ico2.fa.fa-lock
+              input.cb-popup-input.input(placeholder='Пароль', type='text')
+          .cb-popup-row.m-btn
+            a.cb-popup-cansel(href='#') Отмена
+            a.cb-popup-next.btn(href='#') Войти
