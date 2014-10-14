@@ -3483,6 +3483,9 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .cb-overlay:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 
 .cb-popup { position: relative; display: inline-block; vertical-align: middle; margin: 115px 0; width: 540px; -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1); box-shadow: 0 0 40px rgba(0, 0, 0, 0.1); }
+@media only screen and (max-width: 640px) { .cb-popup { width: 300px; } }
+@media only screen and (max-width: 480px) { .cb-popup { width: 240px; } }
+.cb-popup.js-popup-reg { margin-left: -40px; }
 .cb-popup .cb-popup-in { padding: 30px 40px 30px 40px; background: #f3f3f3; text-align: left; overflow: hidden; font-size: 14px; }
 .cb-popup .cb-popup-top { margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #e3e3e3; position: relative; }
 .cb-popup .cb-popup-top.m-mod { border-bottom: none; margin-bottom: 40px; padding-bottom: 0; }
@@ -3496,6 +3499,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .cb-popup .cb-popup-row { margin-top: 20px; }
 .cb-popup .cb-popup-row:first-child { margin-top: 0; }
 .cb-popup .cb-popup-row.m-btn { text-align: right; }
+@media only screen and (max-width: 640px) { .cb-popup .cb-popup-row.m-btn { text-align: center; } }
 .cb-popup .cb-popup-ico1, .cb-popup .cb-popup-ico2, .cb-popup .cb-popup-ico3 { position: absolute; font-size: 21px; }
 .cb-popup .cb-popup-ico1 { left: 15px; top: 12px; }
 .cb-popup .cb-popup-ico2 { left: 15px; top: 14px; }
@@ -3516,6 +3520,7 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .cb-popup .cb-popup-cansel { margin: 0 40px; color: #999999; text-decoration: none; border-bottom: 1px dotted #999999; }
 .cb-popup .cb-popup-cansel:hover { border-color: transparent; }
 .cb-popup .cb-popup-next { padding: 15px 50px; background: #3dc7fe; color: white; }
+@media only screen and (max-width: 640px) { .cb-popup .cb-popup-next { margin-top: 20px; } }
 
 .cb-chat { position: fixed; width: 270px; right: 0; top: 0px; bottom: 0; }
 @media only screen and (max-width: 991px) { .cb-l-col3.m-mod .cb-chat { width: 100%; height: 600px; right: 0; } }
