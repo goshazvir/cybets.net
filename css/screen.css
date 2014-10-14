@@ -3810,9 +3810,9 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 .cb-translation { padding: 20px; background: #181d1f; color: white; position: fixed; bottom: 0; left: 103px; right: 270px; text-align: left; z-index: 9999; }
 @media only screen and (min-width: 1801px) { .cb-translation { right: 378px; } }
 @media only screen and (min-width: 1401px) { .cb-translation { left: 140px; } }
-@media only screen and (max-width: 1280px) { .cb-translation { display: none; } }
-@media only screen and (max-width: 991px) { .cb-translation { left: 0; right: 0; } }
-@media only screen and (max-width: 767px) { .cb-translation { right: 0; } }
+@media only screen and (max-width: 1280px) { .cb-translation { display: none; left: 20px; } }
+@media only screen and (max-width: 1024px) { .cb-translation { left: 10px; right: 220px; } }
+@media only screen and (max-width: 991px) { .cb-translation { right: 10px; } }
 @media only screen and (max-width: 480px) { .cb-translation { font-size: 10px; } }
 @media only screen and (max-width: 991px) { .cb-translation.m-mod { position: relative; } }
 .cb-translation.m-user { left: 138px; }
@@ -3878,9 +3878,10 @@ body { font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 400; 
 
 @media only screen and (max-width: 767px) { .baron-wrap { width: 100%; } }
 
-.cb-bet-translation { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; height: 0; flex: initial; -webkit-transform: scaleY(0); -o-transform: scaleY(0); -ms-transform: scaleY(0); transform: scaleY(0); -webkit-transform-origin: top; -o-transform-origin: top; -ms-transform-origin: top; transform-origin: top; -webkit-transition: -webkit-transform 0.26s ease-out; -o-transition: -o-transform 0.26s ease; -ms-transition: -ms-transform 0.26s ease; transition: transform 0.26s ease; background: #181d1f; color: white; position: fixed; top: 0px; bottom: 0px; left: 138px; right: 270px; z-index: 9999; }
+.cb-bet-translation { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; height: 0; flex: initial; -webkit-transform: scaleY(0); -o-transform: scaleY(0); -ms-transform: scaleY(0); transform: scaleY(0); -webkit-transform-origin: top; -o-transform-origin: top; -ms-transform-origin: top; transform-origin: top; -webkit-transition: -webkit-transform 0.26s ease-out; -o-transition: -o-transform 0.26s ease; -ms-transition: -ms-transform 0.26s ease; transition: transform 0.26s ease; background: #181d1f; color: white; position: fixed; top: 0px; bottom: 0px; left: 153px; right: 270px; z-index: 9999; }
 @media only screen and (min-width: 1801px) { .cb-bet-translation { right: 378px; } }
 @media only screen and (min-width: 1401px) { .cb-bet-translation { left: 190px; } }
+@media only screen and (max-width: 1280px) { .cb-bet-translation { left: 0; right: 0; } }
 @media only screen and (max-width: 991px) { .cb-bet-translation { left: 0; right: 0; } }
 .cb-bet-translation.is-active { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; height: 100%; flex: 1; -webkit-transform: scaleY(1); -o-transform: scaleY(1); -ms-transform: scaleY(1); transform: scaleY(1); }
 .cb-bet-translation.is-active:before { content: ""; height: 100%; width: 100%; position: absolute; left: 0; top: 0; bottom: 0; z-index: -1; background: #181d1f; }

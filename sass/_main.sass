@@ -128,11 +128,12 @@
 		left: 140px
 	+r(w1280)
 		display: none
+		left: 20px
+	+r(w1024)
+		left: 10px
+		right: 220px
 	+r(w990)
-		left: 0
-		right: 0
-	+r(w767)
-		right: 0
+		right: 10px
 	+r(w600)
 		font-size: 12px
 	+r(w480)
@@ -371,13 +372,17 @@
 	position: fixed
 	top: 0px
 	bottom: 0px
-	left: 138px
+	// left: 138px
+	left: 153px
 	right: 270px
 	z-index: 9999
 	+r(w1801)
 		right: 378px
 	+r(w1401)
 		left: 190px
+	+r(w1280)
+		left: 0
+		right: 0
 	+r(w990)
 		left: 0
 		right: 0
