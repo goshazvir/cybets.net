@@ -3,11 +3,19 @@
 	display: flex
 	flex: 1
 	flex-wrap: wrap
+	&.m-nav
+		padding-left: 190px
+		+r(w1400)
+			padding-left: 150px
+		+r(w1280)
+			padding-left: 0
 	.cb-l-col1
 		flex: 1
 		min-width: 270px
 		padding: 0 20px 72px
 		position: relative
+		+r(w1280)
+			padding: 0 20px 0px
 		&.m-mod
 			// min-width: 100% 
 		&.cb-minw990
@@ -50,6 +58,8 @@
 		color: #fff
 		+r(w1801)
 			max-width: 378px 
+		+r(w1280)
+			display: none
 		+r(w767)
 			max-width: 100%
 		&.m-mod

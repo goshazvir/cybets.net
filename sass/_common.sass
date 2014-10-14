@@ -56,10 +56,31 @@ body
 		margin-top: 20px
 		margin-bottom: 15px
 		text-align: left
+.cb-nav-filter
+	position: absolute
+	left: 140px
+	top: 0
+	bottom: 0
+	+r(w1400)
+		left: 103px
+	+r(w1280)
+		display: none
+	+r(w990)
+		// new
+		position: static
 .cb-nav
+	width: 50px
 	background-color: #f3f3f3
+.cb-nav-in
+	margin: 0
 .cb-nav>ul
-	margin-top: 67px
+	// margin-top: 67px
+	margin-top: 0
+	position: fixed
+	top: 67px
+	bottom: 0
+	&.is-absolute
+		position: absolute
 	+r(w990)
 		margin-top: 0
 .cb-nav>ul>li
@@ -144,6 +165,23 @@ body
 .cb-primary-nav
 	background: #242B2E
 	padding: 25px 0px
+	// new
+	position: fixed
+	top: 0
+	bottom: 0
+	max-width: 140px
+	min-width: 140px 
+	+r(w1400)
+		max-width: 103px
+		min-width: 103px 
+	+r(w1280)
+		display: none
+	+r(w990)
+		// new
+		max-width: inherit 
+		max-width: 100% 
+		min-width: 100%
+		position: static
 	&.m-user
 		padding-top: 0
 		max-width: 138px
@@ -157,12 +195,36 @@ body
 				padding: 25px 10px
 				+r(w1400)
 					padding: 20px 10px
+	&.is-scroll
+		&:hover
+			.scroller-bar-wrapper
+				+opacity(1)
+				+transition
+	.scroller-bar-wrapper
+		+opacity(0)
+		+transition
 	span
 		display: block
 	+r(w767)
 	padding: 25px 0 0
 	+r(w1400)
 		padding-top: 7px
+	.cb-primary-nav-wrap
+		padding-right: 0px
+		+r(w990)
+			height: auto 
+			padding-right: 0
+		.baron-text
+			padding-right: 0px
+			+r(w990)
+				padding-right: 0
+		.scroller-bar-wrapper
+			background: transparent
+			right: 2px
+			+r(w990)
+				display: none // del nedd use JS
+		.scroller-bar
+			+border-radius(3px)
 	li
 		padding: 25px 10px
 		border-top: 1px solid #2e373a 
@@ -181,7 +243,7 @@ body
 		display: block
 		color: #FFF
 		+r(w1400)
-			font-size: 0
+			font-size: 11px
 		&:hover
 			text-decoration: none
 			color: $blue
@@ -363,9 +425,3 @@ body
 	display: block
 	+r(w1600)
 		display: none
-
-
-	
-
-
-

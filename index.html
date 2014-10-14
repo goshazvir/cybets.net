@@ -70,15 +70,26 @@
     </div>
     <div id="applicationHost">
       <section class="cb-viewport-container cb-r-viewport-container">
-        <div class="cb-primary-nav js-set-absolute">
-          <ul>
-            <li><a href="#" class="cb-home"><i class="cb-logo cb-icon-logo"></i><span>Сybets.net</span></a></li>
-            <li><a href="#" class="bet"><span class="cb-primary-nav-ico usd-wrap"><i class="fa fa-usd"></i></span><span>Ставки</span></a></li>
-            <li><a href="#"><i class="cb-primary-nav-ico fa fa-users"></i><span>Тотализатор</span></a></li>
-            <li><a href="#"><i class="cb-primary-nav-ico fa fa-arrow-circle-o-right"></i><span>Вход</span></a></li>
-          </ul>
+        <div class="cb-primary-nav js-set-absolute js-nav-get-height">
+          <div class="cb-primary-nav-wrap js-nav-calc-height">
+            <div class="baron-wrap baron js-baron2">
+              <div class="scroller">
+                <div class="baron-text">
+                  <ul>
+                    <li><a href="#" class="cb-home"><i class="cb-logo cb-icon-logo"></i><span>Сybets.net</span></a></li>
+                    <li><a href="#" class="bet"><span class="cb-primary-nav-ico usd-wrap"><i class="fa fa-usd"></i></span><span>Ставки</span></a></li>
+                    <li><a href="#"><i class="cb-primary-nav-ico fa fa-users"></i><span>Тотализатор</span></a></li>
+                    <li><a href="#"><i class="cb-primary-nav-ico fa fa-arrow-circle-o-right"></i><span>Вход</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="scroller-bar-wrapper">
+                <div class="scroller-bar"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <nav class="cb-nav cb-nav-filter">
+        <nav class="cb-nav cb-nav-filter js-nav-each">
           <ul>
             <li><a href="#" class="cb-icon cb-r-icon cb-icon-dota2"></a></li>
             <li><a href="#" class="cb-icon cb-r-icon cb-icon-cs"></a></li>
@@ -87,7 +98,7 @@
             <li><a href="#" class="cb-icon cb-r-icon cb-icon-pb"></a></li>
           </ul>
         </nav>
-        <div class="cb-l">
+        <div class="cb-l m-nav">
           <div class="cb-l-col1">
             <section class="cb-bet-list">
               <h2 class="cb-h2">Предстоящие матчи</h2>
