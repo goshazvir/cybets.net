@@ -38,14 +38,49 @@ $black: #242b2e
 
 // Common blocks
 // --------------------------------------------------
+.cb-viewport-container
+	+r(w990)
+		+transition(all linear 0.3s)
+		-webkit-transform: translate3d(0px, 0px, 0px)
+		transform: translate3d(0px, 0px, 0px)
+	&.is-pushed
+		+r(w990)
+			+transition(all linear 0.3s)
+			-webkit-transform: translate3d(103px, 0px, 0px)
+			transform: translate3d(103px, 0px, 0px)
 #applicationHost
 	min-height: 100%
-
+	overflow: hidden		
 body
 	font-size: 14px 
 	+os
 	line-height: 1.4
-
+.cb-nav-overlay
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	
+	width: 0
+	height: 0
+	+opacity(0)
+	background: rgba(0,0,0,0.3)
+	-webkit-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s
+	-moz-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s
+	transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s
+	
+	&.is-active
+		width: 100%
+		height: 100%
+		+opacity(1)
+		-webkit-transition: opacity 0.3s
+		-moz-transition: opacity 0.3s
+		transition: opacity 0.3s
+		z-index: 999
+		// -webkit-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s
+		// -moz-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s
+		// transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s
 .cb-container
 	position: relative
 
@@ -82,6 +117,8 @@ body
 	+clr 
 	+r(w1280)
 		display: block
+	+r(w480)
+		padding-right: 5px
 	.cb-sexy-nav-left
 		width: 50%
 		float: left
@@ -89,6 +126,11 @@ body
 			font-size: 0
 		li
 			display: inline-block
+			+r(w990)
+				display: none
+			&.cb-sexy-nav-item
+				+r(w990)
+					display: inline-block
 		a
 			display: block
 			font-size: 16px
@@ -97,18 +139,22 @@ body
 			&:hover
 				background: #333a3d
 				color: #c1c2c2
-				text-decoration: none  
+				text-decoration: none
 	.cb-sexy-nav-right
 		width: 50%
 		float: right
 		text-align: right
+		// +r(w990)
+		// 	display: none
 	.cb-sexy-nav-user
 		ul
 			font-size: 0
 		li
 			font-size: 14px
 			display: inline-block
-			color: #989898 
+			color: #989898
+			+r(w990)
+				font-size: 12px
 		a
 			color: #989898 
 			&:hover
@@ -123,6 +169,9 @@ body
 			color: #989898 
 		.cb-user-nick
 			margin: 0 5px 
+			+r(w480)
+				font-size: 0
+				margin: 0
 	.cb-sexy-nav-guest
 		ul
 			font-size: 0
@@ -130,6 +179,8 @@ body
 			margin-left: 30px
 			display: inline-block
 			font-size: 12px
+			+r(w480)
+				margin-left: 10px
 			&:first-child
 				margin-left: 0
 		a
@@ -142,12 +193,18 @@ body
 				text-decoration: none
 	.cb-sexy-logo
 		font-size: 21px
+		position: relative
 		.cb-icon-logo
 			display: inline-block
 			vertical-align: middle
 			color: #3dc7fe
 			margin-left: 10px
 			margin-right: 10px
+		.cb-navmobile-ico
+			+s(nav-ico)
+			position: absolute
+			top: 1px
+			left: 0
 .cb-nav
 	width: 50px
 	background-color: #f3f3f3
@@ -223,6 +280,8 @@ body
 	+r(w1400)
 		width: 76px
 		height: 76px
+	+r(w1280)
+		display: none
 	&:before
 		content: "\e602"
 		font-family: 'Cybets'
@@ -255,21 +314,22 @@ body
 		max-width: 103px
 		min-width: 103px 
 	+r(w1280)
-		display: none
-	+r(w990)
-		// new
-		max-width: inherit 
-		max-width: 100% 
-		min-width: 100%
-		position: static
+		// display: none
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 1
+		height: 100%
+		-webkit-transform: translate3d(-100%, 0, 0)
+		-moz-transform: translate3d(-100%, 0, 0)
+		transform: translate3d(-100%, 0, 0)
+		
 	&.m-user
 		padding-top: 0
 		max-width: 138px
 		min-width: 138px
 		+r(w1801)
 			max-width: 160px 
-		+r(w990)
-			max-width: 100%
 		li
 			&:first-child
 				padding: 25px 10px
@@ -288,9 +348,11 @@ body
 	+r(w767)
 	padding: 25px 0 0
 	+r(w1400)
-		padding-top: 7px
+		padding-top: 29px
 	.cb-primary-nav-wrap
 		padding-right: 0px
+		+r(w1280)
+			padding-top: 7px
 		+r(w990)
 			height: auto 
 			padding-right: 0
@@ -301,8 +363,8 @@ body
 		.scroller-bar-wrapper
 			background: transparent
 			right: 2px
-			+r(w990)
-				display: none // del nedd use JS
+			// +r(w990)
+			// 	display: none // del nedd use JS
 		.scroller-bar
 			+border-radius(3px)
 	li
@@ -312,8 +374,13 @@ body
 		&:first-child
 			+r(w1400)
 				padding: 0 0 20px
+			+r(w1280)
+				display: none
 		+r(w1400)
 			padding: 20px 10px
+		+r(w1280)
+			text-align: left
+			padding: 10px 5px
 		&:hover
 			background: #2E373A 
 		&:first-child
@@ -333,6 +400,8 @@ body
 			+transition
 			+r(w1400)
 				padding: 0 6px 
+			+r(w1280)
+				display: none
 			&:hover
 				+opacity(0.6)
 		&.cb-back
@@ -427,6 +496,8 @@ body
 		+r(w1400)
 			font-size: 26px
 			margin-bottom: 0
+		+r(w1280)
+			display: none
 // Header
 // --------------------------------------------------
 

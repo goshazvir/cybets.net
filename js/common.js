@@ -173,9 +173,14 @@ head.ready(function() {
 	if ($('.js-nav-each').length) {
 		nav_position();
 	};
-	$('.js-nav-guest').on('click', function() {
-	 	$(".cb-sexy-nav-user").toggle();
-	 	$(".cb-sexy-nav-guest").toggle();
+
+	$('.js-nav-push').on('click', function() {
+	 $(".cb-viewport-container").toggleClass("is-pushed");
+	 $(".cb-nav-overlay").toggleClass("is-active");
+	});
+	$('.js-nav-reset').on('click', function() {
+	 $(".cb-viewport-container").removeClass("is-pushed");
+	 $(".cb-nav-overlay").removeClass("is-active");
 	});
 
 	$(window).resize(function(){
