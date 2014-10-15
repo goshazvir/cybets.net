@@ -44,8 +44,8 @@ $black: #242b2e
 .cb-viewport-container
 	+r(w990)
 		+transition(all linear 0.3s)
-		-webkit-transform: translate3d(0px, 0px, 0px)
-		transform: translate3d(0px, 0px, 0px)
+		// -webkit-transform: translate3d(0px, 0px, 0px)
+		// transform: translate3d(0px, 0px, 0px)
 	&.is-pushed
 		+r(w990)
 			+transition(all linear 0.3s)
@@ -102,10 +102,7 @@ body
 	+r(w1400)
 		left: 103px
 	+r(w1280)
-		display: none
-	+r(w990)
-		// new
-		position: static
+		// display: none
 .cb-sexy-nav
 	display: none
 	position: fixed
@@ -139,6 +136,7 @@ body
 			font-size: 16px
 			color: #E1E1E1 
 			padding: 0 10px
+			+text-overflow
 			&:hover
 				background: #333a3d
 				color: #c1c2c2
@@ -197,6 +195,7 @@ body
 	.cb-sexy-logo
 		font-size: 21px
 		position: relative
+		// +text-overflow
 		.cb-icon-logo
 			display: inline-block
 			vertical-align: middle
@@ -217,6 +216,15 @@ body
 .cb-nav
 	width: 50px
 	background-color: #f3f3f3
+	+r(w1280)
+		width: 100%
+		top: 36px
+		bottom: initial
+		left: 0
+		position: fixed
+		z-index: 9999
+		border-bottom: 1px solid #e3e3e3
+		+gpu
 .cb-nav-in
 	margin: 0
 .cb-nav>ul
@@ -225,6 +233,9 @@ body
 	position: fixed
 	top: 67px
 	bottom: 0
+	+r(w1280)
+		text-align: center
+		position: static
 	&.is-absolute
 		position: absolute
 	+r(w990)
@@ -234,6 +245,19 @@ body
 	height: 60px
 	line-height: 60px
 	text-align: center
+	+r(w1280)
+		display: inline-block
+		width: 40px
+		height: 45px
+		line-height: 45px
+	+r(w990)
+		border-left: 1px solid transparent 
+	&:last-child
+		+r(w1280)
+			border-bottom: 1px solid transparent
+	&:last-child
+		+r(w990)
+			border-right: 1px solid transparent 
 .cb-nav>ul>li>a
 	padding: 0
 	vertical-align: middle
