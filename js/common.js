@@ -177,10 +177,13 @@ head.ready(function() {
 	$('.js-nav-push').on('click', function() {
 	 $(".cb-viewport-container").toggleClass("is-pushed");
 	 $(".cb-nav-overlay").toggleClass("is-active");
+	 $(".cb-navmobile-ico").toggleClass("is-active");
 	});
+
 	$('.js-nav-reset').on('click', function() {
 	 $(".cb-viewport-container").removeClass("is-pushed");
 	 $(".cb-nav-overlay").removeClass("is-active");
+	 $(".cb-navmobile-ico").removeClass("is-active");
 	});
 
 	$(window).resize(function(){

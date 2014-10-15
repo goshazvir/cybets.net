@@ -203,10 +203,12 @@ body
 			margin-left: 10px
 			margin-right: 10px
 		.cb-navmobile-ico
-			+s(nav-ico)
+			+s(nav-ico-active)
 			position: absolute
 			top: 1px
 			left: 0
+			&.is-active
+				+s(nav-ico)
 		.cb-navmobile-back
 			+s(nav-back)
 			position: absolute
