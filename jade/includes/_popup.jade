@@ -6,17 +6,29 @@
         i.cb-popup-close.fa.fa-close.js-popup-close
       .cb-popup-meta 1. Регистрационные данные
       .cb-popup-row
-        .cb-input-wrap
-          i.cb-popup-ico1.fa.fa-user
-          input.cb-popup-input.input(placeholder='Ваше имя', type='text')
+        .cb-popup-label1
+          .cb-input-wrap
+            i.cb-popup-ico1.fa.fa-user
+            input.cb-popup-input.input(placeholder='Ваше имя', type='text')
+        .cb-popup-label2
+          .cb-popup-nick Имя для отображения в системе
       .cb-popup-row
-        .cb-input-wrap
-          i.cb-popup-ico2.fa.fa-envelope-o
-          input.cb-popup-input.input(placeholder='Email', type='text')
+        .cb-popup-label1
+          .cb-input-wrap
+            i.cb-popup-ico2.fa.fa-envelope-o
+            input.cb-popup-input.input(placeholder='Email', type='text')
+        .cb-popup-label2
+          .cb-popup-succes Отлично! Письмо подтверждения будет выслано на данный адрес.
       .cb-popup-row
-        .cb-input-wrap
-          i.cb-popup-ico3.fa.fa-phone
-          input.cb-popup-input.input(placeholder='Телефон', type='text')
+        .cb-popup-label1
+          .cb-input-wrap
+            i.cb-popup-ico3.fa.fa-phone
+            input.cb-popup-input.input(placeholder='Телефон', type='text')
+        .cb-popup-label2
+          .cb-popup-error Данный почтовый адрес уже занят. 
+            a(href="#").cb-popup-succes-link Войти 
+            | или 
+            a(href="#").cb-popup-succes-link восстановить пароль?
       .cb-popup-row.m-btn
         a.cb-popup-cansel(href='#') Отмена
         a.cb-popup-next.btn(href='#') Дальше
