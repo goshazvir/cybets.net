@@ -38,6 +38,8 @@
 		text-align: left
 		overflow: hidden
 		font-size: 14px
+		+r(w480)
+			padding: 30px 20px 30px 20px
 	.cb-popup-top
 		margin-bottom: 15px
 		padding-bottom: 15px
@@ -51,6 +53,8 @@
 		margin-bottom: 15px
 		font-size: 14px
 		+ossb
+		+r(w480)
+			font-size: 12px
 	.cb-popup-close
 		cursor: pointer
 		position: absolute
@@ -83,12 +87,41 @@
 			text-align: center
 	.cb-popup-row
 		margin-top: 20px
+		font-size: 0
 		&:first-child
 			margin-top: 0
 		&.m-btn
 			text-align: right
 			+r(w640)
 				text-align: center
+	.cb-popup-label1
+		width: 210px
+		margin-right: 20px
+		display: inline-block
+		vertical-align: middle
+		+r(w640)
+			margin-bottom: 10px
+		+r(w480)
+			width: 200px
+	.cb-popup-label2
+		width: 230px
+		display: inline-block
+		vertical-align: middle
+		font-size: 14px
+		+r(w480)
+			width: 200px
+	.cb-popup-nick
+		font-size: 12px
+		color: #B4B4B4
+	.cb-popup-succes
+		font-size: 12px
+		color: #8bcd17
+	.cb-popup-error
+		font-size: 12px
+		color: #fd6060
+	.cb-popup-succes-link
+		font-size: 12px
+		color: #3DC7FE 
 	.cb-popup-ico1, .cb-popup-ico2, .cb-popup-ico3
 		position: absolute
 		font-size: 21px
