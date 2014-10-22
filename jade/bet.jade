@@ -2,13 +2,38 @@ doctype html
 
 html
   head
-    title Cybets template
+    title Cybets bet
     include includes/_head
   body
     #applicationHost
+      .cb-sexy-nav
+        .cb-sexy-nav-left
+          ul
+            li.cb-sexy-nav-item
+              a(href="#").cb-sexy-logo.js-nav-push
+                i.cb-navmobile-ico
+                i.cb-icon.cb-icon-logo 
+                | cybets.net
+            li
+              a(href="#") Ставки
+            li
+              a(href="#") Тотализатор
+            li
+              a(href="#") Вход
+        .cb-sexy-nav-right
+          .cb-sexy-nav-user
+            ul
+              li
+                a(href="#") 
+                  i.fa.fa-user
+                  span.cb-user-nick user-name
+              li
+                i.fa.fa-cog
+              li
+                i.fa.fa-cog
       section.cb-viewport-container.cb-r-viewport-container
         include includes/_sidebar-alt
-        .cb-l
+        .cb-l.m-nav.m-user
           .cb-l-col1
             include includes/_bet
             include includes/_payment
